@@ -1,0 +1,22 @@
+start 11:04:58, GPU C: 56 57 57 
+p4k        prompt  3857 tok @  231.8 tok/s | gen    4 tok @  43.0 tok/s | drafts 3/3 | '180'
+p16k       prompt 15672 tok @  373.3 tok/s | gen    4 tok @  39.1 tok/s | drafts 3/3 | '720'
+p32k       prompt 31885 tok @  475.2 tok/s | gen    5 tok @  29.4 tok/s | drafts 4/6 | '1440'
+gen        prompt    26 tok @   26.5 tok/s | gen  300 tok @  39.6 tok/s | drafts 132/280 | 'The salt spray had long since eaten away'
+gen        prompt     7 tok @   23.7 tok/s | gen  300 tok @  43.4 tok/s | drafts 135/288 | 'Elias did not speak much, for the sea ha'
+gen        prompt     7 tok @   23.4 tok/s | gen  300 tok @  47.2 tok/s | drafts 149/277 | 'Elias lived in the space between the sky'
+tool       prompt   305 tok @   76.5 tok/s | gen   54 tok @  46.9 tok/s | drafts 36/51 | [('get_weather', '{"city":"Brisbane"}')]
+qr0n-split-15-35 code parse_duration   PASS   250 tok @  52.9 tok/s    7.2 s  think     0 ch  
+qr0n-split-15-35 code merge_intervals  PASS   188 tok @  59.1 tok/s    5.3 s  think     0 ch  
+qr0n-split-15-35 code lru_cache        PASS   239 tok @  69.9 tok/s    5.7 s  think     0 ch  
+qr0n-split-15-35 code roman            PASS   488 tok @  67.5 tok/s    9.4 s  think     0 ch  
+qr0n-split-15-35 code toposort         PASS   420 tok @  63.7 tok/s    8.8 s  think     0 ch  
+qr0n-split-15-35 code fix_bisect       PASS    90 tok @  68.2 tok/s    4.0 s  think     0 ch  
+qr0n-split-15-35 code calc             FAIL   872 tok @  64.6 tok/s   15.6 s  think     0 ch  ValueError: Invalid number with multiple decimal points
+qr0n-split-15-35 code wrap             PASS   382 tok @  69.5 tok/s    7.7 s  think     0 ch  
+qr0n-split-15-35 code total 7/8 passed, 2929 tokens, 64 s
+end 11:08:43
+GPU0 max 72C, max 161W, thermal slowdown 0/112
+GPU1 max 74C, max 162W, thermal slowdown 0/112
+GPU2 max 71C, max 175W, thermal slowdown 0/112
+DONE

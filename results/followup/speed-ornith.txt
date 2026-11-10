@@ -1,0 +1,22 @@
+start 14:42:41, GPU C: 47 49 50 
+p4k        prompt  3857 tok @  812.0 tok/s | gen    4 tok @  30.4 tok/s | drafts 1/8 | '180'
+p16k       prompt 15672 tok @  957.6 tok/s | gen    4 tok @  30.5 tok/s | drafts 1/8 | '720'
+p32k       prompt 31885 tok @  877.6 tok/s | gen    5 tok @  36.6 tok/s | drafts 2/7 | '1440'
+gen        prompt    26 tok @  133.2 tok/s | gen  300 tok @  38.6 tok/s | drafts 87/568 | '# The Keeper of Cape Meridian\n\nElena had'
+gen        prompt    26 tok @  141.4 tok/s | gen  300 tok @  39.6 tok/s | drafts 92/586 | '# The Lightkeeper\n\nMargaret had kept the'
+gen        prompt    26 tok @  142.2 tok/s | gen  300 tok @  38.6 tok/s | drafts 86/572 | '# The Keeper of Point Mara\n\nEleanor had '
+tool       prompt   276 tok @  425.6 tok/s | gen   65 tok @  56.1 tok/s | drafts 34/104 | [('get_weather', '{"city":"Brisbane"}')]
+ornith   code parse_duration   PASS   209 tok @  56.4 tok/s    4.2 s  think     0 ch  
+ornith   code merge_intervals  PASS   188 tok @  54.1 tok/s    3.9 s  think     0 ch  
+ornith   code lru_cache        PASS   158 tok @  59.0 tok/s    3.2 s  think     0 ch  
+ornith   code roman            PASS   422 tok @  57.0 tok/s    7.9 s  think     0 ch  
+ornith   code toposort         PASS   267 tok @  52.9 tok/s    5.5 s  think     0 ch  
+ornith   code fix_bisect       PASS    90 tok @  59.2 tok/s    2.1 s  think     0 ch  
+ornith   code calc             PASS   848 tok @  57.1 tok/s   15.3 s  think     0 ch  
+ornith   code wrap             PASS   303 tok @  54.6 tok/s    6.0 s  think     0 ch  
+ornith   code total 8/8 passed, 2485 tokens, 48 s
+end 14:44:56
+GPU0 max 47C, max 29W, thermal slowdown 0/67
+GPU1 max 72C, max 156W, thermal slowdown 0/67
+GPU2 max 74C, max 158W, thermal slowdown 0/67
+DONE

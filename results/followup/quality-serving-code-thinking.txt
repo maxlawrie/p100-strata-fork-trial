@@ -1,0 +1,24 @@
+fn-think   run 1 code  semver_sort          PASS  7365 tok @  52.6 tok/s  142.8 s  
+fn-think   run 1 code  cron_next            PASS 17682 tok @  53.1 tok/s  336.2 s  
+fn-think   run 1 code  json_parse           PASS 18157 tok @  78.3 tok/s  286.9 s  
+fn-think   run 1 code  regex_match          PASS 18447 tok @  50.2 tok/s  370.8 s  
+fn-think   run 1 code  osa_distance         FAIL  2329 tok @  53.4 tok/s   46.7 s  AssertionError
+fn-think   run 1 code  parse_csv            PASS 17040 tok @  53.6 tok/s  320.7 s  
+fn-think   run 1 code  run_limited          PASS 16841 tok @  51.3 tok/s  392.3 s  
+fn-think   run 1 code  lex_shortest_path    PASS 17257 tok @  49.1 tok/s  414.8 s  
+fn-think   run 1 code  b64                  PASS 13525 tok @  54.5 tok/s  250.9 s  
+fn-think   run 1 code  glob_match           PASS 17533 tok @  56.9 tok/s  310.9 s  
+fn-think   run 1 code  fraction_to_decimal  PASS  1370 tok @  51.8 tok/s   29.7 s  
+fn-think   run 1 code  knapsack_pick        FAIL 17909 tok @  49.6 tok/s  423.6 s  AssertionError: ([(7, 2), (1, 2), (1, 0), (8, 7), (3, 1), (8, 7), (1, 9), (1, 8), (9, 0)], 8, (20, [
+fn-think   run 1 code  kth_permutation      PASS  8656 tok @  49.2 tok/s  178.7 s  
+fn-think   run 1 code  text_justify         PASS  2043 tok @  54.4 tok/s   40.5 s  
+fn-think   run 1 code  add_days             PASS 17086 tok @  55.8 tok/s  309.1 s  
+fn-think   run 1 code  crc32                PASS  3458 tok @  51.9 tok/s   69.6 s  
+fn-think   run 1 code  weighted_intervals   PASS  9022 tok @  49.8 tok/s  184.0 s  
+fn-think   run 1 code  normpath             PASS 16712 tok @  55.8 tok/s  302.4 s  
+fn-think   run 1 code  min_window           PASS  3490 tok @  51.7 tok/s   70.3 s  
+fn-think   run 1 code  int_to_words         PASS  1891 tok @  57.3 tok/s   36.2 s  
+fn-think   run 1 code  big_mul              FAIL 16925 tok @  52.1 tok/s  327.5 s  ValueError: invalid literal for int() with base 10: ''
+fn-think   code total 18/21 (86%); per run: 18; always 18, never 3, mixed 0 of 21 tasks
+fn-think   code by task: semver_sort 1/1  cron_next 1/1  json_parse 1/1  regex_match 1/1  osa_distance 0/1  parse_csv 1/1  run_limited 1/1  lex_shortest_path 1/1  b64 1/1  glob_match 1/1  fraction_to_decimal 1/1  knapsack_pick 0/1  kth_permutation 1/1  text_justify 1/1  add_days 1/1  crc32 1/1  weighted_intervals 1/1  normpath 1/1  min_window 1/1  int_to_words 1/1  big_mul 0/1
+QUALITY-DONE

@@ -1,0 +1,22 @@
+start 12:06:29, GPU C: 53 56 57 
+p4k        prompt  3857 tok @  248.1 tok/s | gen    4 tok @  39.8 tok/s | drafts 3/3 | '180'
+p16k       prompt 15672 tok @  398.4 tok/s | gen    4 tok @  35.4 tok/s | drafts 3/3 | '720'
+p32k       prompt 31885 tok @  496.0 tok/s | gen    5 tok @  27.9 tok/s | drafts 4/6 | '1440'
+gen        prompt    26 tok @   28.1 tok/s | gen  300 tok @  37.4 tok/s | drafts 120/272 | 'The fog did not roll in; it arrived with'
+gen        prompt     7 tok @   26.2 tok/s | gen  300 tok @  45.2 tok/s | drafts 144/293 | 'The fog did not roll in; it invaded. It '
+gen        prompt     7 tok @   29.0 tok/s | gen  300 tok @  45.1 tok/s | drafts 134/249 | 'The salt spray had etched itself into El'
+tool       prompt   305 tok @   81.6 tok/s | gen   45 tok @  44.6 tok/s | drafts 31/44 | [('get_weather', '{"city":"Brisbane"}')]
+strata   code parse_duration   PASS   250 tok @  49.1 tok/s    7.5 s  think     0 ch  
+strata   code merge_intervals  PASS   188 tok @  56.5 tok/s    5.3 s  think     0 ch  
+strata   code lru_cache        PASS   251 tok @  65.4 tok/s    6.0 s  think     0 ch  
+strata   code roman            PASS   514 tok @  65.5 tok/s   10.0 s  think     0 ch  
+strata   code toposort         PASS   419 tok @  65.5 tok/s    8.5 s  think     0 ch  
+strata   code fix_bisect       PASS    90 tok @  70.6 tok/s    3.8 s  think     0 ch  
+strata   code calc             FAIL   872 tok @  65.5 tok/s   15.3 s  think     0 ch  ValueError: Invalid number with multiple decimal points
+strata   code wrap             PASS   382 tok @  69.6 tok/s    7.6 s  think     0 ch  
+strata   code total 7/8 passed, 2966 tokens, 64 s
+end 12:10:02
+GPU0 max 71C, max 186W, thermal slowdown 0/106
+GPU1 max 79C, max 233W, thermal slowdown 2/106
+GPU2 max 76C, max 218W, thermal slowdown 0/106
+DONE

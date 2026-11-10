@@ -1,0 +1,22 @@
+start 12:14:13, GPU C: 55 57 57 
+p4k        prompt  3857 tok @  233.7 tok/s | gen    4 tok @  41.0 tok/s | drafts 3/3 | '180'
+p16k       prompt 15672 tok @  366.0 tok/s | gen    4 tok @  39.7 tok/s | drafts 3/3 | '720'
+p32k       prompt 31885 tok @  456.0 tok/s | gen    5 tok @  25.8 tok/s | drafts 4/6 | '1440'
+gen        prompt    26 tok @   32.7 tok/s | gen  300 tok @  40.2 tok/s | drafts 142/262 | 'The tower was not merely a building; it '
+gen        prompt     7 tok @   44.9 tok/s | gen  300 tok @  45.3 tok/s | drafts 137/268 | 'Elias had not spoken to another human so'
+gen        prompt     7 tok @   45.9 tok/s | gen  300 tok @  46.0 tok/s | drafts 136/256 | 'The iron spiral staircase groaned under '
+tool       prompt   305 tok @   81.3 tok/s | gen   51 tok @  41.9 tok/s | drafts 32/50 | [('get_weather', '{"city":"Brisbane"}')]
+strata   code parse_duration   PASS   250 tok @  52.8 tok/s    7.1 s  think     0 ch  
+strata   code merge_intervals  PASS   188 tok @  60.1 tok/s    5.2 s  think     0 ch  
+strata   code lru_cache        PASS   256 tok @  67.7 tok/s    6.0 s  think     0 ch  
+strata   code roman            PASS   514 tok @  66.6 tok/s    9.9 s  think     0 ch  
+strata   code toposort         PASS   429 tok @  65.5 tok/s    8.7 s  think     0 ch  
+strata   code fix_bisect       PASS    90 tok @  70.9 tok/s    4.0 s  think     0 ch  
+strata   code calc             PASS   907 tok @  64.8 tok/s   16.1 s  think     0 ch  
+strata   code wrap             PASS   382 tok @  70.1 tok/s    7.6 s  think     0 ch  
+strata   code total 8/8 passed, 3016 tokens, 65 s
+end 12:17:56
+GPU0 max 68C, max 188W, thermal slowdown 0/111
+GPU1 max 75C, max 164W, thermal slowdown 0/111
+GPU2 max 72C, max 159W, thermal slowdown 0/111
+DONE

@@ -1,0 +1,22 @@
+start 10:50:47, GPU C: 55 57 57 
+p4k        prompt  3857 tok @  231.8 tok/s | gen    4 tok @  43.2 tok/s | drafts 3/3 | '180'
+p16k       prompt 15672 tok @  374.7 tok/s | gen    4 tok @  39.6 tok/s | drafts 3/3 | '720'
+p32k       prompt 31885 tok @  477.0 tok/s | gen    5 tok @  29.8 tok/s | drafts 4/6 | '1440'
+gen        prompt    26 tok @   28.7 tok/s | gen  300 tok @  43.0 tok/s | drafts 144/276 | 'The salt air clung to Elias’s coat like '
+gen        prompt     7 tok @   25.4 tok/s | gen  300 tok @  44.5 tok/s | drafts 136/295 | 'Elias was not merely a keeper of the lig'
+gen        prompt     7 tok @   25.5 tok/s | gen  300 tok @  47.5 tok/s | drafts 147/282 | 'Elias had not spoken to another human so'
+tool       prompt   305 tok @   78.1 tok/s | gen   78 tok @  42.9 tok/s | drafts 41/83 | [('get_weather', '{"city":"Brisbane"}')]
+qr0n-split-14-34 code parse_duration   PASS   250 tok @  54.4 tok/s    7.1 s  think     0 ch  
+qr0n-split-14-34 code merge_intervals  PASS   188 tok @  61.9 tok/s    5.1 s  think     0 ch  
+qr0n-split-14-34 code lru_cache        PASS   256 tok @  69.5 tok/s    5.9 s  think     0 ch  
+qr0n-split-14-34 code roman            PASS   514 tok @  68.2 tok/s    9.7 s  think     0 ch  
+qr0n-split-14-34 code toposort         PASS   429 tok @  66.8 tok/s    8.6 s  think     0 ch  
+qr0n-split-14-34 code fix_bisect       PASS    90 tok @  70.3 tok/s    4.0 s  think     0 ch  
+qr0n-split-14-34 code calc             FAIL   787 tok @  67.0 tok/s   13.8 s  think     0 ch  ValueError: Invalid number at position 0
+qr0n-split-14-34 code wrap             PASS   375 tok @  70.8 tok/s    7.4 s  think     0 ch  
+qr0n-split-14-34 code total 7/8 passed, 2889 tokens, 62 s
+end 10:54:23
+GPU0 max 70C, max 195W, thermal slowdown 0/108
+GPU1 max 74C, max 148W, thermal slowdown 0/108
+GPU2 max 72C, max 167W, thermal slowdown 0/108
+DONE

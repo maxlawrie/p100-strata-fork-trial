@@ -1,0 +1,24 @@
+q122       run 1 code  semver_sort          FAIL   623 tok @  17.5 tok/s   48.8 s  AssertionError: ['1.0.0', '1.0.0-alpha', '1.0.0-alpha.1', '1.0.0-alpha.beta', '1.0.0-beta', '1.0.0-b
+q122       run 1 code  cron_next            PASS  1274 tok @  17.5 tok/s   86.8 s  
+q122       run 1 code  json_parse           PASS  2001 tok @  17.5 tok/s  126.7 s  
+q122       run 1 code  regex_match          FAIL  6000 tok @  17.4 tok/s  358.6 s  no code block
+q122       run 1 code  osa_distance         PASS   472 tok @  17.5 tok/s   40.4 s  
+q122       run 1 code  parse_csv            PASS  1094 tok @  17.5 tok/s   75.2 s  
+q122       run 1 code  run_limited          PASS   855 tok @  17.5 tok/s   60.8 s  
+q122       run 1 code  lex_shortest_path    PASS   729 tok @  17.5 tok/s   55.0 s  
+q122       run 1 code  b64                  FAIL   869 tok @  17.5 tok/s   62.4 s  AssertionError: (b';\x03.\x11*2\xb5y\x08\x0f\x08\xb1\xf7\xedL.]:\x07\xf9\x7f!\xee#-\x17\x8a ', 'OwMu
+q122       run 1 code  glob_match           FAIL   885 tok @  17.5 tok/s   64.0 s  AssertionError: ('***[!a]', 'cb]', False, True)
+q122       run 1 code  fraction_to_decimal  PASS   310 tok @  17.5 tok/s   32.0 s  
+q122       run 1 code  knapsack_pick        FAIL  2126 tok @  17.5 tok/s  135.2 s  AssertionError: ([(1, 0), (1, 9), (0, 1), (1, 5), (3, 0), (0, 0), (5, 9)], 15, (24, [1, 2, 3, 6]), (
+q122       run 1 code  kth_permutation      PASS   415 tok @  17.5 tok/s   36.3 s  
+q122       run 1 code  text_justify         PASS   394 tok @  17.5 tok/s   35.9 s  
+q122       run 1 code  add_days             FAIL   738 tok @  17.6 tok/s   55.7 s  AssertionError: (('2024-02-28', 1), ('2018-73-25', 'Thursday'), ('2024-02-29', 'Thursday'))
+q122       run 1 code  crc32                FAIL   349 tok @  17.5 tok/s   33.5 s  AssertionError
+q122       run 1 code  weighted_intervals   PASS   724 tok @  17.6 tok/s   54.8 s  
+q122       run 1 code  normpath             FAIL   325 tok @  17.6 tok/s   30.7 s  AssertionError: ('/', '.', '/')
+q122       run 1 code  min_window           PASS   258 tok @  17.7 tok/s   28.0 s  
+q122       run 1 code  int_to_words         PASS   483 tok @  17.5 tok/s   41.7 s  
+q122       run 1 code  big_mul              PASS   318 tok @  17.6 tok/s   32.0 s  
+q122       code total 13/21 (62%); per run: 13; always 13, never 8, mixed 0 of 21 tasks
+q122       code by task: semver_sort 0/1  cron_next 1/1  json_parse 1/1  regex_match 0/1  osa_distance 1/1  parse_csv 1/1  run_limited 1/1  lex_shortest_path 1/1  b64 0/1  glob_match 0/1  fraction_to_decimal 1/1  knapsack_pick 0/1  kth_permutation 1/1  text_justify 1/1  add_days 0/1  crc32 0/1  weighted_intervals 1/1  normpath 0/1  min_window 1/1  int_to_words 1/1  big_mul 1/1
+QUALITY-DONE

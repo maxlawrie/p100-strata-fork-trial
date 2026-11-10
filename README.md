@@ -10,6 +10,9 @@ reading unchanged, no extra heat, and no difference I can measure in a coding te
 mode on 64 GB and across three cards. I switched the rig to it. The opt-in Q8 kernel added only a few percent more
 here and wasn't worth its cost.
 
+A second round of experiments (layer splits, sustained load, power limit, peer mode, two other models, thinking
+on and off) is under [Follow-up experiments](#follow-up-experiments). None of them changed the config.
+
 ## Hardware
 
 - 3× Tesla P100-PCIE-16GB, 140 W power limit each, passive cards in fan shrouds. Two on PCIe 3.0 x8 (CPU lanes),
@@ -77,14 +80,114 @@ changes between runs. So this set can't rank these builds. All it says is that n
 single run of eight tasks was too little to support the 7/8 against 5/8 comparison in my
 [earlier trial](https://github.com/maxlawrie/p100-llamacpp-fork-trial) as firmly as I wrote it up.
 
-### Not covered
+## Follow-up experiments
 
-- Sustained load. No run was long enough to reach the ~6 minutes at which my middle card starts to throttle.
-- `STRATA_ROUTE_TAIL_SKIP=0` by itself. It was set in every fork run, so its own effect on speed or answers isn't
-  separated here.
-- Peer mode (`--peer-device`), which the fork's author uses on two cards. It can't be combined with a layer split.
-- Arithmetic. Junk GPU Lab found Strata getting a payment total wrong 4 times out of 4 where llama.cpp, on the same
-  model file, got it right. I didn't test that. Sums that matter should go through a tool on either build.
+Same day, same rig. Everything below is the serving build (third column above) unless it says otherwise. Raw output
+is in [`results/followup/`](results/followup/). Write-up:
+[Nine experiments on the P100 rig, and the one that mattered](https://lawrie.co.nz/posts/p100-experiments.html).
+
+**Short version:** no setting, mode or other model beat the serving config. Turning thinking on raised the coding
+score more than anything else, at more than ten times the time per answer.
+
+### A repeated benchmark
+
+[`bench/quality.py`](bench/quality.py) asks 21 coding tasks (the 8 hard ones above plus 13 in
+[`coding_tasks_v2.py`](bench/coding_tasks_v2.py), graded by unit tests in a container with no network) and 40
+arithmetic word problems with exact answers ([`arith.py`](bench/arith.py)), three rounds each, temperature 0.
+
+| | Coding, of 21 per round | Arithmetic, of 120 | Code speed, tok/s | Time per coding round |
+|---|---|---|---|---|
+| Serving build, thinking off | 13 / 15 / 16 | 120 | 64.7 mean | about 6 min |
+| `STRATA_ROUTE_TAIL_SKIP` left at its default (7) | 16 / 15 / 15 | 120 | 64.6 mean | about 6 min |
+| Serving build, thinking on, arithmetic only | not run | 120 | | |
+| Serving build, thinking on, coding (1 round) | 18 | not run | 49–78 | 81 min |
+| Ornith 1.5 35B-A3B, thinking off | 6 / 6 / 6 | 120 | 55.4 mean | about 4 min |
+| Ornith 1.5 35B-A3B, thinking on (1 round) | 12 | not run | 46–58 | 85 min |
+| Qwen3.5-122B-A10B, thinking off (1 round) | 13 | not run | 17.5 | about 25 min |
+
+- **Tail-skip:** no difference in speed or score beyond the spread between rounds.
+- **Arithmetic:** every arm scored 120/120, so this set is too easy to separate anything. It did not reproduce the
+  wrong payment totals Junk GPU Lab reported for Strata; his problems are not mine.
+- **Thinking on** allows 22,000 tokens per answer. Flash-Next never ran out: 11 of its answers used 16,700–18,500
+  tokens, so its thinking appears to stop at a budget. Ornith spent the whole allowance thinking on 8 tasks and
+  returned no code; only 1 of its 9 failures was wrong code. The thinking-on rows are one round each. Ornith's second
+  round began with identical token counts and was stopped; Flash-Next's rounds vary.
+- **Three tasks rarely pass** (`parse_csv`, `glob_match`, `knapsack_pick`). I re-ran the failing answers: the prompts
+  state what the tests check and the answers have real bugs. `knapsack_pick` was passed by no model in 12 attempts;
+  its tie-break rule (lexicographically smallest index list) makes it more of a puzzle than a coding task.
+
+### Settings that changed nothing
+
+**Layer split.** One speed run per arm.
+
+| `layer-split` | Stories, tok/s | Code mean, tok/s | Experts in VRAM |
+|---|---|---|---|
+| 12,34 (serving) | 41–46 | 64.9 | 18,707 |
+| 14,34 | 43.0–47.5 | 66.1 | 19,662 |
+| 14,36 | 39.8–45.5 | 64.0 | 19,620 |
+| 15,35 | 39.6–47.2 | 64.4 | 20,180 |
+
+**Sustained load.** [`bench/sustain.sh`](bench/sustain.sh): 12 minutes of back-to-back 300-token stories. Speed
+drops about 1% after 7 minutes. No run hit the 80 °C stop.
+
+| `layer-split` | Mean tok/s | GPU peaks, °C | Throttled samples on the hottest card |
+|---|---|---|---|
+| 12,34 | 45.1 | 61 / 78 / 79 | 33 of 360 |
+| 14,34 | 45.4 | 63 / 73 / 80 | 36 of 358 |
+| 14,36 | 45.5 | 63 / 79 / 80 | 11 of 360 |
+
+**180 W power limit against 140 W.** Prompts 248 / 398 / 496 tok/s against 234 / 366 / 456 (+6–9%). Writing no
+faster. One card reached 79 °C with 2 throttled samples in a 4-minute run (75 °C and none at 140 W).
+
+### Two-card peer mode
+
+`--peer-device 1` on the two PCIe 3.0 x8 cards, with the same IQ3_S files and no new download:
+
+```
+GPUS=1,2
+STRATA_SET="resident-experts kv-resident=32768 conversation-cache-mib=8192 peer-device=1 peer-reserve-mib=2000
+            STRATA_GU_F16=2 STRATA_SM60_D20_SUB=1 STRATA_DOWN_F16=1 STRATA_B6_F16=1 STRATA_ROUTE_TAIL_SKIP=0"
+```
+
+| | Three-card layer split | Two-card peer mode |
+|---|---|---|
+| Reading a 4K / 16K / 32K prompt, tok/s | 234 / 366 / 456 | 325 / 355 / 342 |
+| 300-token stories, tok/s | 40–46 | 35–48 |
+| Code replies, tok/s | 52–74 | 37–55 |
+| Experts held in VRAM | 18,707 | 11,804 (4,645 + 7,159) |
+| Decode expert-cache hit rate | 96–99% | 83–86% |
+| Hottest card | 75 °C | 80 °C after 4 minutes; the peer card 57 °C |
+
+- It runs in low-RAM mode (`resident-experts`) on 64 GB, with 41.7 GiB of experts in RAM.
+- The primary card does all the dense work alone. It reached the benchmark's 80 °C stop after 5 of the 8 easy
+  coding tasks (all 5 passed).
+- The engine refuses `--peer-device` together with `--layer-split`. Strata's Docker launcher keeps earlier
+  `STRATA_SET` values in its `/data` folder, so a container that has run with a layer split needs a fresh `/data`.
+- qr0n's IQ3_XXS weights, which would fit more experts on two cards, were not tried.
+
+### Two other models
+
+Both on [Junk GPU Lab's P100 llama.cpp fork](https://github.com/junkgpulab/llama.cpp-p100) at `c89a8dc`.
+
+| | Flash-Next on Strata | Ornith 1.5 35B-A3B Q4_K_M | Qwen3.5-122B-A10B Q4_K_M |
+|---|---|---|---|
+| Cards | 3 | 2, tensor split, MTP 4 drafts | 3 plus CPU (6 threads) |
+| Reading a 4K / 16K / 32K prompt, tok/s | 234 / 366 / 456 | 812 / 958 / 878 | 31 / 32 / 32 |
+| 300-token stories, tok/s | 40–46 | 38.6–39.6 | 17.2–17.6 |
+| Easy coding set | 8/8, 65 s | 8/8, 48 s | 8/8, 301 s |
+| Hottest card | 75 °C | 74 °C | 64 °C |
+
+- **Ornith** used 12.7 GB on each card at 128K context. Its MTP draft acceptance was low: about 15% in stories and
+  32% in code.
+- **The 122B** is 76.5 GB against 48 GB of VRAM. `-ngl 99 --n-cpu-moe N -sm layer` failed to load at every N from
+  14 to 32, because the layer split puts every layer that keeps its experts on the last card. Leaving out `-ngl`
+  and `--n-cpu-moe` lets the server fit itself: about 15 GB per card, roughly half the layers' experts on the CPU.
+
+### Still not covered
+
+- More than one round of the thinking-on coding runs.
+- qr0n's IQ3_XXS weights in peer mode.
+- An arithmetic set hard enough to separate engines.
 
 ## Reproduce
 

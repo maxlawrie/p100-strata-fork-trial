@@ -1,0 +1,21 @@
+start 21:20:31, GPU C: 45 46 45 
+p4k        prompt  3857 tok @  324.5 tok/s | gen    4 tok @  29.9 tok/s | drafts 3/3 | '180'
+p16k       prompt 15672 tok @  355.3 tok/s | gen    4 tok @  25.1 tok/s | drafts 3/3 | '720'
+p32k       prompt 31885 tok @  341.6 tok/s | gen    5 tok @  22.4 tok/s | drafts 4/6 | '1440'
+gen        prompt    26 tok @   23.9 tok/s | gen  300 tok @  35.1 tok/s | drafts 136/288 | 'Elias had not spoken to another human be'
+gen        prompt     7 tok @   27.1 tok/s | gen  300 tok @  41.7 tok/s | drafts 127/277 | 'The wind did not merely blow; it screame'
+gen        prompt     7 tok @   27.7 tok/s | gen  300 tok @  47.9 tok/s | drafts 155/258 | 'The salt air clung to Elias’s coat like '
+tool       prompt   305 tok @   77.8 tok/s | gen   69 tok @  31.8 tok/s | drafts 40/56 | [('get_weather', '{"city":"Brisbane"}')]
+qr0n-peer code parse_duration   PASS   250 tok @  37.0 tok/s    9.1 s  think     0 ch  
+qr0n-peer code merge_intervals  PASS   191 tok @  46.3 tok/s    6.0 s  think     0 ch  
+qr0n-peer code lru_cache        PASS   251 tok @  55.0 tok/s    6.8 s  think     0 ch  
+qr0n-peer code roman            PASS   514 tok @  51.7 tok/s   12.2 s  think     0 ch  
+ABORT: a GPU reached 80C at 21:24:14
+qr0n-peer code toposort         PASS   429 tok @  50.2 tok/s   10.7 s  think     0 ch  
+qr0n-peer ABORT seen, stopping
+qr0n-peer code total 5/8 passed, 1635 tokens, 45 s
+end 21:24:16
+GPU0 max 45C, max 29W, thermal slowdown 0/112
+GPU1 max 79C, max 189W, thermal slowdown 0/112
+GPU2 max 57C, max 152W, thermal slowdown 0/112
+DONE

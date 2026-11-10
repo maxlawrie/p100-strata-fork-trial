@@ -1,0 +1,22 @@
+start 10:57:45, GPU C: 56 57 57 
+p4k        prompt  3857 tok @  231.7 tok/s | gen    4 tok @  40.4 tok/s | drafts 3/3 | '180'
+p16k       prompt 15672 tok @  363.2 tok/s | gen    4 tok @  35.1 tok/s | drafts 3/3 | '720'
+p32k       prompt 31885 tok @  448.9 tok/s | gen    5 tok @  26.8 tok/s | drafts 4/6 | '1440'
+gen        prompt    26 tok @   28.1 tok/s | gen  300 tok @  39.8 tok/s | drafts 134/285 | 'Elias was not merely a man; he was an ex'
+gen        prompt     7 tok @   25.6 tok/s | gen  300 tok @  44.6 tok/s | drafts 136/284 | 'The salt had long since claimed the edge'
+gen        prompt     7 tok @   25.7 tok/s | gen  300 tok @  45.5 tok/s | drafts 137/270 | 'The salt spray didn’t just coat Elias’s '
+tool       prompt   305 tok @   77.2 tok/s | gen   51 tok @  44.1 tok/s | drafts 34/50 | [('get_weather', '{"city":"Brisbane"}')]
+qr0n-split-14-36 code parse_duration   PASS   250 tok @  50.4 tok/s    7.5 s  think     0 ch  
+qr0n-split-14-36 code merge_intervals  PASS   188 tok @  59.2 tok/s    5.3 s  think     0 ch  
+qr0n-split-14-36 code lru_cache        PASS   258 tok @  68.0 tok/s    6.0 s  think     0 ch  
+qr0n-split-14-36 code roman            PASS   514 tok @  65.9 tok/s   10.0 s  think     0 ch  
+qr0n-split-14-36 code toposort         PASS   419 tok @  65.7 tok/s    8.6 s  think     0 ch  
+qr0n-split-14-36 code fix_bisect       PASS    90 tok @  66.4 tok/s    4.0 s  think     0 ch  
+qr0n-split-14-36 code calc             PASS   987 tok @  65.8 tok/s   17.1 s  think     0 ch  
+qr0n-split-14-36 code wrap             PASS   313 tok @  70.7 tok/s    6.6 s  think     0 ch  
+qr0n-split-14-36 code total 8/8 passed, 3019 tokens, 65 s
+end 11:01:31
+GPU0 max 70C, max 165W, thermal slowdown 0/112
+GPU1 max 75C, max 204W, thermal slowdown 0/112
+GPU2 max 70C, max 195W, thermal slowdown 0/112
+DONE

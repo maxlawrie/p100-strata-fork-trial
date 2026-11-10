@@ -1,0 +1,22 @@
+start 18:14:39, GPU C: 49 47 47 
+p4k        prompt  3857 tok @   31.2 tok/s | gen    4 tok @  16.0 tok/s | drafts -/- | '180'
+p16k       prompt 15672 tok @   32.2 tok/s | gen    4 tok @  15.9 tok/s | drafts -/- | '720'
+p32k       prompt 31885 tok @   31.8 tok/s | gen    5 tok @  14.9 tok/s | drafts -/- | '1440'
+gen        prompt    26 tok @   25.5 tok/s | gen  300 tok @  17.2 tok/s | drafts -/- | 'The wind howled off the Atlantic, a rele'
+gen        prompt    26 tok @   26.3 tok/s | gen  300 tok @  17.5 tok/s | drafts -/- | 'Elias Thorne had lived on Blackwood Rock'
+gen        prompt    26 tok @   26.2 tok/s | gen  300 tok @  17.6 tok/s | drafts -/- | 'Elias Thorne had lived on the jagged roc'
+tool       prompt   276 tok @   15.4 tok/s | gen   76 tok @  17.4 tok/s | drafts -/- | [('get_weather', '{"city":"Brisbane"}')]
+q122     code parse_duration   PASS   489 tok @  17.5 tok/s   40.4 s  think     0 ch  
+q122     code merge_intervals  PASS   186 tok @  17.7 tok/s   21.4 s  think     0 ch  
+q122     code lru_cache        PASS   458 tok @  17.6 tok/s   38.2 s  think     0 ch  
+q122     code roman            PASS   558 tok @  17.4 tok/s   43.9 s  think     0 ch  
+q122     code toposort         PASS   364 tok @  17.4 tok/s   32.3 s  think     0 ch  
+q122     code fix_bisect       PASS    90 tok @  17.6 tok/s   19.3 s  think     0 ch  
+q122     code calc             PASS  1089 tok @  17.4 tok/s   73.0 s  think     0 ch  
+q122     code wrap             PASS   366 tok @  17.4 tok/s   32.3 s  think     0 ch  
+q122     code total 8/8 passed, 3600 tokens, 301 s
+end 18:47:52
+GPU0 max 64C, max 147W, thermal slowdown 0/991
+GPU1 max 54C, max 152W, thermal slowdown 0/991
+GPU2 max 59C, max 163W, thermal slowdown 0/991
+DONE

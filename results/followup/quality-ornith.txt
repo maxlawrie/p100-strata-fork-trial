@@ -1,0 +1,187 @@
+ornith     run 1 code  semver_sort          FAIL   254 tok @  53.5 tok/s    5.4 s  AttributeError: 'int' object has no attribute 'partition'
+ornith     run 1 code  cron_next            FAIL   687 tok @  54.8 tok/s   13.1 s  ValueError: no matching time found within search window
+ornith     run 1 code  json_parse           PASS  1694 tok @  58.3 tok/s   29.5 s  
+ornith     run 1 code  regex_match          FAIL  1373 tok @  56.3 tok/s   25.0 s  RecursionError: maximum recursion depth exceeded
+ornith     run 1 code  osa_distance         FAIL   476 tok @  56.2 tok/s    9.0 s  AssertionError
+ornith     run 1 code  parse_csv            FAIL   377 tok @  57.7 tok/s    7.0 s  AssertionError: accepted invalid: ['"a"b,c']
+ornith     run 1 code  run_limited          FAIL   648 tok @  52.8 tok/s   12.8 s  AttributeError: 'int' object has no attribute 'add_done_callback'
+ornith     run 1 code  lex_shortest_path    FAIL   332 tok @  55.4 tok/s    6.6 s  AssertionError
+ornith     run 1 code  b64                  FAIL   781 tok @  57.3 tok/s   14.1 s  AssertionError: ('OwMuESoytXkIDwix9+1MLl06B/l/Ie4jLReKIA==', b';\x030\x11*\xa0\xb5y\x90\x0f\x08\x88\
+ornith     run 1 code  glob_match           FAIL  1079 tok @  53.7 tok/s   20.7 s  AssertionError: ('***[!a]', 'cb]', False, True)
+ornith     run 1 code  fraction_to_decimal  PASS   217 tok @  59.3 tok/s    4.3 s  
+ornith     run 1 code  knapsack_pick        FAIL   754 tok @  52.4 tok/s   15.0 s  AssertionError: ([(8, 7), (5, 2), (2, 0), (9, 2), (2, 8), (1, 5), (2, 0)], 21, (22, [0, 1, 2, 4, 5, 
+ornith     run 1 code  kth_permutation      PASS   218 tok @  56.4 tok/s    4.4 s  
+ornith     run 1 code  text_justify         FAIL   347 tok @  54.9 tok/s    6.9 s  AssertionError
+ornith     run 1 code  add_days             FAIL   430 tok @  52.9 tok/s    8.8 s  AssertionError: (('2024-02-28', 1), ('2083-373305-174', 'Saturday'), ('2024-02-29', 'Thursday'))
+ornith     run 1 code  crc32                PASS   201 tok @  58.1 tok/s    4.1 s  
+ornith     run 1 code  weighted_intervals   FAIL   505 tok @  56.0 tok/s    9.6 s  AssertionError: ([(1, 2, 2), (12, 17, 1), (10, 11, 2), (12, 15, 4), (0, 1, 1), (5, 10, 8), (9, 13, 3
+ornith     run 1 code  normpath             FAIL   238 tok @  51.6 tok/s    5.2 s  AssertionError: ('/', '.', '/')
+ornith     run 1 code  min_window           PASS   248 tok @  57.9 tok/s    4.9 s  
+ornith     run 1 code  int_to_words         PASS   447 tok @  55.3 tok/s    8.7 s  
+ornith     run 1 code  big_mul              FAIL   536 tok @  53.3 tok/s   10.7 s  AssertionError: ('1795381479163983645360384614', '892584375341419793316220900675218388', '2478337697
+ornith     run 1 arith arith00              PASS   126 tok @  55.8 tok/s    2.8 s  
+ornith     run 1 arith arith01              PASS   261 tok @  57.2 tok/s    5.1 s  
+ornith     run 1 arith arith02              PASS   180 tok @  58.7 tok/s    3.6 s  
+ornith     run 1 arith arith03              PASS   120 tok @  57.5 tok/s    2.5 s  
+ornith     run 1 arith arith04              PASS   123 tok @  61.0 tok/s    2.5 s  
+ornith     run 1 arith arith05              PASS   147 tok @  54.0 tok/s    3.2 s  
+ornith     run 1 arith arith06              PASS   236 tok @  57.3 tok/s    4.6 s  
+ornith     run 1 arith arith07              PASS   211 tok @  57.6 tok/s    4.2 s  
+ornith     run 1 arith arith08              PASS   114 tok @  55.7 tok/s    2.5 s  
+ornith     run 1 arith arith09              PASS   116 tok @  60.3 tok/s    2.5 s  
+ornith     run 1 arith arith10              PASS   149 tok @  53.2 tok/s    3.3 s  
+ornith     run 1 arith arith11              PASS   250 tok @  57.2 tok/s    4.9 s  
+ornith     run 1 arith arith12              PASS   264 tok @  58.4 tok/s    5.0 s  
+ornith     run 1 arith arith13              PASS   114 tok @  56.9 tok/s    2.5 s  
+ornith     run 1 arith arith14              PASS   146 tok @  56.3 tok/s    3.1 s  
+ornith     run 1 arith arith15              PASS   146 tok @  56.3 tok/s    3.1 s  
+ornith     run 1 arith arith16              PASS   236 tok @  56.5 tok/s    4.7 s  
+ornith     run 1 arith arith17              PASS   424 tok @  58.1 tok/s    7.8 s  
+ornith     run 1 arith arith18              PASS   116 tok @  57.5 tok/s    2.5 s  
+ornith     run 1 arith arith19              PASS   186 tok @  56.3 tok/s    3.8 s  
+ornith     run 1 arith arith20              PASS   150 tok @  54.7 tok/s    3.3 s  
+ornith     run 1 arith arith21              PASS   229 tok @  55.2 tok/s    4.7 s  
+ornith     run 1 arith arith22              PASS   177 tok @  58.3 tok/s    3.6 s  
+ornith     run 1 arith arith23              PASS   120 tok @  59.2 tok/s    2.5 s  
+ornith     run 1 arith arith24              PASS   171 tok @  60.0 tok/s    3.3 s  
+ornith     run 1 arith arith25              PASS   149 tok @  54.4 tok/s    3.3 s  
+ornith     run 1 arith arith26              PASS   304 tok @  57.2 tok/s    5.8 s  
+ornith     run 1 arith arith27              PASS   400 tok @  59.6 tok/s    7.2 s  
+ornith     run 1 arith arith28              PASS   127 tok @  56.7 tok/s    2.7 s  
+ornith     run 1 arith arith29              PASS   172 tok @  55.9 tok/s    3.6 s  
+ornith     run 1 arith arith30              PASS   149 tok @  56.6 tok/s    3.2 s  
+ornith     run 1 arith arith31              PASS   241 tok @  55.9 tok/s    4.9 s  
+ornith     run 1 arith arith32              PASS   399 tok @  57.0 tok/s    7.5 s  
+ornith     run 1 arith arith33              PASS   117 tok @  56.1 tok/s    2.6 s  
+ornith     run 1 arith arith34              PASS   109 tok @  56.1 tok/s    2.5 s  
+ornith     run 1 arith arith35              PASS   145 tok @  55.7 tok/s    3.1 s  
+ornith     run 1 arith arith36              PASS   279 tok @  56.8 tok/s    5.4 s  
+ornith     run 1 arith arith37              PASS   249 tok @  59.7 tok/s    4.7 s  
+ornith     run 1 arith arith38              PASS   129 tok @  58.4 tok/s    2.7 s  
+ornith     run 1 arith arith39              PASS   120 tok @  57.0 tok/s    2.6 s  
+ornith     run 2 code  semver_sort          FAIL   254 tok @  53.6 tok/s    5.4 s  AttributeError: 'int' object has no attribute 'partition'
+ornith     run 2 code  cron_next            FAIL   687 tok @  54.9 tok/s   13.1 s  ValueError: no matching time found within search window
+ornith     run 2 code  json_parse           PASS  1694 tok @  58.2 tok/s   29.5 s  
+ornith     run 2 code  regex_match          FAIL  1373 tok @  56.3 tok/s   24.9 s  RecursionError: maximum recursion depth exceeded
+ornith     run 2 code  osa_distance         FAIL   476 tok @  56.3 tok/s    9.0 s  AssertionError
+ornith     run 2 code  parse_csv            FAIL   377 tok @  57.7 tok/s    7.0 s  AssertionError: accepted invalid: ['"a"b,c']
+ornith     run 2 code  run_limited          FAIL   648 tok @  52.6 tok/s   12.9 s  AttributeError: 'int' object has no attribute 'add_done_callback'
+ornith     run 2 code  lex_shortest_path    FAIL   332 tok @  55.4 tok/s    6.5 s  AssertionError
+ornith     run 2 code  b64                  FAIL   781 tok @  57.2 tok/s   14.2 s  AssertionError: ('OwMuESoytXkIDwix9+1MLl06B/l/Ie4jLReKIA==', b';\x030\x11*\xa0\xb5y\x90\x0f\x08\x88\
+ornith     run 2 code  glob_match           FAIL  1079 tok @  53.6 tok/s   20.7 s  AssertionError: ('***[!a]', 'cb]', False, True)
+ornith     run 2 code  fraction_to_decimal  PASS   217 tok @  59.4 tok/s    4.3 s  
+ornith     run 2 code  knapsack_pick        FAIL   754 tok @  52.3 tok/s   15.0 s  AssertionError: ([(8, 7), (5, 2), (2, 0), (9, 2), (2, 8), (1, 5), (2, 0)], 21, (22, [0, 1, 2, 4, 5, 
+ornith     run 2 code  kth_permutation      PASS   218 tok @  56.2 tok/s    4.4 s  
+ornith     run 2 code  text_justify         FAIL   347 tok @  54.9 tok/s    7.0 s  AssertionError
+ornith     run 2 code  add_days             FAIL   430 tok @  52.9 tok/s    8.8 s  AssertionError: (('2024-02-28', 1), ('2083-373305-174', 'Saturday'), ('2024-02-29', 'Thursday'))
+ornith     run 2 code  crc32                PASS   201 tok @  58.1 tok/s    4.1 s  
+ornith     run 2 code  weighted_intervals   FAIL   505 tok @  56.1 tok/s    9.6 s  AssertionError: ([(1, 2, 2), (12, 17, 1), (10, 11, 2), (12, 15, 4), (0, 1, 1), (5, 10, 8), (9, 13, 3
+ornith     run 2 code  normpath             FAIL   238 tok @  51.6 tok/s    5.1 s  AssertionError: ('/', '.', '/')
+ornith     run 2 code  min_window           PASS   248 tok @  57.8 tok/s    4.9 s  
+ornith     run 2 code  int_to_words         PASS   447 tok @  55.2 tok/s    8.8 s  
+ornith     run 2 code  big_mul              FAIL   536 tok @  53.5 tok/s   10.6 s  AssertionError: ('1795381479163983645360384614', '892584375341419793316220900675218388', '2478337697
+ornith     run 2 arith arith00              PASS   126 tok @  55.6 tok/s    2.7 s  
+ornith     run 2 arith arith01              PASS   261 tok @  56.9 tok/s    5.1 s  
+ornith     run 2 arith arith02              PASS   180 tok @  58.6 tok/s    3.6 s  
+ornith     run 2 arith arith03              PASS   120 tok @  57.4 tok/s    2.6 s  
+ornith     run 2 arith arith04              PASS   123 tok @  60.9 tok/s    2.6 s  
+ornith     run 2 arith arith05              PASS   147 tok @  54.0 tok/s    3.3 s  
+ornith     run 2 arith arith06              PASS   236 tok @  57.2 tok/s    4.7 s  
+ornith     run 2 arith arith07              PASS   211 tok @  57.4 tok/s    4.3 s  
+ornith     run 2 arith arith08              PASS   114 tok @  55.6 tok/s    2.5 s  
+ornith     run 2 arith arith09              PASS   116 tok @  60.2 tok/s    2.5 s  
+ornith     run 2 arith arith10              PASS   149 tok @  53.2 tok/s    3.3 s  
+ornith     run 2 arith arith11              PASS   250 tok @  57.4 tok/s    4.9 s  
+ornith     run 2 arith arith12              PASS   264 tok @  58.4 tok/s    5.1 s  
+ornith     run 2 arith arith13              PASS   114 tok @  57.0 tok/s    2.5 s  
+ornith     run 2 arith arith14              PASS   146 tok @  56.5 tok/s    3.1 s  
+ornith     run 2 arith arith15              PASS   146 tok @  56.4 tok/s    3.1 s  
+ornith     run 2 arith arith16              PASS   236 tok @  56.5 tok/s    4.7 s  
+ornith     run 2 arith arith17              PASS   424 tok @  58.0 tok/s    7.9 s  
+ornith     run 2 arith arith18              PASS   116 tok @  57.4 tok/s    2.4 s  
+ornith     run 2 arith arith19              PASS   186 tok @  56.4 tok/s    3.8 s  
+ornith     run 2 arith arith20              PASS   150 tok @  54.7 tok/s    3.3 s  
+ornith     run 2 arith arith21              PASS   229 tok @  55.2 tok/s    4.7 s  
+ornith     run 2 arith arith22              PASS   177 tok @  58.3 tok/s    3.6 s  
+ornith     run 2 arith arith23              PASS   120 tok @  59.5 tok/s    2.5 s  
+ornith     run 2 arith arith24              PASS   171 tok @  60.1 tok/s    3.4 s  
+ornith     run 2 arith arith25              PASS   149 tok @  54.4 tok/s    3.3 s  
+ornith     run 2 arith arith26              PASS   304 tok @  57.2 tok/s    5.9 s  
+ornith     run 2 arith arith27              PASS   400 tok @  59.5 tok/s    7.3 s  
+ornith     run 2 arith arith28              PASS   127 tok @  56.9 tok/s    2.7 s  
+ornith     run 2 arith arith29              PASS   172 tok @  55.8 tok/s    3.6 s  
+ornith     run 2 arith arith30              PASS   149 tok @  56.5 tok/s    3.2 s  
+ornith     run 2 arith arith31              PASS   241 tok @  55.9 tok/s    4.8 s  
+ornith     run 2 arith arith32              PASS   399 tok @  57.2 tok/s    7.5 s  
+ornith     run 2 arith arith33              PASS   117 tok @  56.0 tok/s    2.6 s  
+ornith     run 2 arith arith34              PASS   109 tok @  56.2 tok/s    2.5 s  
+ornith     run 2 arith arith35              PASS   145 tok @  55.7 tok/s    3.2 s  
+ornith     run 2 arith arith36              PASS   279 tok @  56.8 tok/s    5.4 s  
+ornith     run 2 arith arith37              PASS   249 tok @  59.7 tok/s    4.7 s  
+ornith     run 2 arith arith38              PASS   129 tok @  58.5 tok/s    2.7 s  
+ornith     run 2 arith arith39              PASS   120 tok @  57.2 tok/s    2.7 s  
+ornith     run 3 code  semver_sort          FAIL   254 tok @  53.6 tok/s    5.4 s  AttributeError: 'int' object has no attribute 'partition'
+ornith     run 3 code  cron_next            FAIL   687 tok @  54.8 tok/s   13.1 s  ValueError: no matching time found within search window
+ornith     run 3 code  json_parse           PASS  1694 tok @  58.2 tok/s   29.6 s  
+ornith     run 3 code  regex_match          FAIL  1373 tok @  56.3 tok/s   24.9 s  RecursionError: maximum recursion depth exceeded
+ornith     run 3 code  osa_distance         FAIL   476 tok @  56.4 tok/s    9.0 s  AssertionError
+ornith     run 3 code  parse_csv            FAIL   377 tok @  57.9 tok/s    7.0 s  AssertionError: accepted invalid: ['"a"b,c']
+ornith     run 3 code  run_limited          FAIL   648 tok @  52.7 tok/s   12.8 s  AttributeError: 'int' object has no attribute 'add_done_callback'
+ornith     run 3 code  lex_shortest_path    FAIL   332 tok @  55.4 tok/s    6.6 s  AssertionError
+ornith     run 3 code  b64                  FAIL   781 tok @  57.1 tok/s   14.2 s  AssertionError: ('OwMuESoytXkIDwix9+1MLl06B/l/Ie4jLReKIA==', b';\x030\x11*\xa0\xb5y\x90\x0f\x08\x88\
+ornith     run 3 code  glob_match           FAIL  1079 tok @  53.6 tok/s   20.7 s  AssertionError: ('***[!a]', 'cb]', False, True)
+ornith     run 3 code  fraction_to_decimal  PASS   217 tok @  59.4 tok/s    4.3 s  
+ornith     run 3 code  knapsack_pick        FAIL   754 tok @  52.2 tok/s   15.0 s  AssertionError: ([(8, 7), (5, 2), (2, 0), (9, 2), (2, 8), (1, 5), (2, 0)], 21, (22, [0, 1, 2, 4, 5, 
+ornith     run 3 code  kth_permutation      PASS   218 tok @  56.3 tok/s    4.4 s  
+ornith     run 3 code  text_justify         FAIL   347 tok @  54.7 tok/s    7.0 s  AssertionError
+ornith     run 3 code  add_days             FAIL   430 tok @  52.9 tok/s    8.8 s  AssertionError: (('2024-02-28', 1), ('2083-373305-174', 'Saturday'), ('2024-02-29', 'Thursday'))
+ornith     run 3 code  crc32                PASS   201 tok @  58.0 tok/s    4.1 s  
+ornith     run 3 code  weighted_intervals   FAIL   505 tok @  56.0 tok/s    9.6 s  AssertionError: ([(1, 2, 2), (12, 17, 1), (10, 11, 2), (12, 15, 4), (0, 1, 1), (5, 10, 8), (9, 13, 3
+ornith     run 3 code  normpath             FAIL   238 tok @  51.7 tok/s    5.1 s  AssertionError: ('/', '.', '/')
+ornith     run 3 code  min_window           PASS   248 tok @  57.9 tok/s    4.9 s  
+ornith     run 3 code  int_to_words         PASS   447 tok @  55.3 tok/s    8.8 s  
+ornith     run 3 code  big_mul              FAIL   536 tok @  53.4 tok/s   10.7 s  AssertionError: ('1795381479163983645360384614', '892584375341419793316220900675218388', '2478337697
+ornith     run 3 arith arith00              PASS   126 tok @  55.7 tok/s    2.7 s  
+ornith     run 3 arith arith01              PASS   261 tok @  57.1 tok/s    5.1 s  
+ornith     run 3 arith arith02              PASS   180 tok @  58.5 tok/s    3.6 s  
+ornith     run 3 arith arith03              PASS   120 tok @  57.6 tok/s    2.6 s  
+ornith     run 3 arith arith04              PASS   123 tok @  61.0 tok/s    2.6 s  
+ornith     run 3 arith arith05              PASS   147 tok @  53.9 tok/s    3.3 s  
+ornith     run 3 arith arith06              PASS   236 tok @  57.3 tok/s    4.7 s  
+ornith     run 3 arith arith07              PASS   211 tok @  57.4 tok/s    4.3 s  
+ornith     run 3 arith arith08              PASS   114 tok @  55.7 tok/s    2.5 s  
+ornith     run 3 arith arith09              PASS   116 tok @  60.3 tok/s    2.5 s  
+ornith     run 3 arith arith10              PASS   149 tok @  53.2 tok/s    3.3 s  
+ornith     run 3 arith arith11              PASS   250 tok @  57.3 tok/s    4.9 s  
+ornith     run 3 arith arith12              PASS   264 tok @  58.3 tok/s    5.1 s  
+ornith     run 3 arith arith13              PASS   114 tok @  56.9 tok/s    2.5 s  
+ornith     run 3 arith arith14              PASS   146 tok @  56.5 tok/s    3.1 s  
+ornith     run 3 arith arith15              PASS   146 tok @  56.3 tok/s    3.1 s  
+ornith     run 3 arith arith16              PASS   236 tok @  56.5 tok/s    4.7 s  
+ornith     run 3 arith arith17              PASS   424 tok @  58.0 tok/s    7.9 s  
+ornith     run 3 arith arith18              PASS   116 tok @  57.5 tok/s    2.4 s  
+ornith     run 3 arith arith19              PASS   186 tok @  56.4 tok/s    3.9 s  
+ornith     run 3 arith arith20              PASS   150 tok @  54.7 tok/s    3.3 s  
+ornith     run 3 arith arith21              PASS   229 tok @  55.4 tok/s    4.7 s  
+ornith     run 3 arith arith22              PASS   177 tok @  58.4 tok/s    3.6 s  
+ornith     run 3 arith arith23              PASS   120 tok @  59.4 tok/s    2.5 s  
+ornith     run 3 arith arith24              PASS   171 tok @  60.2 tok/s    3.4 s  
+ornith     run 3 arith arith25              PASS   149 tok @  54.5 tok/s    3.3 s  
+ornith     run 3 arith arith26              PASS   304 tok @  57.2 tok/s    5.8 s  
+ornith     run 3 arith arith27              PASS   400 tok @  59.6 tok/s    7.3 s  
+ornith     run 3 arith arith28              PASS   127 tok @  56.9 tok/s    2.7 s  
+ornith     run 3 arith arith29              PASS   172 tok @  55.9 tok/s    3.6 s  
+ornith     run 3 arith arith30              PASS   149 tok @  56.6 tok/s    3.2 s  
+ornith     run 3 arith arith31              PASS   241 tok @  56.0 tok/s    4.8 s  
+ornith     run 3 arith arith32              PASS   399 tok @  57.1 tok/s    7.5 s  
+ornith     run 3 arith arith33              PASS   117 tok @  56.1 tok/s    2.6 s  
+ornith     run 3 arith arith34              PASS   109 tok @  56.3 tok/s    2.5 s  
+ornith     run 3 arith arith35              PASS   145 tok @  55.8 tok/s    3.1 s  
+ornith     run 3 arith arith36              PASS   279 tok @  56.8 tok/s    5.5 s  
+ornith     run 3 arith arith37              PASS   249 tok @  59.7 tok/s    4.7 s  
+ornith     run 3 arith arith38              PASS   129 tok @  58.5 tok/s    2.7 s  
+ornith     run 3 arith arith39              PASS   120 tok @  57.1 tok/s    2.6 s  
+ornith     code total 18/63 (29%); per run: 6 6 6; always 6, never 15, mixed 0 of 21 tasks
+ornith     code by task: semver_sort 0/3  cron_next 0/3  json_parse 3/3  regex_match 0/3  osa_distance 0/3  parse_csv 0/3  run_limited 0/3  lex_shortest_path 0/3  b64 0/3  glob_match 0/3  fraction_to_decimal 3/3  knapsack_pick 0/3  kth_permutation 3/3  text_justify 0/3  add_days 0/3  crc32 3/3  weighted_intervals 0/3  normpath 0/3  min_window 3/3  int_to_words 3/3  big_mul 0/3
+ornith     arith total 120/120 (100%); per run: 40 40 40; always 40, never 0, mixed 0 of 40 tasks
+QUALITY-DONE
