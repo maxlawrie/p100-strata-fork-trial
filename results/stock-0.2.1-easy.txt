@@ -1,0 +1,22 @@
+start 09:00:01, GPU C: 54 56 57 
+p4k        prompt  3857 tok @  232.8 tok/s | gen    4 tok @  36.5 tok/s | drafts 3/3 | '180'
+p16k       prompt 15672 tok @  366.0 tok/s | gen    4 tok @  31.3 tok/s | drafts 3/3 | '720'
+p32k       prompt 31885 tok @  455.6 tok/s | gen    5 tok @  25.2 tok/s | drafts 4/6 | '1440'
+gen        prompt    26 tok @   39.2 tok/s | gen  300 tok @  31.8 tok/s | drafts 140/263 | 'The salt spray didn’t just hit Elias; it'
+gen        prompt     7 tok @   40.5 tok/s | gen  300 tok @  35.8 tok/s | drafts 133/257 | 'The salt had eaten into Elias’s bones lo'
+gen        prompt     7 tok @   41.3 tok/s | gen  300 tok @  34.3 tok/s | drafts 133/282 | 'Elias did not fear the dark; he respecte'
+tool       prompt   305 tok @   78.3 tok/s | gen   53 tok @  34.8 tok/s | drafts 34/52 | [('get_weather', '{"city":"Brisbane"}')]
+strata   code parse_duration   PASS   250 tok @  42.1 tok/s    8.5 s  think     0 ch  
+strata   code merge_intervals  PASS   187 tok @  46.5 tok/s    6.2 s  think     0 ch  
+strata   code lru_cache        PASS   239 tok @  54.9 tok/s    6.7 s  think     0 ch  
+strata   code roman            PASS   514 tok @  51.4 tok/s   12.3 s  think     0 ch  
+strata   code toposort         PASS   453 tok @  48.2 tok/s   11.7 s  think     0 ch  
+strata   code fix_bisect       PASS    90 tok @  55.5 tok/s    4.4 s  think     0 ch  
+strata   code calc             PASS   777 tok @  51.2 tok/s   17.3 s  think     0 ch  
+strata   code wrap             PASS   375 tok @  52.0 tok/s    9.4 s  think     0 ch  
+strata   code total 8/8 passed, 2885 tokens, 76 s
+end 09:04:02
+GPU0 max 67C, max 170W, thermal slowdown 0/120
+GPU1 max 74C, max 164W, thermal slowdown 0/120
+GPU2 max 71C, max 173W, thermal slowdown 0/120
+DONE

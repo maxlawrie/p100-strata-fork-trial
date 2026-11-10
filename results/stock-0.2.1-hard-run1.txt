@@ -1,0 +1,15 @@
+start 09:07:04, GPU C: 55 57 57 
+strata   code semver_sort      PASS  1121 tok @  50.4 tok/s   24.8 s  think     0 ch  
+strata   code cron_next        FAIL  1636 tok @  48.5 tok/s   36.5 s  think     0 ch  AssertionError: ('0 0 29 2 *', datetime.datetime(2026, 10, 20, 19, 47, 31), date
+strata   code json_parse       PASS  2144 tok @  55.3 tok/s   41.3 s  think     0 ch  
+strata   code regex_match      FAIL  2987 tok @  50.3 tok/s   62.1 s  think     0 ch  AssertionError: 4 wrong, e.g. [('[a-b]|(ab+|c?b+)+a*(\\.+)*', 'bcba', True), ('\
+strata   code osa_distance     PASS   460 tok @  52.0 tok/s   11.3 s  think     0 ch  
+strata   code parse_csv        FAIL  1426 tok @  48.8 tok/s   31.8 s  think     0 ch  AssertionError: ('a,bba ,,"b\n ,"\n', [['a', 'bba ', '', '']], [['a', 'bba ', ''
+strata   code run_limited      FAIL   401 tok @  47.4 tok/s   10.9 s  think     0 ch  AssertionError: {'now': 0, 'peak': 3, 'started': [0, 1, 2, 3, 4, 5, 6, 7], 'canc
+strata   code lex_shortest_path PASS  1433 tok @  43.1 tok/s   35.8 s  think     0 ch  
+strata   code-hard total 4/8 passed, 11608 tokens, 254 s
+end 09:11:21
+GPU0 max 63C, max 133W, thermal slowdown 0/129
+GPU1 max 72C, max 143W, thermal slowdown 0/129
+GPU2 max 73C, max 165W, thermal slowdown 0/129
+DONE

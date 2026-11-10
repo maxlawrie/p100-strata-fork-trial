@@ -1,0 +1,9 @@
+09:18:29 arm flags: resident-experts kv-resident=32768 layer-split=12,34 conversation-cache-mib=8192 STRATA_GU_F16=2 STRATA_SM60_D20_SUB=1 STRATA_DOWN_F16=1 STRATA_B6_F16=1 STRATA_ROUTE_TAIL_SKIP=0
+09:18:41 strata 0.2.1 stopped
+09:21:03 up. VRAM MiB: 15635 15719 15929 , RAM used GiB: 36
+09:21:43 GPU C: 55 56 57 
+09:21:43 candidate.sh easy
+09:28:33 GPU C: 55 57 57 
+09:28:33 candidate.sh hard
+09:31:55 done
+09:32:07 strata 0.2.1 restarted

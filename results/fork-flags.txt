@@ -1,0 +1,22 @@
+start 09:21:43, GPU C: 55 56 57 
+p4k        prompt  3857 tok @  231.2 tok/s | gen    4 tok @  37.1 tok/s | drafts 3/3 | '180'
+p16k       prompt 15672 tok @  364.9 tok/s | gen    4 tok @  32.9 tok/s | drafts 3/3 | '720'
+p32k       prompt 31885 tok @  454.8 tok/s | gen    5 tok @  25.4 tok/s | drafts 4/6 | '1440'
+gen        prompt    26 tok @   27.0 tok/s | gen  300 tok @  39.3 tok/s | drafts 142/300 | 'Elias did not mind the silence; he prefe'
+gen        prompt     7 tok @   26.6 tok/s | gen  300 tok @  42.4 tok/s | drafts 128/277 | 'Elias did not speak much, for he had lon'
+gen        prompt     7 tok @   29.8 tok/s | gen  300 tok @  43.0 tok/s | drafts 131/301 | 'Elias did not speak to the sea; he liste'
+tool       prompt   305 tok @   75.6 tok/s | gen   60 tok @  42.0 tok/s | drafts 39/50 | [('get_weather', '{"city":"Brisbane"}')]
+qr0n-flags code parse_duration   PASS   250 tok @  44.6 tok/s    8.2 s  think     0 ch  
+qr0n-flags code merge_intervals  PASS   188 tok @  55.0 tok/s    5.6 s  think     0 ch  
+qr0n-flags code lru_cache        PASS   251 tok @  64.7 tok/s    6.2 s  think     0 ch  
+qr0n-flags code roman            PASS   514 tok @  62.6 tok/s   10.5 s  think     0 ch  
+qr0n-flags code toposort         PASS   437 tok @  61.2 tok/s    9.4 s  think     0 ch  
+qr0n-flags code fix_bisect       PASS    90 tok @  67.3 tok/s    4.1 s  think     0 ch  
+qr0n-flags code calc             FAIL   871 tok @  63.5 tok/s   15.8 s  think     0 ch  ValueError: Invalid number with multiple decimal points
+qr0n-flags code wrap             PASS   382 tok @  66.7 tok/s    8.0 s  think     0 ch  
+qr0n-flags code total 7/8 passed, 2983 tokens, 68 s
+end 09:25:32
+GPU0 max 68C, max 169W, thermal slowdown 0/114
+GPU1 max 74C, max 176W, thermal slowdown 0/114
+GPU2 max 71C, max 164W, thermal slowdown 0/114
+DONE

@@ -1,0 +1,5 @@
+src/
+Dockerfile.qr0n
+out/
+.env
+__pycache__/

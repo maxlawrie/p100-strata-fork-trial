@@ -1,0 +1,15 @@
+start 09:14:36, GPU C: 54 56 57 
+strata   code semver_sort      PASS  1132 tok @  50.7 tok/s   24.9 s  think     0 ch  
+strata   code cron_next        PASS  1438 tok @  48.6 tok/s   32.3 s  think     0 ch  
+strata   code json_parse       PASS  2172 tok @  54.8 tok/s   42.2 s  think     0 ch  
+strata   code regex_match      PASS  3045 tok @  49.4 tok/s   64.3 s  think     0 ch  
+strata   code osa_distance     PASS   431 tok @  53.3 tok/s   10.6 s  think     0 ch  
+strata   code parse_csv        FAIL   674 tok @  50.5 tok/s   15.9 s  think     0 ch  AssertionError: ('"a b,",b b,"\n\n ","a \r\n"\r\n"""bb\na"," \n\n"",",', [['a b,
+strata   code run_limited      FAIL   452 tok @  49.9 tok/s   11.4 s  think     0 ch  no exception
+strata   code lex_shortest_path PASS  1160 tok @  44.7 tok/s   28.5 s  think     0 ch  
+strata   code-hard total 6/8 passed, 10504 tokens, 230 s
+end 09:18:29
+GPU0 max 64C, max 129W, thermal slowdown 0/117
+GPU1 max 70C, max 147W, thermal slowdown 0/117
+GPU2 max 72C, max 144W, thermal slowdown 0/117
+DONE

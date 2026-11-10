@@ -1,0 +1,9 @@
+10:10:59 arm q8 
+10:11:09 serving strata stopped
+10:13:26 up. VRAM MiB: 13967 15691 15971 , RAM used GiB: 35
+10:15:37 GPU C: 55 57 57 
+10:15:37 candidate.sh easy
+10:22:14 GPU C: 55 57 57 
+10:22:14 candidate.sh hard
+10:25:41 done
+10:25:53 serving strata restarted

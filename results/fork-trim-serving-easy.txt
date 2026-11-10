@@ -1,0 +1,22 @@
+start 09:52:43, GPU C: 55 57 58 
+p4k        prompt  3857 tok @  231.8 tok/s | gen    4 tok @  40.2 tok/s | drafts 3/3 | '180'
+p16k       prompt 15672 tok @  365.2 tok/s | gen    4 tok @  36.0 tok/s | drafts 3/3 | '720'
+p32k       prompt 31885 tok @  454.7 tok/s | gen    5 tok @  28.1 tok/s | drafts 4/6 | '1440'
+gen        prompt    26 tok @   28.6 tok/s | gen  300 tok @  41.4 tok/s | drafts 145/292 | 'Elias did not speak to the sea, but he l'
+gen        prompt     7 tok @   26.2 tok/s | gen  300 tok @  42.7 tok/s | drafts 123/272 | 'The salt had eaten into the iron of Elia'
+gen        prompt     7 tok @   29.6 tok/s | gen  300 tok @  45.6 tok/s | drafts 136/262 | 'The salt spray had long since claimed El'
+tool       prompt   305 tok @   78.4 tok/s | gen   56 tok @  50.2 tok/s | drafts 36/46 | [('get_weather', '{"city":"Brisbane"}')]
+strata   code parse_duration   PASS   250 tok @  50.6 tok/s    7.4 s  think     0 ch  
+strata   code merge_intervals  PASS   188 tok @  59.5 tok/s    5.2 s  think     0 ch  
+strata   code lru_cache        PASS   256 tok @  68.4 tok/s    6.0 s  think     0 ch  
+strata   code roman            PASS   488 tok @  68.0 tok/s    9.3 s  think     0 ch  
+strata   code toposort         PASS   429 tok @  64.3 tok/s    8.9 s  think     0 ch  
+strata   code fix_bisect       PASS    90 tok @  70.2 tok/s    4.0 s  think     0 ch  
+strata   code calc             FAIL   872 tok @  66.0 tok/s   15.3 s  think     0 ch  ValueError: Invalid number with multiple decimal points
+strata   code wrap             PASS   382 tok @  69.9 tok/s    7.6 s  think     0 ch  
+strata   code total 7/8 passed, 2955 tokens, 64 s
+end 09:56:27
+GPU0 max 67C, max 158W, thermal slowdown 0/111
+GPU1 max 74C, max 176W, thermal slowdown 0/111
+GPU2 max 71C, max 169W, thermal slowdown 0/111
+DONE

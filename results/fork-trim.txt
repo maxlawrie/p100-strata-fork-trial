@@ -1,0 +1,22 @@
+start 09:35:10, GPU C: 54 56 57 
+p4k        prompt  3857 tok @  232.1 tok/s | gen    4 tok @  40.2 tok/s | drafts 3/3 | '180'
+p16k       prompt 15672 tok @  365.5 tok/s | gen    4 tok @  35.8 tok/s | drafts 3/3 | '720'
+p32k       prompt 31885 tok @  455.1 tok/s | gen    5 tok @  28.3 tok/s | drafts 4/6 | '1440'
+gen        prompt    26 tok @   28.6 tok/s | gen  300 tok @  41.2 tok/s | drafts 141/269 | 'The salt spray tasted like iron and old '
+gen        prompt     7 tok @   25.6 tok/s | gen  300 tok @  44.4 tok/s | drafts 136/303 | 'The salt air was thick enough to taste, '
+gen        prompt     7 tok @   29.3 tok/s | gen  300 tok @  44.9 tok/s | drafts 135/276 | 'The salt spray didn’t just hit the glass'
+tool       prompt   305 tok @   78.6 tok/s | gen   70 tok @  50.8 tok/s | drafts 49/61 | [('get_weather', '{"city":"Brisbane"}')]
+qr0n-trim code parse_duration   PASS   250 tok @  51.6 tok/s    7.3 s  think     0 ch  
+qr0n-trim code merge_intervals  PASS   188 tok @  59.6 tok/s    5.2 s  think     0 ch  
+qr0n-trim code lru_cache        PASS   251 tok @  67.1 tok/s    6.0 s  think     0 ch  
+qr0n-trim code roman            PASS   514 tok @  65.4 tok/s   10.0 s  think     0 ch  
+qr0n-trim code toposort         PASS   429 tok @  65.7 tok/s    8.7 s  think     0 ch  
+qr0n-trim code fix_bisect       PASS    90 tok @  73.7 tok/s    3.9 s  think     0 ch  
+qr0n-trim code calc             PASS   863 tok @  65.9 tok/s   15.2 s  think     0 ch  
+qr0n-trim code wrap             PASS   313 tok @  70.3 tok/s    6.6 s  think     0 ch  
+qr0n-trim code total 8/8 passed, 2898 tokens, 63 s
+end 09:38:52
+GPU0 max 67C, max 190W, thermal slowdown 0/111
+GPU1 max 74C, max 156W, thermal slowdown 0/111
+GPU2 max 71C, max 165W, thermal slowdown 0/111
+DONE

@@ -1,0 +1,15 @@
+start 10:22:14, GPU C: 55 57 57 
+qr0n-q8  code semver_sort      PASS  1243 tok @  68.2 tok/s   20.4 s  think     0 ch  
+qr0n-q8  code cron_next        FAIL  1498 tok @  68.2 tok/s   24.3 s  think     0 ch  ValueError: day is out of range for month
+qr0n-q8  code json_parse       PASS  2094 tok @  73.8 tok/s   30.6 s  think     0 ch  
+qr0n-q8  code regex_match      FAIL  3440 tok @  68.0 tok/s   52.9 s  think     0 ch    - Backslash \ to escape metacharacters
+qr0n-q8  code osa_distance     PASS   431 tok @  69.6 tok/s    8.4 s  think     0 ch  
+qr0n-q8  code parse_csv        FAIL   619 tok @  71.3 tok/s   10.9 s  think     0 ch  AssertionError: ('"a b,",b b,"\n\n ","a \r\n"\r\n"""bb\na"," \n\n"",",', [['a b,
+qr0n-q8  code run_limited      FAIL   385 tok @  64.2 tok/s    8.0 s  think     0 ch  AssertionError: {'now': 0, 'peak': 3, 'started': [0, 1, 2, 3, 4, 5, 6, 7], 'canc
+qr0n-q8  code lex_shortest_path PASS   952 tok @  61.4 tok/s   17.7 s  think     0 ch  
+qr0n-q8  code-hard total 4/8 passed, 10662 tokens, 173 s
+end 10:25:41
+GPU0 max 61C, max 108W, thermal slowdown 0/103
+GPU1 max 68C, max 139W, thermal slowdown 0/103
+GPU2 max 69C, max 138W, thermal slowdown 0/103
+DONE

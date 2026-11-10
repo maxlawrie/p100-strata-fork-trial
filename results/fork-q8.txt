@@ -1,0 +1,22 @@
+start 10:15:37, GPU C: 55 57 58 
+p4k        prompt  3857 tok @  236.8 tok/s | gen    4 tok @  31.7 tok/s | drafts 3/3 | '180'
+p16k       prompt 15672 tok @  368.5 tok/s | gen    4 tok @  35.1 tok/s | drafts 3/3 | '720'
+p32k       prompt 31885 tok @  458.9 tok/s | gen    5 tok @  33.3 tok/s | drafts 4/6 | '1440'
+gen        prompt    26 tok @   27.8 tok/s | gen  300 tok @  42.4 tok/s | drafts 134/271 | 'Elias did not fear the dark; he feared t'
+gen        prompt     7 tok @   28.8 tok/s | gen  300 tok @  48.3 tok/s | drafts 135/272 | 'Elias did not speak to people; he spoke '
+gen        prompt     7 tok @   29.3 tok/s | gen  300 tok @  50.7 tok/s | drafts 145/278 | 'Elias was not merely a keeper of the lig'
+tool       prompt   305 tok @   80.8 tok/s | gen   53 tok @  39.4 tok/s | drafts 31/51 | [('get_weather', '{"city":"Brisbane"}')]
+qr0n-q8  code parse_duration   PASS   250 tok @  48.1 tok/s    7.4 s  think     0 ch  
+qr0n-q8  code merge_intervals  PASS   188 tok @  60.6 tok/s    4.9 s  think     0 ch  
+qr0n-q8  code lru_cache        PASS   255 tok @  70.7 tok/s    5.6 s  think     0 ch  
+qr0n-q8  code roman            PASS   514 tok @  67.6 tok/s    9.5 s  think     0 ch  
+qr0n-q8  code toposort         PASS   420 tok @  67.3 tok/s    8.1 s  think     0 ch  
+qr0n-q8  code fix_bisect       PASS    90 tok @  69.6 tok/s    3.7 s  think     0 ch  
+qr0n-q8  code calc             PASS   786 tok @  70.1 tok/s   13.0 s  think     0 ch  
+qr0n-q8  code wrap             PASS   382 tok @  73.3 tok/s    7.1 s  think     0 ch  
+qr0n-q8  code total 8/8 passed, 2885 tokens, 59 s
+end 10:19:13
+GPU0 max 67C, max 171W, thermal slowdown 0/108
+GPU1 max 75C, max 171W, thermal slowdown 0/108
+GPU2 max 71C, max 175W, thermal slowdown 0/108
+DONE

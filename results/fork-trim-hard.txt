@@ -1,0 +1,15 @@
+start 09:41:53, GPU C: 55 57 57 
+qr0n-trim code semver_sort      PASS  1048 tok @  65.4 tok/s   18.5 s  think     0 ch  
+qr0n-trim code cron_next        PASS  1522 tok @  62.6 tok/s   27.0 s  think     0 ch  
+qr0n-trim code json_parse       PASS  2193 tok @  71.0 tok/s   33.3 s  think     0 ch  
+qr0n-trim code regex_match      PASS  2110 tok @  67.1 tok/s   34.1 s  think     0 ch  
+qr0n-trim code osa_distance     PASS   469 tok @  68.8 tok/s    9.2 s  think     0 ch  
+qr0n-trim code parse_csv        FAIL   716 tok @  66.8 tok/s   13.2 s  think     0 ch  AssertionError: ('"a b,",b b,"\n\n ","a \r\n"\r\n"""bb\na"," \n\n"",",', [['a b,
+qr0n-trim code run_limited      PASS   449 tok @  64.4 tok/s    9.2 s  think     0 ch  
+qr0n-trim code lex_shortest_path PASS  1352 tok @  58.7 tok/s   25.6 s  think     0 ch  
+qr0n-trim code-hard total 7/8 passed, 9859 tokens, 170 s
+end 09:44:47
+GPU0 max 62C, max 131W, thermal slowdown 0/87
+GPU1 max 69C, max 132W, thermal slowdown 0/87
+GPU2 max 71C, max 141W, thermal slowdown 0/87
+DONE

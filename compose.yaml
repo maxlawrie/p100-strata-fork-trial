@@ -1,0 +1,45 @@
+# Strata (qr0n's P100 fork of v0.2.2) serving Qwen3.8-Flash-Next GSQ-RCO IQ3_S on 3x Tesla P100 with 64 GB of RAM.
+# This is the configuration measured in README.md's last column and the one my rig now runs.
+# Image: ./build.sh. Put STRATA_API_KEY=... in a .env file beside this one.
+services:
+  strata:
+    image: local/strata-pascal:0.2.2-qr0n
+    container_name: strata
+    restart: unless-stopped
+    network_mode: host
+    # The engine page-locks tens of GB of experts in RAM, and releases them slowly on SIGTERM.
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    shm_size: 2gb
+    stop_grace_period: 2m
+    volumes:
+      - /srv/strata-state:/data                    # presets, run settings, logs
+      - /srv/strata:/data/Strata-data:ro           # models/ packs/ mtp/ (read-write for the first start, which downloads and prepares them)
+    environment:
+      FAMILY: qwen
+      MODEL: IQ3_S
+      CONTEXT: "256k"
+      PARALLEL: "1"
+      VISION: "off"
+      TUNE: skip
+      # Name the cards: "all" lets setup keep the low-RAM mode on one card.
+      GPUS: "0,1,2"
+      API_KEY: ${STRATA_API_KEY}
+      # resident-experts: RAM holds only the experts the GPUs don't (IQ3_S at 256K wants ~78 GB otherwise).
+      # kv-resident=32768: the last 32K tokens of KV stay in VRAM, the rest streams from RAM.
+      # layer-split=12,34: explicit split (GPU0 0-11, GPU1 12-33, GPU2 34-47 + head), tuned for this rig's cooling.
+      # trim-stage-weights: each card loads only its own layers' dense weights (needs the explicit split).
+      # STRATA_GU_F16 / SM60_D20_SUB / DOWN_F16 / B6_F16: the fork's fp16 kernels, off by default.
+      # STRATA_ROUTE_TAIL_SKIP=0: don't skip low-weight experts (upstream's default of 7 changes the output).
+      STRATA_SET: >-
+        resident-experts kv-resident=32768 layer-split=12,34 conversation-cache-mib=8192 trim-stage-weights
+        STRATA_GU_F16=2 STRATA_SM60_D20_SUB=1 STRATA_DOWN_F16=1 STRATA_B6_F16=1 STRATA_ROUTE_TAIL_SKIP=0
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]

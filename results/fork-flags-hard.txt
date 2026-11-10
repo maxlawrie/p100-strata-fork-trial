@@ -1,0 +1,15 @@
+start 09:28:33, GPU C: 55 57 57 
+qr0n-flags code semver_sort      PASS  1048 tok @  62.6 tok/s   19.3 s  think     0 ch  
+qr0n-flags code cron_next        FAIL  1273 tok @  62.2 tok/s   23.2 s  think     0 ch  OverflowError: date value out of range
+qr0n-flags code json_parse       PASS  2105 tok @  67.9 tok/s   33.5 s  think     0 ch  
+qr0n-flags code regex_match      PASS  2911 tok @  62.7 tok/s   49.1 s  think     0 ch  
+qr0n-flags code osa_distance     PASS   431 tok @  64.9 tok/s    9.1 s  think     0 ch  
+qr0n-flags code parse_csv        FAIL  1032 tok @  63.4 tok/s   18.8 s  think     0 ch  AssertionError: ('"a b,",b b,"\n\n ","a \r\n"\r\n"""bb\na"," \n\n"",",', [['a b,
+qr0n-flags code run_limited      FAIL   401 tok @  58.9 tok/s    9.2 s  think     0 ch  AssertionError: {'now': 0, 'peak': 3, 'started': [0, 1, 2, 3, 4, 5, 6, 7], 'canc
+qr0n-flags code lex_shortest_path PASS  1569 tok @  53.8 tok/s   31.7 s  think     0 ch  
+qr0n-flags code-hard total 5/8 passed, 10770 tokens, 194 s
+end 09:31:55
+GPU0 max 61C, max 133W, thermal slowdown 0/101
+GPU1 max 68C, max 134W, thermal slowdown 0/101
+GPU2 max 71C, max 145W, thermal slowdown 0/101
+DONE
