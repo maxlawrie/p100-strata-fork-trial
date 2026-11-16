@@ -1,0 +1,22 @@
+start 07:42:51, GPU C: 46 45 46 
+p4k        prompt  3857 tok @  284.8 tok/s | gen    4 tok @  29.6 tok/s | drafts 3/6 | '179'
+p16k       prompt 15672 tok @  442.3 tok/s | gen    4 tok @  47.6 tok/s | drafts 3/3 | '720'
+p32k       prompt 31885 tok @  546.2 tok/s | gen    5 tok @  35.5 tok/s | drafts 4/6 | '1440'
+gen        prompt    26 tok @   31.2 tok/s | gen  300 tok @  41.7 tok/s | drafts 125/295 | 'The salt spray clung to Elias’s beard li'
+gen        prompt     7 tok @   26.1 tok/s | gen  300 tok @  44.6 tok/s | drafts 131/270 | 'The wind howled against the granite wall'
+gen        prompt     7 tok @   29.2 tok/s | gen  300 tok @  43.6 tok/s | drafts 134/294 | 'The wind howled across the jagged cliffs'
+tool       prompt   305 tok @  100.3 tok/s | gen   44 tok @  65.5 tok/s | drafts 29/35 | [('get_weather', '{"city":"Brisbane"}')]
+gyro-s-3card code parse_duration   PASS   352 tok @  65.1 tok/s    7.1 s  think     0 ch  
+gyro-s-3card code merge_intervals  PASS   168 tok @  65.3 tok/s    3.9 s  think     0 ch  
+gyro-s-3card code lru_cache        PASS   256 tok @  74.2 tok/s    5.0 s  think     0 ch  
+gyro-s-3card code roman            PASS   547 tok @  70.2 tok/s    9.3 s  think     0 ch  
+gyro-s-3card code toposort         PASS   441 tok @  68.0 tok/s    8.0 s  think     0 ch  
+gyro-s-3card code fix_bisect       PASS    90 tok @  78.3 tok/s    3.1 s  think     0 ch  
+gyro-s-3card code calc             FAIL   666 tok @  68.7 tok/s   11.1 s  think     0 ch  UnboundLocalError: cannot access local variable 'pos' where it is not associated
+gyro-s-3card code wrap             PASS   304 tok @  72.2 tok/s    5.7 s  think     0 ch  
+gyro-s-3card code total 7/8 passed, 2824 tokens, 53 s
+end 07:46:00
+GPU0 max 69C, max 253W, thermal slowdown 0/95
+GPU1 max 78C, max 252W, thermal slowdown 0/95
+GPU2 max 71C, max 252W, thermal slowdown 0/95
+DONE

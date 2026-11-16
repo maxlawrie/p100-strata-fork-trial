@@ -1,0 +1,15 @@
+start 07:48:00, GPU C: 58 48 51 
+night-tune-pipeline code semver_sort      PASS  1098 tok @  66.3 tok/s   19.0 s  think     0 ch  
+night-tune-pipeline code cron_next        FAIL  1386 tok @  61.7 tok/s   25.1 s  think     0 ch  AssertionError: ('*/15 9-17 * * 1-5', datetime.datetime(2026, 10, 20, 19, 47, 31
+night-tune-pipeline code json_parse       PASS  2115 tok @  70.8 tok/s   32.3 s  think     0 ch  
+night-tune-pipeline code regex_match      PASS  4208 tok @  62.3 tok/s   70.2 s  think     0 ch  
+night-tune-pipeline code osa_distance     PASS   442 tok @  68.1 tok/s    8.9 s  think     0 ch  
+night-tune-pipeline code parse_csv        FAIL   890 tok @  62.8 tok/s   16.6 s  think     0 ch  AssertionError: ('"a b,",b b,"\n\n ","a \r\n"\r\n"""bb\na"," \n\n"",",', [['a b,
+night-tune-pipeline code run_limited      PASS   371 tok @  64.2 tok/s    8.0 s  think     0 ch  
+night-tune-pipeline code lex_shortest_path PASS  1281 tok @  56.0 tok/s   25.4 s  think     0 ch  
+night-tune-pipeline code-hard total 6/8 passed, 11791 tokens, 206 s
+end 07:51:30
+GPU0 max 65C, max 145W, thermal slowdown 0/105
+GPU1 max 58C, max 134W, thermal slowdown 0/105
+GPU2 max 64C, max 132W, thermal slowdown 0/105
+DONE

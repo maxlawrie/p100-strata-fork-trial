@@ -1,0 +1,36 @@
+# Trial container for the overnight arms (night/run-arm.sh): the serving image with FAMILY, MODEL, cards, context and
+# settings taken from night/arms/<arm>.env. Port 8080, so the serving container must be stopped (run-all.sh does it).
+services:
+  strata-night:
+    image: local/strata-pascal:0.2.2-qr0n
+    container_name: strata-night
+    restart: "no"
+    network_mode: host
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    shm_size: 2gb
+    stop_grace_period: 2m
+    volumes:
+      # A state folder per arm: the launcher keeps earlier STRATA_SET values in /data.
+      - /srv/strata-state-night/${ARM}:/data
+      # Read-write: a model's first start prepares its pack here, beside the others.
+      - /srv/strata:/data/Strata-data
+    environment:
+      FAMILY: ${FAMILY}
+      MODEL: ${MODEL}
+      CONTEXT: ${CONTEXT}
+      PARALLEL: "1"
+      VISION: "off"
+      TUNE: skip
+      GPUS: ${GPUS}
+      API_KEY: ${STRATA_API_KEY}
+      STRATA_SET: ${STRATA_SET}
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]

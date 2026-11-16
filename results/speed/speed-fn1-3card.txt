@@ -1,0 +1,22 @@
+start 19:27:36, GPU C: 42 40 49 
+p4k        prompt  3857 tok @   26.4 tok/s | gen    4 tok @   4.5 tok/s | drafts -/- | '180'
+p16k       prompt 15672 tok @   25.4 tok/s | gen    4 tok @  10.5 tok/s | drafts -/- | '720'
+p32k       prompt 31885 tok @   23.9 tok/s | gen    5 tok @  11.9 tok/s | drafts -/- | '1440'
+gen        prompt    26 tok @    9.1 tok/s | gen  300 tok @  15.2 tok/s | drafts -/- | 'Elias didn’t speak much, not because he '
+gen        prompt    26 tok @   27.4 tok/s | gen  300 tok @  20.2 tok/s | drafts -/- | 'Elias was a man carved from salt and sil'
+gen        prompt    26 tok @   27.8 tok/s | gen  300 tok @  20.3 tok/s | drafts -/- | 'Elias did not fear the dark; he respecte'
+tool       prompt   314 tok @   15.7 tok/s | gen   49 tok @  13.3 tok/s | drafts -/- | [('get_weather', '{"city":"Brisbane"}')]
+night-fn1-3card code parse_duration   PASS   258 tok @  14.9 tok/s   28.4 s  think     0 ch  
+night-fn1-3card code merge_intervals  PASS   182 tok @  16.2 tok/s   19.4 s  think     0 ch  
+night-fn1-3card code lru_cache        FAIL   523 tok @  17.3 tok/s   40.1 s  think     0 ch  AssertionError
+night-fn1-3card code roman            PASS   443 tok @  16.8 tok/s   36.1 s  think     0 ch  
+night-fn1-3card code toposort         PASS   453 tok @  16.7 tok/s   36.1 s  think     0 ch  
+night-fn1-3card code fix_bisect       PASS    95 tok @  15.9 tok/s   18.1 s  think     0 ch  
+night-fn1-3card code calc             PASS   692 tok @  17.8 tok/s   47.0 s  think     0 ch  
+night-fn1-3card code wrap             PASS   358 tok @  18.0 tok/s   28.9 s  think     0 ch  
+night-fn1-3card code total 7/8 passed, 3004 tokens, 254 s
+end 20:08:10
+GPU0 max 57C, max 169W, thermal slowdown 0/1210
+GPU1 max 43C, max 126W, thermal slowdown 0/1210
+GPU2 max 50C, max 144W, thermal slowdown 0/1210
+DONE

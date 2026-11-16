@@ -1,0 +1,187 @@
+night-q36-tensor run 1 code  semver_sort          PASS   688 tok @ 100.7 tok/s    7.7 s  
+night-q36-tensor run 1 code  cron_next            FAIL  1536 tok @ 100.5 tok/s   15.8 s  ValueError: No matching time found within the search limit
+night-q36-tensor run 1 code  json_parse           PASS  2145 tok @ 124.9 tok/s   17.7 s  
+night-q36-tensor run 1 code  regex_match          FAIL  5134 tok @ 104.7 tok/s   49.6 s  NameError: name 'right_node' is not defined. Did you mean: 'right_tokens'?
+night-q36-tensor run 1 code  osa_distance         PASS   518 tok @ 120.9 tok/s    4.9 s  
+night-q36-tensor run 1 code  parse_csv            PASS   990 tok @ 126.3 tok/s    8.3 s  
+night-q36-tensor run 1 code  run_limited          FAIL   362 tok @ 108.1 tok/s    3.8 s  ValueError: Set of Tasks/Futures is empty.
+night-q36-tensor run 1 code  lex_shortest_path    PASS  1052 tok @  92.3 tok/s   11.9 s  
+night-q36-tensor run 1 code  b64                  FAIL   933 tok @ 110.8 tok/s    8.9 s  AssertionError: ('OwMuESoytXkIDwix9+1MLl06B/l/Ie4jLReKIA==', b'\xb02\xe1\x12\xa3+W\x90\x80\xf0\x8b\x
+night-q36-tensor run 1 code  glob_match           FAIL  1119 tok @ 114.1 tok/s   10.4 s  IndexError: list index out of range
+night-q36-tensor run 1 code  fraction_to_decimal  PASS   360 tok @ 116.4 tok/s    3.7 s  
+night-q36-tensor run 1 code  knapsack_pick        FAIL  1423 tok @  95.0 tok/s   15.5 s  AssertionError: ([(8, 7), (5, 2), (2, 0), (9, 2), (2, 8), (1, 5), (2, 0)], 21, (22, [0, 1, 2, 4, 5, 
+night-q36-tensor run 1 code  kth_permutation      PASS   487 tok @  97.9 tok/s    5.5 s  
+night-q36-tensor run 1 code  text_justify         PASS   460 tok @ 104.8 tok/s    4.9 s  
+night-q36-tensor run 1 code  add_days             PASS  2105 tok @ 102.6 tok/s   21.1 s  
+night-q36-tensor run 1 code  crc32                FAIL   426 tok @ 103.5 tok/s    4.7 s  AssertionError
+night-q36-tensor run 1 code  weighted_intervals   PASS   951 tok @ 110.1 tok/s    9.2 s  
+night-q36-tensor run 1 code  normpath             FAIL   548 tok @ 100.7 tok/s    5.9 s  AssertionError: ('/', '.', '/')
+night-q36-tensor run 1 code  min_window           PASS   397 tok @ 108.7 tok/s    4.2 s  
+night-q36-tensor run 1 code  int_to_words         PASS   635 tok @ 120.6 tok/s    5.9 s  
+night-q36-tensor run 1 code  big_mul              PASS  1099 tok @  97.4 tok/s   11.8 s  
+night-q36-tensor run 1 arith arith00              PASS   270 tok @ 128.8 tok/s    2.6 s  
+night-q36-tensor run 1 arith arith01              PASS   477 tok @ 124.3 tok/s    4.3 s  
+night-q36-tensor run 1 arith arith02              PASS   438 tok @ 124.4 tok/s    4.0 s  
+night-q36-tensor run 1 arith arith03              PASS   321 tok @ 127.7 tok/s    2.9 s  
+night-q36-tensor run 1 arith arith04              PASS   309 tok @ 119.8 tok/s    3.1 s  
+night-q36-tensor run 1 arith arith05              PASS   216 tok @ 123.5 tok/s    2.2 s  
+night-q36-tensor run 1 arith arith06              PASS   380 tok @ 130.8 tok/s    3.4 s  
+night-q36-tensor run 1 arith arith07              PASS   715 tok @ 132.2 tok/s    5.9 s  
+night-q36-tensor run 1 arith arith08              PASS   339 tok @ 136.9 tok/s    2.9 s  
+night-q36-tensor run 1 arith arith09              PASS   336 tok @ 121.0 tok/s    3.3 s  
+night-q36-tensor run 1 arith arith10              PASS   271 tok @ 125.9 tok/s    2.6 s  
+night-q36-tensor run 1 arith arith11              PASS   405 tok @ 129.8 tok/s    3.6 s  
+night-q36-tensor run 1 arith arith12              FAIL  1500 tok @ 119.4 tok/s   13.0 s  got 6, want 718.44
+night-q36-tensor run 1 arith arith13              PASS   376 tok @ 131.6 tok/s    3.3 s  
+night-q36-tensor run 1 arith arith14              PASS   341 tok @ 121.9 tok/s    3.3 s  
+night-q36-tensor run 1 arith arith15              PASS   269 tok @ 125.2 tok/s    2.6 s  
+night-q36-tensor run 1 arith arith16              PASS   396 tok @ 126.4 tok/s    3.6 s  
+night-q36-tensor run 1 arith arith17              PASS  1493 tok @ 123.6 tok/s   12.6 s  
+night-q36-tensor run 1 arith arith18              PASS   350 tok @ 133.3 tok/s    3.1 s  
+night-q36-tensor run 1 arith arith19              PASS   376 tok @ 124.1 tok/s    3.5 s  
+night-q36-tensor run 1 arith arith20              PASS   264 tok @ 128.0 tok/s    2.5 s  
+night-q36-tensor run 1 arith arith21              PASS   517 tok @ 123.5 tok/s    4.7 s  
+night-q36-tensor run 1 arith arith22              PASS   720 tok @ 125.6 tok/s    6.2 s  
+night-q36-tensor run 1 arith arith23              PASS   388 tok @ 134.7 tok/s    3.3 s  
+night-q36-tensor run 1 arith arith24              PASS   390 tok @ 122.6 tok/s    3.7 s  
+night-q36-tensor run 1 arith arith25              PASS   270 tok @ 127.7 tok/s    2.6 s  
+night-q36-tensor run 1 arith arith26              PASS   427 tok @ 130.7 tok/s    3.7 s  
+night-q36-tensor run 1 arith arith27              PASS   715 tok @ 131.3 tok/s    5.9 s  
+night-q36-tensor run 1 arith arith28              PASS   360 tok @ 127.4 tok/s    3.3 s  
+night-q36-tensor run 1 arith arith29              PASS   325 tok @ 121.9 tok/s    3.2 s  
+night-q36-tensor run 1 arith arith30              PASS   264 tok @ 126.0 tok/s    2.6 s  
+night-q36-tensor run 1 arith arith31              PASS   398 tok @ 126.8 tok/s    3.6 s  
+night-q36-tensor run 1 arith arith32              PASS   814 tok @ 132.0 tok/s    6.6 s  
+night-q36-tensor run 1 arith arith33              PASS   407 tok @ 134.6 tok/s    3.5 s  
+night-q36-tensor run 1 arith arith34              PASS   308 tok @ 124.0 tok/s    3.0 s  
+night-q36-tensor run 1 arith arith35              PASS   235 tok @ 125.0 tok/s    2.4 s  
+night-q36-tensor run 1 arith arith36              PASS   500 tok @ 125.2 tok/s    4.5 s  
+night-q36-tensor run 1 arith arith37              PASS   824 tok @ 127.0 tok/s    7.0 s  
+night-q36-tensor run 1 arith arith38              PASS   430 tok @ 131.7 tok/s    3.7 s  
+night-q36-tensor run 1 arith arith39              PASS   324 tok @ 117.9 tok/s    3.2 s  
+night-q36-tensor run 2 code  semver_sort          PASS   688 tok @ 100.6 tok/s    7.4 s  
+night-q36-tensor run 2 code  cron_next            FAIL  1193 tok @ 102.9 tok/s   12.2 s  AssertionError: ('*/15 9-17 * * 1-5', datetime.datetime(2027, 12, 31, 23, 59), datetime.datetime(202
+night-q36-tensor run 2 code  json_parse           PASS  2145 tok @ 125.1 tok/s   17.6 s  
+night-q36-tensor run 2 code  regex_match          FAIL  4525 tok @ 107.4 tok/s   42.7 s  NameError: name 'right_tree' is not defined. Did you mean: 'right_tokens'?
+night-q36-tensor run 2 code  osa_distance         PASS   518 tok @ 121.5 tok/s    4.9 s  
+night-q36-tensor run 2 code  parse_csv            PASS   990 tok @ 125.9 tok/s    8.4 s  
+night-q36-tensor run 2 code  run_limited          FAIL   362 tok @ 108.2 tok/s    3.9 s  ValueError: Set of Tasks/Futures is empty.
+night-q36-tensor run 2 code  lex_shortest_path    PASS  1052 tok @  92.0 tok/s   12.0 s  
+night-q36-tensor run 2 code  b64                  FAIL   933 tok @ 110.7 tok/s    9.0 s  AssertionError: ('OwMuESoytXkIDwix9+1MLl06B/l/Ie4jLReKIA==', b'\xb02\xe1\x12\xa3+W\x90\x80\xf0\x8b\x
+night-q36-tensor run 2 code  glob_match           FAIL  1119 tok @ 113.9 tok/s   10.4 s  IndexError: list index out of range
+night-q36-tensor run 2 code  fraction_to_decimal  PASS   360 tok @ 116.3 tok/s    3.7 s  
+night-q36-tensor run 2 code  knapsack_pick        FAIL  1423 tok @  94.6 tok/s   15.6 s  AssertionError: ([(8, 7), (5, 2), (2, 0), (9, 2), (2, 8), (1, 5), (2, 0)], 21, (22, [0, 1, 2, 4, 5, 
+night-q36-tensor run 2 code  kth_permutation      PASS   487 tok @  97.7 tok/s    5.5 s  
+night-q36-tensor run 2 code  text_justify         PASS   460 tok @ 104.7 tok/s    5.0 s  
+night-q36-tensor run 2 code  add_days             PASS  2105 tok @ 102.5 tok/s   21.1 s  
+night-q36-tensor run 2 code  crc32                FAIL   426 tok @ 103.8 tok/s    4.7 s  AssertionError
+night-q36-tensor run 2 code  weighted_intervals   PASS   951 tok @ 110.2 tok/s    9.2 s  
+night-q36-tensor run 2 code  normpath             FAIL   548 tok @ 100.3 tok/s    5.9 s  AssertionError: ('/', '.', '/')
+night-q36-tensor run 2 code  min_window           PASS   397 tok @ 108.3 tok/s    4.2 s  
+night-q36-tensor run 2 code  int_to_words         PASS   635 tok @ 120.1 tok/s    5.9 s  
+night-q36-tensor run 2 code  big_mul              PASS  1099 tok @  97.3 tok/s   11.9 s  
+night-q36-tensor run 2 arith arith00              PASS   270 tok @ 128.5 tok/s    2.6 s  
+night-q36-tensor run 2 arith arith01              PASS   477 tok @ 124.5 tok/s    4.3 s  
+night-q36-tensor run 2 arith arith02              PASS   438 tok @ 124.0 tok/s    4.1 s  
+night-q36-tensor run 2 arith arith03              PASS   321 tok @ 127.3 tok/s    2.9 s  
+night-q36-tensor run 2 arith arith04              PASS   309 tok @ 119.7 tok/s    3.1 s  
+night-q36-tensor run 2 arith arith05              PASS   216 tok @ 123.0 tok/s    2.2 s  
+night-q36-tensor run 2 arith arith06              PASS   380 tok @ 130.8 tok/s    3.4 s  
+night-q36-tensor run 2 arith arith07              PASS   715 tok @ 132.4 tok/s    5.9 s  
+night-q36-tensor run 2 arith arith08              PASS   339 tok @ 137.1 tok/s    2.9 s  
+night-q36-tensor run 2 arith arith09              PASS   336 tok @ 121.3 tok/s    3.3 s  
+night-q36-tensor run 2 arith arith10              PASS   271 tok @ 125.9 tok/s    2.6 s  
+night-q36-tensor run 2 arith arith11              PASS   405 tok @ 129.8 tok/s    3.6 s  
+night-q36-tensor run 2 arith arith12              FAIL  1500 tok @ 119.4 tok/s   13.1 s  got 6, want 718.44
+night-q36-tensor run 2 arith arith13              PASS   376 tok @ 131.2 tok/s    3.3 s  
+night-q36-tensor run 2 arith arith14              PASS   341 tok @ 122.0 tok/s    3.3 s  
+night-q36-tensor run 2 arith arith15              PASS   269 tok @ 125.0 tok/s    2.6 s  
+night-q36-tensor run 2 arith arith16              PASS   396 tok @ 126.2 tok/s    3.6 s  
+night-q36-tensor run 2 arith arith17              PASS  1493 tok @ 123.6 tok/s   12.6 s  
+night-q36-tensor run 2 arith arith18              PASS   350 tok @ 133.2 tok/s    3.1 s  
+night-q36-tensor run 2 arith arith19              PASS   376 tok @ 123.7 tok/s    3.5 s  
+night-q36-tensor run 2 arith arith20              PASS   264 tok @ 127.8 tok/s    2.6 s  
+night-q36-tensor run 2 arith arith21              PASS   517 tok @ 123.7 tok/s    4.7 s  
+night-q36-tensor run 2 arith arith22              PASS   720 tok @ 125.5 tok/s    6.3 s  
+night-q36-tensor run 2 arith arith23              PASS   388 tok @ 134.3 tok/s    3.3 s  
+night-q36-tensor run 2 arith arith24              PASS   390 tok @ 122.3 tok/s    3.7 s  
+night-q36-tensor run 2 arith arith25              PASS   270 tok @ 127.3 tok/s    2.6 s  
+night-q36-tensor run 2 arith arith26              PASS   427 tok @ 130.5 tok/s    3.7 s  
+night-q36-tensor run 2 arith arith27              PASS   715 tok @ 131.0 tok/s    5.9 s  
+night-q36-tensor run 2 arith arith28              PASS   360 tok @ 127.3 tok/s    3.3 s  
+night-q36-tensor run 2 arith arith29              PASS   325 tok @ 121.6 tok/s    3.2 s  
+night-q36-tensor run 2 arith arith30              PASS   264 tok @ 125.7 tok/s    2.6 s  
+night-q36-tensor run 2 arith arith31              PASS   398 tok @ 126.9 tok/s    3.6 s  
+night-q36-tensor run 2 arith arith32              PASS   814 tok @ 131.5 tok/s    6.7 s  
+night-q36-tensor run 2 arith arith33              PASS   407 tok @ 134.9 tok/s    3.4 s  
+night-q36-tensor run 2 arith arith34              PASS   308 tok @ 124.0 tok/s    3.0 s  
+night-q36-tensor run 2 arith arith35              PASS   235 tok @ 124.6 tok/s    2.4 s  
+night-q36-tensor run 2 arith arith36              PASS   500 tok @ 125.0 tok/s    4.5 s  
+night-q36-tensor run 2 arith arith37              PASS   824 tok @ 126.5 tok/s    7.0 s  
+night-q36-tensor run 2 arith arith38              PASS   430 tok @ 131.3 tok/s    3.7 s  
+night-q36-tensor run 2 arith arith39              PASS   324 tok @ 117.8 tok/s    3.2 s  
+night-q36-tensor run 3 code  semver_sort          PASS   688 tok @ 100.8 tok/s    7.4 s  
+night-q36-tensor run 3 code  cron_next            FAIL  1193 tok @ 103.0 tok/s   12.2 s  AssertionError: ('*/15 9-17 * * 1-5', datetime.datetime(2027, 12, 31, 23, 59), datetime.datetime(202
+night-q36-tensor run 3 code  json_parse           PASS  2145 tok @ 125.5 tok/s   17.6 s  
+night-q36-tensor run 3 code  regex_match          FAIL  4525 tok @ 107.4 tok/s   42.7 s  NameError: name 'right_tree' is not defined. Did you mean: 'right_tokens'?
+night-q36-tensor run 3 code  osa_distance         PASS   518 tok @ 120.7 tok/s    4.9 s  
+night-q36-tensor run 3 code  parse_csv            PASS   990 tok @ 125.9 tok/s    8.4 s  
+night-q36-tensor run 3 code  run_limited          FAIL   362 tok @ 108.2 tok/s    3.9 s  ValueError: Set of Tasks/Futures is empty.
+night-q36-tensor run 3 code  lex_shortest_path    PASS  1052 tok @  92.1 tok/s   12.0 s  
+night-q36-tensor run 3 code  b64                  FAIL   933 tok @ 111.0 tok/s    8.9 s  AssertionError: ('OwMuESoytXkIDwix9+1MLl06B/l/Ie4jLReKIA==', b'\xb02\xe1\x12\xa3+W\x90\x80\xf0\x8b\x
+night-q36-tensor run 3 code  glob_match           FAIL  1119 tok @ 113.9 tok/s   10.4 s  IndexError: list index out of range
+night-q36-tensor run 3 code  fraction_to_decimal  PASS   360 tok @ 116.1 tok/s    3.7 s  
+night-q36-tensor run 3 code  knapsack_pick        FAIL  1423 tok @  94.8 tok/s   15.6 s  AssertionError: ([(8, 7), (5, 2), (2, 0), (9, 2), (2, 8), (1, 5), (2, 0)], 21, (22, [0, 1, 2, 4, 5, 
+night-q36-tensor run 3 code  kth_permutation      PASS   487 tok @  97.9 tok/s    5.5 s  
+night-q36-tensor run 3 code  text_justify         PASS   460 tok @ 104.3 tok/s    5.0 s  
+night-q36-tensor run 3 code  add_days             PASS  2105 tok @ 102.7 tok/s   21.1 s  
+night-q36-tensor run 3 code  crc32                FAIL   426 tok @ 103.5 tok/s    4.7 s  AssertionError
+night-q36-tensor run 3 code  weighted_intervals   PASS   951 tok @ 109.9 tok/s    9.2 s  
+night-q36-tensor run 3 code  normpath             FAIL   548 tok @ 100.5 tok/s    5.9 s  AssertionError: ('/', '.', '/')
+night-q36-tensor run 3 code  min_window           PASS   397 tok @ 108.1 tok/s    4.2 s  
+night-q36-tensor run 3 code  int_to_words         PASS   635 tok @ 120.2 tok/s    5.9 s  
+night-q36-tensor run 3 code  big_mul              PASS  1099 tok @  97.1 tok/s   11.9 s  
+night-q36-tensor run 3 arith arith00              PASS   270 tok @ 128.0 tok/s    2.6 s  
+night-q36-tensor run 3 arith arith01              PASS   477 tok @ 123.8 tok/s    4.3 s  
+night-q36-tensor run 3 arith arith02              PASS   438 tok @ 123.8 tok/s    4.1 s  
+night-q36-tensor run 3 arith arith03              PASS   321 tok @ 127.2 tok/s    2.9 s  
+night-q36-tensor run 3 arith arith04              PASS   309 tok @ 119.4 tok/s    3.1 s  
+night-q36-tensor run 3 arith arith05              PASS   216 tok @ 123.1 tok/s    2.2 s  
+night-q36-tensor run 3 arith arith06              PASS   380 tok @ 130.1 tok/s    3.4 s  
+night-q36-tensor run 3 arith arith07              PASS   715 tok @ 132.1 tok/s    5.9 s  
+night-q36-tensor run 3 arith arith08              PASS   339 tok @ 136.9 tok/s    2.9 s  
+night-q36-tensor run 3 arith arith09              PASS   336 tok @ 121.1 tok/s    3.3 s  
+night-q36-tensor run 3 arith arith10              PASS   271 tok @ 125.5 tok/s    2.6 s  
+night-q36-tensor run 3 arith arith11              PASS   405 tok @ 129.6 tok/s    3.6 s  
+night-q36-tensor run 3 arith arith12              FAIL  1500 tok @ 119.3 tok/s   13.1 s  got 6, want 718.44
+night-q36-tensor run 3 arith arith13              PASS   376 tok @ 131.2 tok/s    3.3 s  
+night-q36-tensor run 3 arith arith14              PASS   341 tok @ 121.8 tok/s    3.3 s  
+night-q36-tensor run 3 arith arith15              PASS   269 tok @ 125.1 tok/s    2.7 s  
+night-q36-tensor run 3 arith arith16              PASS   396 tok @ 126.1 tok/s    3.6 s  
+night-q36-tensor run 3 arith arith17              PASS  1493 tok @ 123.2 tok/s   12.6 s  
+night-q36-tensor run 3 arith arith18              PASS   350 tok @ 132.9 tok/s    3.1 s  
+night-q36-tensor run 3 arith arith19              PASS   376 tok @ 123.8 tok/s    3.5 s  
+night-q36-tensor run 3 arith arith20              PASS   264 tok @ 128.0 tok/s    2.6 s  
+night-q36-tensor run 3 arith arith21              PASS   517 tok @ 123.8 tok/s    4.7 s  
+night-q36-tensor run 3 arith arith22              PASS   720 tok @ 125.8 tok/s    6.2 s  
+night-q36-tensor run 3 arith arith23              PASS   388 tok @ 133.6 tok/s    3.4 s  
+night-q36-tensor run 3 arith arith24              PASS   390 tok @ 122.2 tok/s    3.7 s  
+night-q36-tensor run 3 arith arith25              PASS   270 tok @ 126.7 tok/s    2.6 s  
+night-q36-tensor run 3 arith arith26              PASS   427 tok @ 130.2 tok/s    3.8 s  
+night-q36-tensor run 3 arith arith27              PASS   715 tok @ 130.7 tok/s    6.0 s  
+night-q36-tensor run 3 arith arith28              PASS   360 tok @ 127.0 tok/s    3.3 s  
+night-q36-tensor run 3 arith arith29              PASS   325 tok @ 121.5 tok/s    3.2 s  
+night-q36-tensor run 3 arith arith30              PASS   264 tok @ 126.3 tok/s    2.6 s  
+night-q36-tensor run 3 arith arith31              PASS   398 tok @ 126.6 tok/s    3.7 s  
+night-q36-tensor run 3 arith arith32              PASS   814 tok @ 131.8 tok/s    6.7 s  
+night-q36-tensor run 3 arith arith33              PASS   407 tok @ 134.5 tok/s    3.5 s  
+night-q36-tensor run 3 arith arith34              PASS   308 tok @ 123.6 tok/s    3.0 s  
+night-q36-tensor run 3 arith arith35              PASS   235 tok @ 124.9 tok/s    2.4 s  
+night-q36-tensor run 3 arith arith36              PASS   500 tok @ 124.8 tok/s    4.5 s  
+night-q36-tensor run 3 arith arith37              PASS   824 tok @ 126.9 tok/s    7.0 s  
+night-q36-tensor run 3 arith arith38              PASS   430 tok @ 131.2 tok/s    3.7 s  
+night-q36-tensor run 3 arith arith39              PASS   324 tok @ 117.7 tok/s    3.3 s  
+night-q36-tensor code total 39/63 (62%); per run: 13 13 13; always 13, never 8, mixed 0 of 21 tasks
+night-q36-tensor code by task: semver_sort 3/3  cron_next 0/3  json_parse 3/3  regex_match 0/3  osa_distance 3/3  parse_csv 3/3  run_limited 0/3  lex_shortest_path 3/3  b64 0/3  glob_match 0/3  fraction_to_decimal 3/3  knapsack_pick 0/3  kth_permutation 3/3  text_justify 3/3  add_days 3/3  crc32 0/3  weighted_intervals 3/3  normpath 0/3  min_window 3/3  int_to_words 3/3  big_mul 3/3
+night-q36-tensor arith total 117/120 (98%); per run: 39 39 39; always 39, never 1, mixed 0 of 40 tasks
+QUALITY-DONE

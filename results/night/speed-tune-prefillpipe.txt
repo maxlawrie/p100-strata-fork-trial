@@ -1,0 +1,22 @@
+start 08:29:30, GPU C: 52 41 43 
+p4k        prompt  3857 tok @  260.1 tok/s | gen    4 tok @  40.2 tok/s | drafts 3/3 | '180'
+p16k       prompt 15672 tok @  400.1 tok/s | gen    4 tok @  36.1 tok/s | drafts 3/3 | '720'
+p32k       prompt 31885 tok @  469.8 tok/s | gen    5 tok @  27.9 tok/s | drafts 4/6 | '1440'
+gen        prompt    26 tok @   28.3 tok/s | gen  300 tok @  38.8 tok/s | drafts 124/276 | 'Elias did not speak to people; he spoke '
+gen        prompt     7 tok @   25.8 tok/s | gen  300 tok @  45.9 tok/s | drafts 138/266 | 'Elias Thorne did not speak to people; he'
+gen        prompt     7 tok @   29.4 tok/s | gen  300 tok @  46.5 tok/s | drafts 136/258 | 'The salt air didn’t just smell of brine;'
+tool       prompt   305 tok @   79.9 tok/s | gen   52 tok @  52.4 tok/s | drafts 34/40 | [('get_weather', '{"city":"Brisbane"}')]
+night-tune-prefillpipe code parse_duration   PASS   250 tok @  50.6 tok/s    7.4 s  think     0 ch  
+night-tune-prefillpipe code merge_intervals  PASS   188 tok @  59.2 tok/s    5.2 s  think     0 ch  
+night-tune-prefillpipe code lru_cache        PASS   256 tok @  68.6 tok/s    5.9 s  think     0 ch  
+night-tune-prefillpipe code roman            PASS   514 tok @  66.3 tok/s    9.9 s  think     0 ch  
+night-tune-prefillpipe code toposort         PASS   430 tok @  65.4 tok/s    8.8 s  think     0 ch  
+night-tune-prefillpipe code fix_bisect       PASS    90 tok @  67.7 tok/s    4.0 s  think     0 ch  
+night-tune-prefillpipe code calc             FAIL   871 tok @  64.9 tok/s   15.5 s  think     0 ch  ValueError: Invalid number with multiple decimal points
+night-tune-prefillpipe code wrap             PASS   313 tok @  71.1 tok/s    6.5 s  think     0 ch  
+night-tune-prefillpipe code total 7/8 passed, 2912 tokens, 63 s
+end 08:33:05
+GPU0 max 68C, max 202W, thermal slowdown 0/107
+GPU1 max 63C, max 180W, thermal slowdown 0/107
+GPU2 max 61C, max 170W, thermal slowdown 0/107
+DONE

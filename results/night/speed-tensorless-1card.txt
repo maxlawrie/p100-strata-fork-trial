@@ -1,0 +1,10 @@
+start 06:42:09, GPU C: 44 37 38 
+p4k        prompt  3857 tok @  163.0 tok/s | gen    4 tok @  25.2 tok/s | drafts -/- | '180'
+p16k       prompt 15672 tok @  149.0 tok/s | gen    4 tok @  22.4 tok/s | drafts -/- | '720'
+ABORT: a GPU reached 80C at 06:45:30
+p32k       prompt 31885 tok @   64.5 tok/s | gen    5 tok @  14.5 tok/s | drafts -/- | '1440'
+end 06:52:34
+GPU0 max 80C, max 174W, thermal slowdown 179/308
+GPU1 max 37C, max 27W, thermal slowdown 0/308
+GPU2 max 38C, max 26W, thermal slowdown 0/308
+DONE

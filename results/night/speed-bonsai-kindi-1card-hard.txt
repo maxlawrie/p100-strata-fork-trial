@@ -1,0 +1,13 @@
+start 02:35:28, GPU C: 58 36 38 
+night-bonsai-kindi-1card code semver_sort      PASS     0 tok @   0.0 tok/s   18.3 s  think     0 ch  
+night-bonsai-kindi-1card code cron_next        FAIL     0 tok @   0.0 tok/s   34.2 s  think     0 ch  AttributeError: type object 'datetime.datetime' has no attribute 'datetime'
+night-bonsai-kindi-1card code json_parse       FAIL     0 tok @   0.0 tok/s   63.6 s  think     0 ch  ValueError: Expected ',' or ']' at position 133
+ABORT: a GPU reached 80C at 02:39:24
+night-bonsai-kindi-1card code regex_match      FAIL     0 tok @   0.0 tok/s  331.2 s  think     0 ch  no code block
+night-bonsai-kindi-1card ABORT seen, stopping
+night-bonsai-kindi-1card code-hard total 1/8 passed, 0 tokens, 447 s
+end 02:42:57
+GPU0 max 80C, max 142W, thermal slowdown 123/221
+GPU1 max 36C, max 28W, thermal slowdown 0/221
+GPU2 max 38C, max 27W, thermal slowdown 0/221
+DONE

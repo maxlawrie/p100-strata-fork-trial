@@ -1,0 +1,18 @@
+01:31:45 [qwen36-1card] starting (easy hard sustain quality); cards at 43 51 46 
+ Container strata-night  Creating
+ Container strata-night  Created
+ Container strata-night  Starting
+ Container strata-night  Started
+01:32:01 [qwen36-1card] the container stopped before the model was ready:
+Starting Strata: UD-Q4_K_XL (preset 'docker').
+Main: GPU 1 Tesla P100-PCIE-16GB. Off: GPU 2 Tesla P100-PCIE-16GB, GPU 3 Tesla P100-PCIE-16GB.
+    Checking the engine for this computer…
+    Engine 0.1.47 (cuda) is installed.
+    Getting qwen36 UD-Q4_K_XL ready (a download may be large; it continues where it stopped if interrupted)…
+    Getting your model ready
+    Checking your computer
+    Getting the helper packages ready
+    Checking the engine for this PC
+strata: The model could not be installed. this engine (0.1.47) does not run Qwen3.6-35B-A3B yet. update Strata, or compile the engine with --build, and run setup again
+[X] strata launch stopped with code 6 (the lines above say why). The container ends. Fix that and start it again: finished steps are not repeated, and an interrupted download continues where it stopped. 6
+01:32:01 [qwen36-1card] container stopped

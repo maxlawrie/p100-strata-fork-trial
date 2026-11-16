@@ -1,0 +1,22 @@
+start 13:42:02, GPU C: 42 41 44 
+p4k        prompt  3857 tok @  678.1 tok/s | gen    4 tok @  21.6 tok/s | drafts 1/3 | '180'
+p16k       prompt 15672 tok @  895.9 tok/s | gen    4 tok @  26.9 tok/s | drafts 1/3 | '720'
+p32k       prompt 31885 tok @  890.9 tok/s | gen    5 tok @  35.8 tok/s | drafts 2/3 | '1440'
+gen        prompt    26 tok @   35.7 tok/s | gen  300 tok @  52.0 tok/s | drafts 119/215 | 'Elias was not merely a man; he was an ex'
+gen        prompt     7 tok @   44.8 tok/s | gen  300 tok @  52.8 tok/s | drafts 118/210 | 'Elias did not mind the silence; he had m'
+gen        prompt     7 tok @   43.1 tok/s | gen  300 tok @  54.7 tok/s | drafts 134/248 | 'The salt spray had long since etched its'
+tool       prompt   305 tok @   92.7 tok/s | gen  153 tok @  49.3 tok/s | drafts 77/110 | [('get_weather', '{"city":"Brisbane"}')]
+fnx2-2card code parse_duration   PASS   258 tok @  54.8 tok/s    6.3 s  think     0 ch  
+fnx2-2card code merge_intervals  PASS   182 tok @  53.8 tok/s    4.7 s  think     0 ch  
+fnx2-2card code lru_cache        FAIL   570 tok @  56.7 tok/s   11.7 s  think     0 ch  KeyError: 1
+fnx2-2card code roman            PASS   426 tok @  56.0 tok/s    9.2 s  think     0 ch  
+fnx2-2card code toposort         PASS   409 tok @  55.5 tok/s    8.7 s  think     0 ch  
+fnx2-2card code fix_bisect       PASS    95 tok @  49.4 tok/s    6.8 s  think     0 ch  
+fnx2-2card code calc             PASS   835 tok @  59.1 tok/s   15.5 s  think     0 ch  
+fnx2-2card code wrap             PASS   365 tok @  62.6 tok/s    7.2 s  think     0 ch  
+fnx2-2card code total 7/8 passed, 3140 tokens, 70 s
+end 13:44:39
+GPU0 max 42C, max 29W, thermal slowdown 0/78
+GPU1 max 58C, max 175W, thermal slowdown 0/78
+GPU2 max 65C, max 164W, thermal slowdown 0/78
+DONE

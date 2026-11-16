@@ -1,0 +1,22 @@
+start 12:42:10, GPU C: 40 50 40 
+p4k        prompt  3857 tok @  164.4 tok/s | gen    4 tok @  25.3 tok/s | drafts -/- | '180'
+p16k       prompt 15672 tok @  154.4 tok/s | gen    4 tok @  24.3 tok/s | drafts -/- | '720'
+p32k       prompt 31885 tok @  136.5 tok/s | gen    5 tok @  22.8 tok/s | drafts -/- | '1440'
+gen        prompt    26 tok @   37.9 tok/s | gen  300 tok @  25.3 tok/s | drafts -/- | 'Elias had not spoken to another human be'
+gen        prompt    26 tok @   39.1 tok/s | gen  300 tok @  25.2 tok/s | drafts -/- | 'The fog rolled in like a gray shroud, sw'
+gen        prompt    26 tok @   39.1 tok/s | gen  300 tok @  25.2 tok/s | drafts -/- | 'The fog rolled in not as a wall, but as '
+tool       prompt   314 tok @  103.6 tok/s | gen   50 tok @  25.2 tok/s | drafts -/- | [('get_weather', '{"city":"Brisbane"}')]
+night-tensorless-1card-gpu1 code parse_duration   PASS   264 tok @  25.2 tok/s   12.6 s  think     0 ch  
+night-tensorless-1card-gpu1 code merge_intervals  PASS   177 tok @  25.2 tok/s    8.2 s  think     0 ch  
+night-tensorless-1card-gpu1 code lru_cache        PASS   385 tok @  25.3 tok/s   17.0 s  think     0 ch  
+night-tensorless-1card-gpu1 code roman            PASS   475 tok @  25.2 tok/s   20.5 s  think     0 ch  
+night-tensorless-1card-gpu1 code toposort         PASS   414 tok @  25.2 tok/s   18.1 s  think     0 ch  
+night-tensorless-1card-gpu1 code fix_bisect       PASS    90 tok @  25.2 tok/s    5.7 s  think     0 ch  
+night-tensorless-1card-gpu1 code calc             PASS   796 tok @  25.2 tok/s   32.9 s  think     0 ch  
+night-tensorless-1card-gpu1 code wrap             PASS   300 tok @  25.2 tok/s   13.6 s  think     0 ch  
+night-tensorless-1card-gpu1 code total 8/8 passed, 2901 tokens, 129 s
+end 12:51:06
+GPU0 max 41C, max 27W, thermal slowdown 0/266
+GPU1 max 73C, max 162W, thermal slowdown 0/266
+GPU2 max 40C, max 27W, thermal slowdown 0/266
+DONE

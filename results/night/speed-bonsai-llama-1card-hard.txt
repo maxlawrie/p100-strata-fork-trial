@@ -1,0 +1,12 @@
+start 05:21:35, GPU C: 58 36 38 
+night-bonsai-llama-1card code semver_sort      PASS   399 tok @  25.0 tok/s   20.4 s  think     0 ch  
+night-bonsai-llama-1card code cron_next        FAIL   894 tok @  24.5 tok/s   39.3 s  think     0 ch  AttributeError: type object 'datetime.datetime' has no attribute 'datetime'
+ABORT: a GPU reached 80C at 05:23:07
+night-bonsai-llama-1card code json_parse       FAIL  1740 tok @  18.7 tok/s   95.6 s  think     0 ch  ValueError: Expected ',' or ']' at position 133
+night-bonsai-llama-1card ABORT seen, stopping
+night-bonsai-llama-1card code-hard total 1/8 passed, 3033 tokens, 155 s
+end 05:24:12
+GPU0 max 79C, max 139W, thermal slowdown 24/78
+GPU1 max 37C, max 27W, thermal slowdown 0/78
+GPU2 max 38C, max 27W, thermal slowdown 0/78
+DONE

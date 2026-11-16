@@ -1,0 +1,10 @@
+start 10:38:55, GPU C: 78 50 45 
+ABORT: a GPU reached 80C at 10:39:01
+gyro-s-1card code semver_sort      FAIL  1134 tok @  39.1 tok/s   31.4 s  think     0 ch  TypeError: ord() expected a character, but string of length 2 found
+gyro-s-1card ABORT seen, stopping
+gyro-s-1card code-hard total 0/8 passed, 1134 tokens, 31 s
+end 10:39:27
+GPU0 max 80C, max 104W, thermal slowdown 3/16
+GPU1 max 50C, max 30W, thermal slowdown 0/16
+GPU2 max 45C, max 28W, thermal slowdown 0/16
+DONE

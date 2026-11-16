@@ -1,0 +1,12 @@
+08:44:00 [tune-base2] starting (easy hard); cards at 50 41 43 
+ Container strata-night  Creating
+ Container strata-night  Created
+ Container strata-night  Starting
+ Container strata-night  Started
+08:45:46 [tune-base2] model ready after 106 s
+08:45:46 [tune-base2] cards at 51 41 43 after waiting 0 s for <= 58 C
+08:45:46 [tune-base2] step easy
+08:51:27 [tune-base2] cards at 58 48 51 after waiting 120 s for <= 58 C
+08:51:27 [tune-base2] step hard
+08:54:19 [tune-base2] done
+08:54:29 [tune-base2] container stopped

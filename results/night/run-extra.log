@@ -1,0 +1,7 @@
+2026-11-15 21:42:58 waiting for the Bonsai chain
+2026-11-16 06:29:05 serving stopped
+2026-11-16 06:29:05 loading local/tensorless-engine:sm60
+Loaded image: local/tensorless-engine:sm60
+2026-11-16 06:32:45 arm tensorless-1card start; cards at 45 47 50 
+2026-11-16 07:19:17 arm tensorless-1card end, exit 0; cards at 78 37 38 
+2026-11-16 07:19:17 handing over to the settings arms

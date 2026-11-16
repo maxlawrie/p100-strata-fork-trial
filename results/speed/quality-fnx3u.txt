@@ -1,0 +1,187 @@
+fnx3u      run 1 code  semver_sort          PASS   965 tok @  52.1 tok/s   18.9 s  
+fnx3u      run 1 code  cron_next            FAIL  1347 tok @  54.6 tok/s   32.1 s  ValueError: No matching time found within search limit
+fnx3u      run 1 code  json_parse           PASS  2110 tok @  50.3 tok/s   42.4 s  
+fnx3u      run 1 code  regex_match          PASS  2002 tok @  55.7 tok/s   42.9 s  
+fnx3u      run 1 code  osa_distance         PASS   457 tok @  52.6 tok/s   10.8 s  
+fnx3u      run 1 code  parse_csv            PASS   816 tok @  58.2 tok/s   16.2 s  
+fnx3u      run 1 code  run_limited          PASS   619 tok @  61.7 tok/s   11.8 s  
+fnx3u      run 1 code  lex_shortest_path    PASS   887 tok @  54.0 tok/s   23.1 s  
+fnx3u      run 1 code  b64                  PASS  1327 tok @  50.3 tok/s   28.7 s  
+fnx3u      run 1 code  glob_match           FAIL   930 tok @  53.8 tok/s   24.5 s  AssertionError: ('***[!a]', 'cb]', False, True)
+fnx3u      run 1 code  fraction_to_decimal  PASS   331 tok @  53.9 tok/s   14.5 s  
+fnx3u      run 1 code  knapsack_pick        FAIL   807 tok @  50.6 tok/s   23.2 s  AssertionError: ([(8, 7), (5, 2), (2, 0), (9, 2), (2, 8), (1, 5), (2, 0)], 21, (22, [0, 1, 2, 4, 5, 
+fnx3u      run 1 code  kth_permutation      PASS   395 tok @  58.0 tok/s    8.7 s  
+fnx3u      run 1 code  text_justify         FAIL   530 tok @  52.6 tok/s   17.2 s  AssertionError
+fnx3u      run 1 code  add_days             PASS  1134 tok @  54.9 tok/s   28.4 s  
+fnx3u      run 1 code  crc32                PASS   402 tok @  49.0 tok/s   10.7 s  
+fnx3u      run 1 code  weighted_intervals   PASS   749 tok @  54.0 tok/s   16.2 s  
+fnx3u      run 1 code  normpath             PASS   419 tok @  60.9 tok/s    9.0 s  
+fnx3u      run 1 code  min_window           PASS   391 tok @  53.9 tok/s    9.4 s  
+fnx3u      run 1 code  int_to_words         PASS   561 tok @  53.2 tok/s   18.9 s  
+fnx3u      run 1 code  big_mul              FAIL  1242 tok @  52.7 tok/s   31.0 s  IndexError: list index out of range
+fnx3u      run 1 arith arith00              PASS   266 tok @  48.0 tok/s    7.6 s  
+fnx3u      run 1 arith arith01              PASS   661 tok @  43.2 tok/s   17.6 s  
+fnx3u      run 1 arith arith02              PASS   403 tok @  44.1 tok/s   11.0 s  
+fnx3u      run 1 arith arith03              PASS   314 tok @  42.9 tok/s    9.0 s  
+fnx3u      run 1 arith arith04              PASS   309 tok @  48.9 tok/s    8.1 s  
+fnx3u      run 1 arith arith05              PASS   219 tok @  44.9 tok/s    6.6 s  
+fnx3u      run 1 arith arith06              PASS   479 tok @  43.2 tok/s   13.1 s  
+fnx3u      run 1 arith arith07              PASS   513 tok @  41.6 tok/s   14.3 s  
+fnx3u      run 1 arith arith08              PASS   220 tok @  46.6 tok/s    6.4 s  
+fnx3u      run 1 arith arith09              PASS   351 tok @  50.1 tok/s    8.8 s  
+fnx3u      run 1 arith arith10              PASS   267 tok @  49.2 tok/s    7.3 s  
+fnx3u      run 1 arith arith11              PASS   362 tok @  44.9 tok/s   10.2 s  
+fnx3u      run 1 arith arith12              PASS   386 tok @  43.8 tok/s   10.6 s  
+fnx3u      run 1 arith arith13              PASS   341 tok @  44.4 tok/s    9.4 s  
+fnx3u      run 1 arith arith14              PASS   484 tok @  43.2 tok/s   13.0 s  
+fnx3u      run 1 arith arith15              PASS   269 tok @  45.8 tok/s    7.7 s  
+fnx3u      run 1 arith arith16              PASS   375 tok @  45.8 tok/s   10.2 s  
+fnx3u      run 1 arith arith17              PASS   404 tok @  44.6 tok/s   11.1 s  
+fnx3u      run 1 arith arith18              PASS   300 tok @  44.6 tok/s    8.4 s  
+fnx3u      run 1 arith arith19              PASS   336 tok @  46.9 tok/s    9.0 s  
+fnx3u      run 1 arith arith20              PASS   267 tok @  48.5 tok/s    7.2 s  
+fnx3u      run 1 arith arith21              PASS   509 tok @  42.4 tok/s   14.0 s  
+fnx3u      run 1 arith arith22              PASS   597 tok @  42.5 tok/s   16.0 s  
+fnx3u      run 1 arith arith23              PASS   363 tok @  42.8 tok/s   10.2 s  
+fnx3u      run 1 arith arith24              PASS   427 tok @  44.0 tok/s   11.5 s  
+fnx3u      run 1 arith arith25              PASS   265 tok @  49.7 tok/s    7.1 s  
+fnx3u      run 1 arith arith26              PASS   720 tok @  41.9 tok/s   19.4 s  
+fnx3u      run 1 arith arith27              PASS   450 tok @  43.8 tok/s   12.4 s  
+fnx3u      run 1 arith arith28              PASS   281 tok @  44.9 tok/s    8.0 s  
+fnx3u      run 1 arith arith29              PASS   372 tok @  46.0 tok/s    9.9 s  
+fnx3u      run 1 arith arith30              PASS   267 tok @  48.6 tok/s    7.3 s  
+fnx3u      run 1 arith arith31              PASS   482 tok @  43.6 tok/s   13.1 s  
+fnx3u      run 1 arith arith32              PASS   561 tok @  41.3 tok/s   15.7 s  
+fnx3u      run 1 arith arith33              PASS   345 tok @  43.1 tok/s    9.7 s  
+fnx3u      run 1 arith arith34              PASS   360 tok @  43.7 tok/s   10.0 s  
+fnx3u      run 1 arith arith35              PASS   216 tok @  44.3 tok/s    6.6 s  
+fnx3u      run 1 arith arith36              PASS   633 tok @  42.4 tok/s   17.1 s  
+fnx3u      run 1 arith arith37              PASS   901 tok @  48.6 tok/s   20.7 s  
+fnx3u      run 1 arith arith38              PASS   340 tok @  46.2 tok/s    9.1 s  
+fnx3u      run 1 arith arith39              PASS   372 tok @  46.3 tok/s    9.8 s  
+fnx3u      run 2 code  semver_sort          PASS   965 tok @  53.4 tok/s   20.3 s  
+fnx3u      run 2 code  cron_next            FAIL  1347 tok @  54.5 tok/s   32.2 s  ValueError: No matching time found within search limit
+fnx3u      run 2 code  json_parse           PASS  2110 tok @  50.5 tok/s   43.9 s  
+fnx3u      run 2 code  regex_match          PASS  2002 tok @  56.5 tok/s   42.4 s  
+fnx3u      run 2 code  osa_distance         PASS   457 tok @  52.7 tok/s   10.8 s  
+fnx3u      run 2 code  parse_csv            PASS   816 tok @  58.3 tok/s   16.2 s  
+fnx3u      run 2 code  run_limited          PASS   619 tok @  61.8 tok/s   11.8 s  
+fnx3u      run 2 code  lex_shortest_path    PASS   887 tok @  54.1 tok/s   23.1 s  
+fnx3u      run 2 code  b64                  PASS  1327 tok @  50.8 tok/s   28.4 s  
+fnx3u      run 2 code  glob_match           FAIL   930 tok @  55.3 tok/s   24.1 s  AssertionError: ('***[!a]', 'cb]', False, True)
+fnx3u      run 2 code  fraction_to_decimal  PASS   331 tok @  55.0 tok/s   14.3 s  
+fnx3u      run 2 code  knapsack_pick        FAIL   807 tok @  51.4 tok/s   22.9 s  AssertionError: ([(8, 7), (5, 2), (2, 0), (9, 2), (2, 8), (1, 5), (2, 0)], 21, (22, [0, 1, 2, 4, 5, 
+fnx3u      run 2 code  kth_permutation      PASS   395 tok @  58.9 tok/s    8.6 s  
+fnx3u      run 2 code  text_justify         FAIL   530 tok @  52.2 tok/s   17.3 s  AssertionError
+fnx3u      run 2 code  add_days             PASS  1134 tok @  55.5 tok/s   28.1 s  
+fnx3u      run 2 code  crc32                PASS   402 tok @  49.6 tok/s   10.6 s  
+fnx3u      run 2 code  weighted_intervals   PASS   749 tok @  55.4 tok/s   15.8 s  
+fnx3u      run 2 code  normpath             PASS   419 tok @  60.3 tok/s    9.0 s  
+fnx3u      run 2 code  min_window           PASS   391 tok @  54.3 tok/s    9.3 s  
+fnx3u      run 2 code  int_to_words         PASS   561 tok @  53.7 tok/s   18.7 s  
+fnx3u      run 2 code  big_mul              FAIL  1242 tok @  53.0 tok/s   30.8 s  IndexError: list index out of range
+fnx3u      run 2 arith arith00              PASS   266 tok @  48.5 tok/s    7.5 s  
+fnx3u      run 2 arith arith01              PASS   661 tok @  43.7 tok/s   17.4 s  
+fnx3u      run 2 arith arith02              PASS   403 tok @  44.4 tok/s   11.0 s  
+fnx3u      run 2 arith arith03              PASS   314 tok @  44.3 tok/s    8.8 s  
+fnx3u      run 2 arith arith04              PASS   309 tok @  48.3 tok/s    8.2 s  
+fnx3u      run 2 arith arith05              PASS   219 tok @  45.1 tok/s    6.6 s  
+fnx3u      run 2 arith arith06              PASS   479 tok @  43.5 tok/s   13.0 s  
+fnx3u      run 2 arith arith07              PASS   513 tok @  41.9 tok/s   14.2 s  
+fnx3u      run 2 arith arith08              PASS   220 tok @  47.0 tok/s    6.3 s  
+fnx3u      run 2 arith arith09              PASS   351 tok @  50.7 tok/s    8.8 s  
+fnx3u      run 2 arith arith10              PASS   267 tok @  49.6 tok/s    7.2 s  
+fnx3u      run 2 arith arith11              PASS   362 tok @  44.8 tok/s   10.2 s  
+fnx3u      run 2 arith arith12              PASS   386 tok @  44.0 tok/s   10.5 s  
+fnx3u      run 2 arith arith13              PASS   341 tok @  43.7 tok/s    9.5 s  
+fnx3u      run 2 arith arith14              PASS   484 tok @  43.5 tok/s   12.9 s  
+fnx3u      run 2 arith arith15              PASS   269 tok @  45.4 tok/s    7.7 s  
+fnx3u      run 2 arith arith16              PASS   375 tok @  47.6 tok/s    9.9 s  
+fnx3u      run 2 arith arith17              PASS   404 tok @  44.3 tok/s   11.1 s  
+fnx3u      run 2 arith arith18              PASS   300 tok @  44.1 tok/s    8.4 s  
+fnx3u      run 2 arith arith19              PASS   336 tok @  47.1 tok/s    9.0 s  
+fnx3u      run 2 arith arith20              PASS   267 tok @  47.9 tok/s    7.3 s  
+fnx3u      run 2 arith arith21              PASS   509 tok @  42.9 tok/s   13.8 s  
+fnx3u      run 2 arith arith22              PASS   597 tok @  42.8 tok/s   15.8 s  
+fnx3u      run 2 arith arith23              PASS   363 tok @  44.1 tok/s    9.9 s  
+fnx3u      run 2 arith arith24              PASS   427 tok @  44.4 tok/s   11.4 s  
+fnx3u      run 2 arith arith25              PASS   265 tok @  49.9 tok/s    7.1 s  
+fnx3u      run 2 arith arith26              PASS   720 tok @  42.1 tok/s   19.3 s  
+fnx3u      run 2 arith arith27              PASS   450 tok @  44.3 tok/s   12.3 s  
+fnx3u      run 2 arith arith28              PASS   281 tok @  44.9 tok/s    7.9 s  
+fnx3u      run 2 arith arith29              PASS   372 tok @  46.1 tok/s    9.9 s  
+fnx3u      run 2 arith arith30              PASS   267 tok @  47.4 tok/s    7.4 s  
+fnx3u      run 2 arith arith31              PASS   482 tok @  45.9 tok/s   12.5 s  
+fnx3u      run 2 arith arith32              PASS   561 tok @  42.4 tok/s   15.3 s  
+fnx3u      run 2 arith arith33              PASS   345 tok @  43.2 tok/s    9.6 s  
+fnx3u      run 2 arith arith34              PASS   360 tok @  43.8 tok/s   10.0 s  
+fnx3u      run 2 arith arith35              PASS   216 tok @  44.5 tok/s    6.6 s  
+fnx3u      run 2 arith arith36              PASS   633 tok @  42.4 tok/s   17.1 s  
+fnx3u      run 2 arith arith37              PASS   901 tok @  48.7 tok/s   20.6 s  
+fnx3u      run 2 arith arith38              PASS   340 tok @  47.1 tok/s    9.0 s  
+fnx3u      run 2 arith arith39              PASS   372 tok @  46.5 tok/s    9.8 s  
+fnx3u      run 3 code  semver_sort          PASS   965 tok @  53.7 tok/s   20.2 s  
+fnx3u      run 3 code  cron_next            FAIL  1347 tok @  55.2 tok/s   32.1 s  ValueError: No matching time found within search limit
+fnx3u      run 3 code  json_parse           PASS  2110 tok @  50.5 tok/s   43.9 s  
+fnx3u      run 3 code  regex_match          PASS  2002 tok @  55.9 tok/s   42.9 s  
+fnx3u      run 3 code  osa_distance         PASS   457 tok @  52.7 tok/s   10.8 s  
+fnx3u      run 3 code  parse_csv            PASS   816 tok @  57.5 tok/s   16.4 s  
+fnx3u      run 3 code  run_limited          PASS   619 tok @  61.9 tok/s   11.8 s  
+fnx3u      run 3 code  lex_shortest_path    PASS   887 tok @  53.1 tok/s   23.5 s  
+fnx3u      run 3 code  b64                  PASS  1327 tok @  50.8 tok/s   28.4 s  
+fnx3u      run 3 code  glob_match           FAIL   930 tok @  55.1 tok/s   24.1 s  AssertionError: ('***[!a]', 'cb]', False, True)
+fnx3u      run 3 code  fraction_to_decimal  PASS   331 tok @  55.3 tok/s   14.3 s  
+fnx3u      run 3 code  knapsack_pick        FAIL   807 tok @  52.3 tok/s   22.6 s  AssertionError: ([(8, 7), (5, 2), (2, 0), (9, 2), (2, 8), (1, 5), (2, 0)], 21, (22, [0, 1, 2, 4, 5, 
+fnx3u      run 3 code  kth_permutation      PASS   395 tok @  59.0 tok/s    8.6 s  
+fnx3u      run 3 code  text_justify         FAIL   530 tok @  53.0 tok/s   17.0 s  AssertionError
+fnx3u      run 3 code  add_days             PASS  1134 tok @  55.4 tok/s   28.2 s  
+fnx3u      run 3 code  crc32                PASS   402 tok @  49.5 tok/s   10.6 s  
+fnx3u      run 3 code  weighted_intervals   PASS   749 tok @  54.5 tok/s   16.0 s  
+fnx3u      run 3 code  normpath             PASS   419 tok @  61.4 tok/s    8.9 s  
+fnx3u      run 3 code  min_window           PASS   391 tok @  53.2 tok/s    9.5 s  
+fnx3u      run 3 code  int_to_words         PASS   561 tok @  53.6 tok/s   18.7 s  
+fnx3u      run 3 code  big_mul              FAIL  1242 tok @  53.1 tok/s   30.8 s  IndexError: list index out of range
+fnx3u      run 3 arith arith00              PASS   266 tok @  48.5 tok/s    7.5 s  
+fnx3u      run 3 arith arith01              PASS   661 tok @  43.1 tok/s   17.6 s  
+fnx3u      run 3 arith arith02              PASS   403 tok @  44.5 tok/s   10.9 s  
+fnx3u      run 3 arith arith03              PASS   314 tok @  44.2 tok/s    8.8 s  
+fnx3u      run 3 arith arith04              PASS   309 tok @  48.3 tok/s    8.2 s  
+fnx3u      run 3 arith arith05              PASS   219 tok @  45.1 tok/s    6.6 s  
+fnx3u      run 3 arith arith06              PASS   479 tok @  44.8 tok/s   12.7 s  
+fnx3u      run 3 arith arith07              PASS   513 tok @  41.9 tok/s   14.3 s  
+fnx3u      run 3 arith arith08              PASS   220 tok @  47.0 tok/s    6.3 s  
+fnx3u      run 3 arith arith09              PASS   351 tok @  50.7 tok/s    8.8 s  
+fnx3u      run 3 arith arith10              PASS   267 tok @  49.6 tok/s    7.2 s  
+fnx3u      run 3 arith arith11              PASS   362 tok @  44.8 tok/s   10.2 s  
+fnx3u      run 3 arith arith12              PASS   386 tok @  44.1 tok/s   10.5 s  
+fnx3u      run 3 arith arith13              PASS   341 tok @  44.8 tok/s    9.3 s  
+fnx3u      run 3 arith arith14              PASS   484 tok @  42.4 tok/s   13.2 s  
+fnx3u      run 3 arith arith15              PASS   269 tok @  45.4 tok/s    7.7 s  
+fnx3u      run 3 arith arith16              PASS   375 tok @  46.0 tok/s   10.1 s  
+fnx3u      run 3 arith arith17              PASS   404 tok @  44.0 tok/s   11.2 s  
+fnx3u      run 3 arith arith18              PASS   300 tok @  45.1 tok/s    8.3 s  
+fnx3u      run 3 arith arith19              PASS   336 tok @  47.2 tok/s    8.9 s  
+fnx3u      run 3 arith arith20              PASS   267 tok @  48.4 tok/s    7.2 s  
+fnx3u      run 3 arith arith21              PASS   509 tok @  41.8 tok/s   14.2 s  
+fnx3u      run 3 arith arith22              PASS   597 tok @  42.8 tok/s   15.8 s  
+fnx3u      run 3 arith arith23              PASS   363 tok @  44.1 tok/s    9.9 s  
+fnx3u      run 3 arith arith24              PASS   427 tok @  44.4 tok/s   11.4 s  
+fnx3u      run 3 arith arith25              PASS   265 tok @  49.9 tok/s    7.1 s  
+fnx3u      run 3 arith arith26              PASS   720 tok @  41.8 tok/s   19.4 s  
+fnx3u      run 3 arith arith27              PASS   450 tok @  44.4 tok/s   12.2 s  
+fnx3u      run 3 arith arith28              PASS   281 tok @  45.1 tok/s    7.9 s  
+fnx3u      run 3 arith arith29              PASS   372 tok @  46.1 tok/s    9.9 s  
+fnx3u      run 3 arith arith30              PASS   267 tok @  48.7 tok/s    7.3 s  
+fnx3u      run 3 arith arith31              PASS   482 tok @  44.3 tok/s   12.9 s  
+fnx3u      run 3 arith arith32              PASS   561 tok @  43.0 tok/s   15.1 s  
+fnx3u      run 3 arith arith33              PASS   345 tok @  42.1 tok/s    9.9 s  
+fnx3u      run 3 arith arith34              PASS   360 tok @  43.3 tok/s   10.1 s  
+fnx3u      run 3 arith arith35              PASS   216 tok @  44.5 tok/s    6.6 s  
+fnx3u      run 3 arith arith36              PASS   633 tok @  43.5 tok/s   16.7 s  
+fnx3u      run 3 arith arith37              PASS   901 tok @  48.5 tok/s   20.7 s  
+fnx3u      run 3 arith arith38              PASS   340 tok @  47.0 tok/s    9.0 s  
+fnx3u      run 3 arith arith39              PASS   372 tok @  46.4 tok/s    9.8 s  
+fnx3u      code total 48/63 (76%); per run: 16 16 16; always 16, never 5, mixed 0 of 21 tasks
+fnx3u      code by task: semver_sort 3/3  cron_next 0/3  json_parse 3/3  regex_match 3/3  osa_distance 3/3  parse_csv 3/3  run_limited 3/3  lex_shortest_path 3/3  b64 3/3  glob_match 0/3  fraction_to_decimal 3/3  knapsack_pick 0/3  kth_permutation 3/3  text_justify 0/3  add_days 3/3  crc32 3/3  weighted_intervals 3/3  normpath 3/3  min_window 3/3  int_to_words 3/3  big_mul 0/3
+fnx3u      arith total 120/120 (100%); per run: 40 40 40; always 40, never 0, mixed 0 of 40 tasks
+QUALITY-DONE

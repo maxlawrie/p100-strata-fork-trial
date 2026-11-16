@@ -1,0 +1,393 @@
+[kindi 20:03:03] blocking sync: card 0 primary context flags 0x4 (set: 0)
+[kindi 20:03:03] blocking sync: card 1 primary context flags 0x4 (set: 0)
+[kindi 20:05:10] card 0: 2.87 GB of weights (122s)
+[kindi 20:07:23] card 1: 2.87 GB of weights (133s)
+[kindi 20:07:33] plan engine ready: 2 cards, ctx 65536, K/V q8_0, weights 5-trit lane (269.4s)
+[kindi 20:07:33] prompt cache: a checkpoint every 6912 tokens (152 MB each), 3 parked conversations, budget 12431 MB
+[kindi 20:07:33] engine fingerprint 0e15e9752a24: {"engine": "kindi.tp.TPEngine", "cards": 2, "weights": "5-trit lane", "kv": "q8_0", "chunk": 512, "chunk_q8": false, "chunk_tc": false, "chunk_att": "flash", "chunk_tile": "", "batch": "4", "tc": "0", "tc_tmax": "", "fd": "0", "d1": "0", "att_tc": "0", "spec": "0", "head": "exact"}
+[kindi 20:07:33] saved openings: 0 in /data/state-kindi-2card/openings/53107f530aa5-e0e15e9752a24
+[kindi 20:07:33] serving on http://127.0.0.1:8093/v1 (model bonsai2-27b)
+[kindi 20:07:34] request: 3857 prompt tokens (max 10 new)
+[kindi 20:07:34] cache: 3857 prompt tokens, 0 shared with the last request, resumed at 0
+[kindi 20:08:03] prompt: 0 reused, 3857 read in 28.7s
+[kindi 20:08:03] done: 3 tokens in 0.3s (stop)
+[kindi 20:08:03] request: 15672 prompt tokens (max 10 new)
+[kindi 20:08:04] cache: 15672 prompt tokens, 9 shared with the last request, resumed at 0
+[kindi 20:09:38] prompt: 0 reused, 15672 read in 94.8s
+[kindi 20:09:38] done: 3 tokens in 0.1s (stop)
+[kindi 20:09:38] request: 31885 prompt tokens (max 10 new)
+[kindi 20:09:39] cache: 31885 prompt tokens, 9 shared with the last request, resumed at 0
+[kindi 20:13:02] prompt: 0 reused, 31885 read in 204.0s
+[kindi 20:13:03] done: 4 tokens in 0.1s (stop)
+[kindi 20:13:03] request: 26 prompt tokens (max 300 new)
+[kindi 20:13:04] cache: 26 prompt tokens, 3 shared with the last request, resumed at 0
+[kindi 20:13:06] prompt: 0 reused, 26 read in 3.1s
+[kindi 20:13:14] done: 300 tokens in 8.1s (length)
+[kindi 20:13:14] request: 26 prompt tokens (max 300 new)
+[kindi 20:13:14] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:13:14] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:13:23] done: 300 tokens in 8.2s (length)
+[kindi 20:13:23] request: 26 prompt tokens (max 300 new)
+[kindi 20:13:23] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:13:23] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:13:31] done: 300 tokens in 8.1s (length)
+[kindi 20:13:31] request: 278 prompt tokens (max 800 new)
+[kindi 20:13:31] cache: 278 prompt tokens, 1 shared with the last request, resumed at 0
+[kindi 20:13:34] prompt: 0 reused, 278 read in 3.1s
+[kindi 20:13:35] done: 27 tokens in 0.7s (stop)
+[kindi 20:13:35] request: 130 prompt tokens (max 2500 new)
+[kindi 20:13:35] cache: 130 prompt tokens, 3 shared with the last request, resumed at 0
+[kindi 20:13:38] prompt: 0 reused, 130 read in 2.6s
+[kindi 20:13:42] done: 168 tokens in 4.3s (stop)
+[kindi 20:13:43] request: 87 prompt tokens (max 2500 new)
+[kindi 20:13:43] cache: 87 prompt tokens, 34 shared with the last request, resumed at 26
+[kindi 20:13:44] prompt: 26 reused, 61 read in 1.6s
+[kindi 20:13:49] done: 173 tokens in 4.4s (stop)
+[kindi 20:13:49] request: 109 prompt tokens (max 2500 new)
+[kindi 20:13:49] cache: 109 prompt tokens, 33 shared with the last request, resumed at 26
+[kindi 20:13:51] prompt: 26 reused, 83 read in 1.8s
+[kindi 20:13:56] done: 222 tokens in 5.7s (stop)
+[kindi 20:13:57] request: 100 prompt tokens (max 2500 new)
+[kindi 20:13:57] cache: 100 prompt tokens, 31 shared with the last request, resumed at 26
+[kindi 20:13:59] prompt: 26 reused, 74 read in 1.8s
+[kindi 20:14:10] done: 442 tokens in 11.5s (stop)
+[kindi 20:14:11] request: 102 prompt tokens (max 2500 new)
+[kindi 20:14:11] cache: 102 prompt tokens, 31 shared with the last request, resumed at 26
+[kindi 20:14:13] prompt: 26 reused, 76 read in 2.4s
+[kindi 20:14:21] done: 309 tokens in 7.9s (stop)
+[kindi 20:14:21] request: 161 prompt tokens (max 2500 new)
+[kindi 20:14:21] cache: 161 prompt tokens, 30 shared with the last request, resumed at 26
+[kindi 20:14:23] prompt: 26 reused, 135 read in 1.5s
+[kindi 20:14:25] done: 89 tokens in 2.3s (stop)
+[kindi 20:16:41] request: 26 prompt tokens (max 300 new)
+[kindi 20:16:41] cache: 26 prompt tokens, 1 shared with the last request, resumed at 0
+[kindi 20:16:42] prompt: 0 reused, 26 read in 1.1s
+[kindi 20:16:50] done: 300 tokens in 8.1s (length)
+[kindi 20:16:50] request: 26 prompt tokens (max 300 new)
+[kindi 20:16:51] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:16:51] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:16:59] done: 300 tokens in 8.0s (length)
+[kindi 20:16:59] request: 26 prompt tokens (max 300 new)
+[kindi 20:16:59] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:17:00] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:17:08] done: 300 tokens in 8.1s (length)
+[kindi 20:17:08] request: 26 prompt tokens (max 300 new)
+[kindi 20:17:08] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:17:08] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:17:16] done: 300 tokens in 8.1s (length)
+[kindi 20:17:16] request: 26 prompt tokens (max 300 new)
+[kindi 20:17:17] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:17:17] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:17:25] done: 300 tokens in 8.1s (length)
+[kindi 20:17:25] request: 26 prompt tokens (max 300 new)
+[kindi 20:17:25] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:17:26] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:17:34] done: 300 tokens in 8.1s (length)
+[kindi 20:17:34] request: 26 prompt tokens (max 300 new)
+[kindi 20:17:34] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:17:34] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:17:42] done: 300 tokens in 8.1s (length)
+[kindi 20:17:42] request: 26 prompt tokens (max 300 new)
+[kindi 20:17:42] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:17:43] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:17:51] done: 300 tokens in 8.1s (length)
+[kindi 20:17:51] request: 26 prompt tokens (max 300 new)
+[kindi 20:17:51] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:17:52] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:18:00] done: 300 tokens in 8.1s (length)
+[kindi 20:18:00] request: 26 prompt tokens (max 300 new)
+[kindi 20:18:00] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:18:00] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:18:08] done: 300 tokens in 8.1s (length)
+[kindi 20:18:08] request: 26 prompt tokens (max 300 new)
+[kindi 20:18:08] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:18:09] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:18:17] done: 300 tokens in 8.1s (length)
+[kindi 20:18:17] request: 26 prompt tokens (max 300 new)
+[kindi 20:18:17] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:18:18] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:18:26] done: 300 tokens in 8.1s (length)
+[kindi 20:18:26] request: 26 prompt tokens (max 300 new)
+[kindi 20:18:26] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:18:26] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:18:34] done: 300 tokens in 8.1s (length)
+[kindi 20:18:34] request: 26 prompt tokens (max 300 new)
+[kindi 20:18:34] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:18:35] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:18:43] done: 300 tokens in 8.1s (length)
+[kindi 20:18:43] request: 26 prompt tokens (max 300 new)
+[kindi 20:18:43] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:18:44] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:18:52] done: 300 tokens in 8.1s (length)
+[kindi 20:18:52] request: 26 prompt tokens (max 300 new)
+[kindi 20:18:52] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:18:52] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:19:00] done: 300 tokens in 8.1s (length)
+[kindi 20:19:00] request: 26 prompt tokens (max 300 new)
+[kindi 20:19:00] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:19:01] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:19:09] done: 300 tokens in 8.1s (length)
+[kindi 20:19:09] request: 26 prompt tokens (max 300 new)
+[kindi 20:19:09] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:19:10] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:19:18] done: 300 tokens in 8.1s (length)
+[kindi 20:19:18] request: 26 prompt tokens (max 300 new)
+[kindi 20:19:18] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:19:18] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:19:26] done: 300 tokens in 8.1s (length)
+[kindi 20:19:26] request: 26 prompt tokens (max 300 new)
+[kindi 20:19:27] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:19:27] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:19:35] done: 300 tokens in 8.1s (length)
+[kindi 20:19:35] request: 26 prompt tokens (max 300 new)
+[kindi 20:19:35] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:19:36] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:19:44] done: 300 tokens in 8.1s (length)
+[kindi 20:19:44] request: 26 prompt tokens (max 300 new)
+[kindi 20:19:44] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:19:44] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:19:52] done: 300 tokens in 8.1s (length)
+[kindi 20:19:53] request: 26 prompt tokens (max 300 new)
+[kindi 20:19:53] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:19:53] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:20:01] done: 300 tokens in 8.1s (length)
+[kindi 20:20:01] request: 26 prompt tokens (max 300 new)
+[kindi 20:20:01] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:20:02] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:20:10] done: 300 tokens in 8.1s (length)
+[kindi 20:20:10] request: 26 prompt tokens (max 300 new)
+[kindi 20:20:10] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:20:10] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:20:19] done: 300 tokens in 8.1s (length)
+[kindi 20:20:19] request: 26 prompt tokens (max 300 new)
+[kindi 20:20:19] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:20:19] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:20:27] done: 300 tokens in 8.1s (length)
+[kindi 20:20:27] request: 26 prompt tokens (max 300 new)
+[kindi 20:20:27] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:20:28] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:20:36] done: 300 tokens in 8.1s (length)
+[kindi 20:20:36] request: 26 prompt tokens (max 300 new)
+[kindi 20:20:36] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:20:36] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:20:45] done: 300 tokens in 8.1s (length)
+[kindi 20:20:45] request: 26 prompt tokens (max 300 new)
+[kindi 20:20:45] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:20:45] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:20:53] done: 300 tokens in 8.1s (length)
+[kindi 20:20:53] request: 26 prompt tokens (max 300 new)
+[kindi 20:20:53] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:20:54] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:21:02] done: 300 tokens in 8.1s (length)
+[kindi 20:21:02] request: 26 prompt tokens (max 300 new)
+[kindi 20:21:02] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:21:03] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:21:11] done: 300 tokens in 8.1s (length)
+[kindi 20:21:11] request: 26 prompt tokens (max 300 new)
+[kindi 20:21:11] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:21:11] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:21:19] done: 300 tokens in 8.1s (length)
+[kindi 20:21:19] request: 26 prompt tokens (max 300 new)
+[kindi 20:21:19] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:21:20] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:21:28] done: 300 tokens in 8.1s (length)
+[kindi 20:21:28] request: 26 prompt tokens (max 300 new)
+[kindi 20:21:28] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:21:29] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:21:37] done: 300 tokens in 8.1s (length)
+[kindi 20:21:37] request: 26 prompt tokens (max 300 new)
+[kindi 20:21:37] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:21:37] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:21:45] done: 300 tokens in 8.1s (length)
+[kindi 20:21:45] request: 26 prompt tokens (max 300 new)
+[kindi 20:21:46] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:21:46] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:21:54] done: 300 tokens in 8.2s (length)
+[kindi 20:21:54] request: 26 prompt tokens (max 300 new)
+[kindi 20:21:54] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:21:55] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:22:03] done: 300 tokens in 8.1s (length)
+[kindi 20:22:03] request: 26 prompt tokens (max 300 new)
+[kindi 20:22:03] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:22:03] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:22:12] done: 300 tokens in 8.2s (length)
+[kindi 20:22:12] request: 26 prompt tokens (max 300 new)
+[kindi 20:22:12] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:22:12] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:22:21] done: 300 tokens in 8.3s (length)
+[kindi 20:22:21] request: 26 prompt tokens (max 300 new)
+[kindi 20:22:21] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:22:21] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:22:29] done: 300 tokens in 8.1s (length)
+[kindi 20:22:29] request: 26 prompt tokens (max 300 new)
+[kindi 20:22:29] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:22:30] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:22:38] done: 300 tokens in 8.2s (length)
+[kindi 20:22:38] request: 26 prompt tokens (max 300 new)
+[kindi 20:22:38] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:22:39] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:22:47] done: 300 tokens in 8.3s (length)
+[kindi 20:22:47] request: 26 prompt tokens (max 300 new)
+[kindi 20:22:47] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:22:47] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:22:56] done: 300 tokens in 8.2s (length)
+[kindi 20:22:56] request: 26 prompt tokens (max 300 new)
+[kindi 20:22:56] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:22:56] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:23:04] done: 300 tokens in 8.2s (length)
+[kindi 20:23:05] request: 26 prompt tokens (max 300 new)
+[kindi 20:23:05] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:23:05] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:23:13] done: 300 tokens in 8.2s (length)
+[kindi 20:23:13] request: 26 prompt tokens (max 300 new)
+[kindi 20:23:13] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:23:14] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:23:22] done: 300 tokens in 8.3s (length)
+[kindi 20:23:22] request: 26 prompt tokens (max 300 new)
+[kindi 20:23:22] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:23:23] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:23:31] done: 300 tokens in 8.1s (length)
+[kindi 20:23:31] request: 26 prompt tokens (max 300 new)
+[kindi 20:23:31] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:23:32] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:23:40] done: 300 tokens in 8.2s (length)
+[kindi 20:23:40] request: 26 prompt tokens (max 300 new)
+[kindi 20:23:40] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:23:40] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:23:49] done: 300 tokens in 8.4s (length)
+[kindi 20:23:49] request: 26 prompt tokens (max 300 new)
+[kindi 20:23:49] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:23:49] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:23:57] done: 300 tokens in 8.2s (length)
+[kindi 20:23:58] request: 26 prompt tokens (max 300 new)
+[kindi 20:23:58] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:23:58] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:24:06] done: 300 tokens in 8.1s (length)
+[kindi 20:24:06] request: 26 prompt tokens (max 300 new)
+[kindi 20:24:06] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:24:07] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:24:15] done: 300 tokens in 8.4s (length)
+[kindi 20:24:15] request: 26 prompt tokens (max 300 new)
+[kindi 20:24:15] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:24:16] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:24:24] done: 300 tokens in 8.3s (length)
+[kindi 20:24:24] request: 26 prompt tokens (max 300 new)
+[kindi 20:24:24] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:24:25] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:24:33] done: 300 tokens in 8.1s (length)
+[kindi 20:24:33] request: 26 prompt tokens (max 300 new)
+[kindi 20:24:33] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:24:33] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:24:42] done: 300 tokens in 8.2s (length)
+[kindi 20:24:42] request: 26 prompt tokens (max 300 new)
+[kindi 20:24:42] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:24:42] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:24:50] done: 300 tokens in 8.3s (length)
+[kindi 20:24:50] request: 26 prompt tokens (max 300 new)
+[kindi 20:24:51] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:24:51] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:24:59] done: 300 tokens in 8.1s (length)
+[kindi 20:24:59] request: 26 prompt tokens (max 300 new)
+[kindi 20:24:59] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:25:00] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:25:08] done: 300 tokens in 8.3s (length)
+[kindi 20:25:08] request: 26 prompt tokens (max 300 new)
+[kindi 20:25:08] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:25:08] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:25:17] done: 300 tokens in 8.4s (length)
+[kindi 20:25:17] request: 26 prompt tokens (max 300 new)
+[kindi 20:25:17] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:25:17] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:25:26] done: 300 tokens in 8.2s (length)
+[kindi 20:25:26] request: 26 prompt tokens (max 300 new)
+[kindi 20:25:26] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:25:26] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:25:34] done: 300 tokens in 8.1s (length)
+[kindi 20:25:34] request: 26 prompt tokens (max 300 new)
+[kindi 20:25:34] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:25:35] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:25:43] done: 300 tokens in 8.2s (length)
+[kindi 20:25:43] request: 26 prompt tokens (max 300 new)
+[kindi 20:25:43] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:25:44] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:25:52] done: 300 tokens in 8.3s (length)
+[kindi 20:25:52] request: 26 prompt tokens (max 300 new)
+[kindi 20:25:52] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:25:53] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:26:01] done: 300 tokens in 8.2s (length)
+[kindi 20:26:01] request: 26 prompt tokens (max 300 new)
+[kindi 20:26:01] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:26:01] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:26:10] done: 300 tokens in 8.4s (length)
+[kindi 20:26:10] request: 26 prompt tokens (max 300 new)
+[kindi 20:26:10] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:26:10] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:26:18] done: 300 tokens in 8.2s (length)
+[kindi 20:26:19] request: 26 prompt tokens (max 300 new)
+[kindi 20:26:19] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:26:19] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:26:27] done: 300 tokens in 8.1s (length)
+[kindi 20:26:27] request: 26 prompt tokens (max 300 new)
+[kindi 20:26:27] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:26:28] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:26:36] done: 300 tokens in 8.4s (length)
+[kindi 20:26:36] request: 26 prompt tokens (max 300 new)
+[kindi 20:26:36] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:26:37] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:26:45] done: 300 tokens in 8.1s (length)
+[kindi 20:26:45] request: 26 prompt tokens (max 300 new)
+[kindi 20:26:45] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:26:45] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:26:54] done: 300 tokens in 8.2s (length)
+[kindi 20:26:54] request: 26 prompt tokens (max 300 new)
+[kindi 20:26:54] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:26:54] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:27:03] done: 300 tokens in 8.3s (length)
+[kindi 20:27:03] request: 26 prompt tokens (max 300 new)
+[kindi 20:27:03] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:27:03] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:27:12] done: 300 tokens in 8.4s (length)
+[kindi 20:27:12] request: 26 prompt tokens (max 300 new)
+[kindi 20:27:12] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:27:12] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:27:20] done: 300 tokens in 8.1s (length)
+[kindi 20:27:20] request: 26 prompt tokens (max 300 new)
+[kindi 20:27:20] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:27:21] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:27:29] done: 300 tokens in 8.3s (length)
+[kindi 20:27:29] request: 26 prompt tokens (max 300 new)
+[kindi 20:27:29] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:27:30] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:27:38] done: 300 tokens in 8.1s (length)
+[kindi 20:27:38] request: 26 prompt tokens (max 300 new)
+[kindi 20:27:38] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:27:38] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:27:47] done: 300 tokens in 8.4s (length)
+[kindi 20:27:47] request: 26 prompt tokens (max 300 new)
+[kindi 20:27:47] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:27:47] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:27:56] done: 300 tokens in 8.2s (length)
+[kindi 20:27:56] request: 26 prompt tokens (max 300 new)
+[kindi 20:27:56] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:27:56] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:28:04] done: 300 tokens in 8.2s (length)
+[kindi 20:28:04] request: 26 prompt tokens (max 300 new)
+[kindi 20:28:04] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:28:05] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:28:13] done: 300 tokens in 8.2s (length)
+[kindi 20:28:13] request: 26 prompt tokens (max 300 new)
+[kindi 20:28:13] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:28:14] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:28:22] done: 300 tokens in 8.4s (length)
+[kindi 20:28:22] request: 26 prompt tokens (max 300 new)
+[kindi 20:28:22] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:28:23] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:28:31] done: 300 tokens in 8.3s (length)
+[kindi 20:28:31] request: 26 prompt tokens (max 300 new)
+[kindi 20:28:31] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:28:32] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:28:40] done: 300 tokens in 8.2s (length)
+[kindi 20:28:40] request: 26 prompt tokens (max 300 new)
+[kindi 20:28:40] cache: 26 prompt tokens, 26 shared with the last request, resumed at 19
+[kindi 20:28:40] prompt: 19 reused, 7 read in 0.5s
+[kindi 20:28:49] done: 300 tokens in 8.3s (length)

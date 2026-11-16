@@ -1,0 +1,22 @@
+start 07:58:13, GPU C: 51 41 43 
+p4k        prompt  3857 tok @  234.1 tok/s | gen    4 tok @  40.9 tok/s | drafts 3/3 | '180'
+p16k       prompt 15672 tok @  373.7 tok/s | gen    4 tok @  36.8 tok/s | drafts 3/3 | '720'
+p32k       prompt 31885 tok @  469.2 tok/s | gen    5 tok @  28.3 tok/s | drafts 4/6 | '1440'
+gen        prompt    26 tok @   27.4 tok/s | gen  300 tok @  42.9 tok/s | drafts 135/208 | 'The salt spray had long since etched its'
+gen        prompt     7 tok @   25.0 tok/s | gen  300 tok @  48.1 tok/s | drafts 136/202 | 'Elias did not speak to the sea, for the '
+gen        prompt     7 tok @   27.7 tok/s | gen  300 tok @  48.5 tok/s | drafts 143/233 | 'Elias was not merely a keeper of light; '
+tool       prompt   305 tok @   80.3 tok/s | gen   49 tok @  54.3 tok/s | drafts 34/38 | [('get_weather', '{"city":"Brisbane"}')]
+night-tune-specp code parse_duration   PASS   250 tok @  52.6 tok/s    7.2 s  think     0 ch  
+night-tune-specp code merge_intervals  PASS   188 tok @  59.7 tok/s    5.2 s  think     0 ch  
+night-tune-specp code lru_cache        PASS   239 tok @  68.2 tok/s    5.7 s  think     0 ch  
+night-tune-specp code roman            PASS   514 tok @  67.2 tok/s    9.8 s  think     0 ch  
+night-tune-specp code toposort         PASS   429 tok @  66.1 tok/s    8.7 s  think     0 ch  
+night-tune-specp code fix_bisect       PASS    90 tok @  70.7 tok/s    3.9 s  think     0 ch  
+night-tune-specp code calc             PASS   777 tok @  66.4 tok/s   13.8 s  think     0 ch  
+night-tune-specp code wrap             PASS   381 tok @  68.0 tok/s    7.8 s  think     0 ch  
+night-tune-specp code total 8/8 passed, 2868 tokens, 62 s
+end 08:01:51
+GPU0 max 66C, max 164W, thermal slowdown 0/109
+GPU1 max 61C, max 175W, thermal slowdown 0/109
+GPU2 max 60C, max 166W, thermal slowdown 0/109
+DONE

@@ -1,0 +1,15 @@
+start 16:50:09, GPU C: 56 48 55 
+fnx3a    code semver_sort      PASS   974 tok @  26.9 tok/s   40.6 s  think     0 ch  
+fnx3a    code cron_next        PASS  1680 tok @  31.0 tok/s   68.8 s  think     0 ch  
+fnx3a    code json_parse       PASS  2109 tok @  24.6 tok/s   89.8 s  think     0 ch  
+fnx3a    code regex_match      FAIL  2846 tok @  30.3 tok/s  107.0 s  think     0 ch  UnboundLocalError: cannot access local variable 'ast' where it is not associated
+fnx3a    code osa_distance     PASS   456 tok @  26.7 tok/s   21.5 s  think     0 ch  
+fnx3a    code parse_csv        FAIL   608 tok @  26.4 tok/s   27.4 s  think     0 ch  AssertionError: accepted invalid: ['"a"b,c']
+fnx3a    code run_limited      PASS   619 tok @  36.1 tok/s   20.7 s  think     0 ch  
+fnx3a    code lex_shortest_path PASS   719 tok @  31.5 tok/s   36.0 s  think     0 ch  
+fnx3a    code-hard total 6/8 passed, 10011 tokens, 412 s
+end 16:57:05
+GPU0 max 60C, max 103W, thermal slowdown 0/207
+GPU1 max 50C, max 106W, thermal slowdown 0/207
+GPU2 max 58C, max 102W, thermal slowdown 0/207
+DONE

@@ -1,0 +1,16 @@
+21:01:25 [gyro-m-3card] starting (easy hard sustain quality); cards at 50 41 43 
+ Container strata-night  Creating
+ Container strata-night  Created
+ Container strata-night  Starting
+ Container strata-night  Started
+21:02:41 [gyro-m-3card] model ready after 75 s
+21:02:41 [gyro-m-3card] cards at 52 41 44 after waiting 0 s for <= 58 C
+21:02:41 [gyro-m-3card] step easy
+21:08:56 [gyro-m-3card] cards at 58 49 51 after waiting 150 s for <= 58 C
+21:08:56 [gyro-m-3card] step hard
+21:15:53 [gyro-m-3card] cards at 59 48 52 after waiting 181 s for <= 58 C
+21:15:53 [gyro-m-3card] step sustain
+21:32:30 [gyro-m-3card] cards at 58 47 51 after waiting 271 s for <= 58 C
+21:32:30 [gyro-m-3card] step quality
+22:14:55 [gyro-m-3card] done
+22:15:00 [gyro-m-3card] container stopped

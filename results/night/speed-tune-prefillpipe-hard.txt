@@ -1,0 +1,15 @@
+start 08:35:36, GPU C: 58 48 49 
+night-tune-prefillpipe code semver_sort      PASS  1141 tok @  65.0 tok/s   20.0 s  think     0 ch  
+night-tune-prefillpipe code cron_next        FAIL  1420 tok @  64.2 tok/s   24.7 s  think     0 ch  ValueError: day is out of range for month
+night-tune-prefillpipe code json_parse       PASS  2268 tok @  71.7 tok/s   34.1 s  think     0 ch  
+night-tune-prefillpipe code regex_match      FAIL  3436 tok @  64.1 tok/s   56.2 s  think     0 ch  AttributeError: 'tuple' object has no attribute '_id'
+night-tune-prefillpipe code osa_distance     PASS   445 tok @  68.5 tok/s    8.9 s  think     0 ch  
+night-tune-prefillpipe code parse_csv        FAIL   852 tok @  69.2 tok/s   14.8 s  think     0 ch  AssertionError: ('"a b,",b b,"\n\n ","a \r\n"\r\n"""bb\na"," \n\n"",",', [['a b,
+night-tune-prefillpipe code run_limited      PASS   411 tok @  61.4 tok/s    8.9 s  think     0 ch  
+night-tune-prefillpipe code lex_shortest_path PASS  1025 tok @  56.7 tok/s   20.6 s  think     0 ch  
+night-tune-prefillpipe code-hard total 5/8 passed, 10998 tokens, 188 s
+end 08:38:48
+GPU0 max 64C, max 122W, thermal slowdown 0/96
+GPU1 max 58C, max 124W, thermal slowdown 0/96
+GPU2 max 63C, max 144W, thermal slowdown 0/96
+DONE

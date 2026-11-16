@@ -13,8 +13,9 @@ temps() { nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader,nounits |
 echo "start $(date +%T), GPU C: $(temps)" >> $OUT
 T0=$SECONDS; last=0
 while [ $((SECONDS - T0)) -lt $((MIN * 60)) ]; do
+  R0=$(date +%s.%N)   # servers without "timings" (Kindi): completion tokens over wall-clock time for the request
   tps=$(curl -s $URL/v1/chat/completions -H "Authorization: Bearer $K" -H "Content-Type: application/json" -d @sustain-gen.json \
-        | python3 -c "import json,sys; print('%.1f' % json.load(sys.stdin).get('timings',{}).get('predicted_per_second',0))" 2>/dev/null)
+        | python3 -c "import json,sys,time; d=json.load(sys.stdin); t=d.get('timings',{}).get('predicted_per_second'); print('%.1f' % (t or d.get('usage',{}).get('completion_tokens',0)/(time.time()-float(sys.argv[1]))))" $R0 2>/dev/null)
   n=$(wc -l < sustain-$L-gpu.log); slow=$(tail -n +$((last + 1)) sustain-$L-gpu.log | awk -F', ' '$6 ~ /20$/' | wc -l); last=$n
   t=$(temps); echo "$((SECONDS - T0)) s  ${tps:-ERR} tok/s  GPU C: $t slowdown samples: $slow" >> $OUT
   if echo "$t" | awk -v m=$STOP '{for(i=1;i<=NF;i++) if($i>=m) f=1} END{exit !f}'; then echo "STOP: a GPU reached $STOP C at $((SECONDS - T0)) s" >> $OUT; break; fi

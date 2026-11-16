@@ -1,0 +1,15 @@
+start 21:08:57, GPU C: 58 49 51 
+night-gyro-m-3card code semver_sort      FAIL  1840 tok @  52.3 tok/s   36.9 s  think     0 ch  AssertionError: ['1.0.0', '1.0.0-alpha', '1.0.0-alpha.1', '1.0.0-alpha.beta', '1
+night-gyro-m-3card code cron_next        FAIL  1437 tok @  53.2 tok/s   28.9 s  think     0 ch  AssertionError: ('0 0 29 2 *', datetime.datetime(2026, 10, 20, 19, 47, 31), date
+night-gyro-m-3card code json_parse       FAIL  2442 tok @  59.8 tok/s   42.6 s  think     0 ch  ValueError: Expected ',' or '}' at position 156, got 'b'
+night-gyro-m-3card code regex_match      FAIL  3164 tok @  54.9 tok/s   59.5 s  think     0 ch  UnboundLocalError: cannot access local variable 'pos' where it is not associated
+night-gyro-m-3card code osa_distance     PASS   558 tok @  57.0 tok/s   11.4 s  think     0 ch  
+night-gyro-m-3card code parse_csv        FAIL  1383 tok @  51.1 tok/s   28.8 s  think     0 ch  AssertionError: accepted invalid: ['"a"b,c']
+night-gyro-m-3card code run_limited      FAIL   352 tok @  53.4 tok/s    8.1 s  think     0 ch  AssertionError: {'now': 0, 'peak': 3, 'started': [0, 1, 2], 'cancelled': 0}
+night-gyro-m-3card code lex_shortest_path PASS   685 tok @  53.0 tok/s   14.7 s  think     0 ch  
+night-gyro-m-3card code-hard total 2/8 passed, 11861 tokens, 231 s
+end 21:12:52
+GPU0 max 68C, max 131W, thermal slowdown 0/117
+GPU1 max 63C, max 146W, thermal slowdown 0/117
+GPU2 max 67C, max 147W, thermal slowdown 0/117
+DONE

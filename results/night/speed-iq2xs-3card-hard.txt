@@ -1,0 +1,15 @@
+start 22:28:48, GPU C: 58 49 50 
+night-iq2xs-3card code semver_sort      PASS   910 tok @  68.1 tok/s   15.2 s  think     0 ch  
+night-iq2xs-3card code cron_next        FAIL  1649 tok @  68.2 tok/s   26.2 s  think     0 ch  OverflowError: date value out of range
+night-iq2xs-3card code json_parse       FAIL  1887 tok @  77.1 tok/s   26.3 s  think     0 ch  UnboundLocalError: cannot access local variable 'pos' where it is not associated
+night-iq2xs-3card code regex_match      FAIL  3632 tok @  61.3 tok/s   61.2 s  think     0 ch  AssertionError: 435 wrong, e.g. [('(a*)*', 'aaaa', True), ('(a|)+', 'aaa', True)
+night-iq2xs-3card code osa_distance     PASS   410 tok @  76.5 tok/s    7.1 s  think     0 ch  
+night-iq2xs-3card code parse_csv        FAIL   606 tok @  74.0 tok/s   10.0 s  think     0 ch  AssertionError: ('"a b,",b b,"\n\n ","a \r\n"\r\n"""bb\na"," \n\n"",",', [['a b,
+night-iq2xs-3card code run_limited      FAIL  1046 tok @  69.8 tok/s   16.6 s  think     0 ch  sys:1: RuntimeWarning: coroutine 'run_limited.<locals>.run_one' was never awaite
+night-iq2xs-3card code lex_shortest_path PASS   553 tok @  68.7 tok/s    9.9 s  think     0 ch  
+night-iq2xs-3card code-hard total 3/8 passed, 10693 tokens, 172 s
+end 22:31:54
+GPU0 max 64C, max 141W, thermal slowdown 0/93
+GPU1 max 57C, max 140W, thermal slowdown 0/93
+GPU2 max 60C, max 134W, thermal slowdown 0/93
+DONE

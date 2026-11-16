@@ -1,0 +1,16 @@
+22:22:32 [iq2xs-3card] starting (easy hard sustain quality); cards at 50 39 42 
+ Container strata-night  Creating
+ Container strata-night  Created
+ Container strata-night  Starting
+ Container strata-night  Started
+22:24:03 [iq2xs-3card] model ready after 90 s
+22:24:03 [iq2xs-3card] cards at 51 40 42 after waiting 0 s for <= 58 C
+22:24:03 [iq2xs-3card] step easy
+22:28:48 [iq2xs-3card] cards at 58 49 51 after waiting 91 s for <= 58 C
+22:28:48 [iq2xs-3card] step hard
+22:33:39 [iq2xs-3card] cards at 58 48 51 after waiting 105 s for <= 58 C
+22:33:39 [iq2xs-3card] step sustain
+22:47:30 [iq2xs-3card] cards at 58 50 55 after waiting 105 s for <= 58 C
+22:47:30 [iq2xs-3card] step quality
+23:16:59 [iq2xs-3card] done
+23:17:07 [iq2xs-3card] container stopped

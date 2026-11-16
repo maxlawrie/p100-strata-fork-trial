@@ -1,0 +1,15 @@
+start 13:44:39, GPU C: 42 57 64 
+fnx2-2card code semver_sort      PASS   968 tok @  56.0 tok/s   19.2 s  think     0 ch  
+fnx2-2card code cron_next        FAIL  6000 tok @  52.0 tok/s  120.1 s  think     0 ch  no code block
+fnx2-2card code json_parse       PASS  2109 tok @  52.9 tok/s   41.7 s  think     0 ch  
+fnx2-2card code regex_match      PASS  2134 tok @  58.4 tok/s   41.1 s  think     0 ch  
+fnx2-2card code osa_distance     PASS   456 tok @  54.7 tok/s   10.2 s  think     0 ch  
+fnx2-2card code parse_csv        FAIL   608 tok @  56.8 tok/s   12.5 s  think     0 ch  AssertionError: accepted invalid: ['"a"b,c']
+fnx2-2card code run_limited      FAIL  1091 tok @  61.1 tok/s   19.4 s  think     0 ch  AssertionError: {'now': 0, 'peak': 3, 'started': [0, 1, 2], 'cancelled': 0}
+fnx2-2card code lex_shortest_path PASS  1499 tok @  58.1 tok/s   30.3 s  think     0 ch  
+fnx2-2card code-hard total 5/8 passed, 14865 tokens, 295 s
+end 13:49:38
+GPU0 max 43C, max 28W, thermal slowdown 0/149
+GPU1 max 63C, max 129W, thermal slowdown 0/149
+GPU2 max 76C, max 132W, thermal slowdown 0/149
+DONE

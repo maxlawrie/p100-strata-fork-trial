@@ -1,0 +1,43 @@
+2026-11-16 09:57:13 chain start
+2026-11-16 09:57:23 serving stopped
+2026-11-16 09:57:24 arm q36-tensor start at 140 W; cards at 47 41 48 
+2026-11-16 10:16:18 arm q36-tensor end, exit 0; cards at 41 62 77 
+2026-11-16 10:20:04 arm q36-layer start at 140 W; cards at 41 39 50 
+2026-11-16 10:36:06 arm q36-layer end, exit 0; cards at 41 53 75 
+2026-11-16 10:39:37 arm pl180 start at 180 W; cards at 41 39 50 
+2026-11-16 10:57:39 arm pl180 end, exit 0; cards at 52 53 70 
+2026-11-16 11:00:54 arm pl220 start at 220 W; cards at 44 40 50 
+2026-11-16 11:19:07 arm pl220 end, exit 0; cards at 53 53 71 
+2026-11-16 11:22:38 arm pl220-prefillpipe start at 220 W; cards at 44 39 50 
+2026-11-16 11:27:58 arm pl220-prefillpipe end, exit 0; cards at 58 56 64 
+2026-11-16 11:30:29 arm gyro-s-1card-gpu1 start at 140 W; cards at 48 42 50 
+2026-11-16 11:48:36 arm gyro-s-1card-gpu1 end, exit 0; cards at 40 71 40 
+2026-11-16 11:50:22 arm kindi-1card start at 140 W; cards at 40 50 40 
+2026-11-16 12:14:36 arm kindi-1card end, exit 0; cards at 41 71 40 
+2026-11-16 12:16:22 arm llama-1card start at 140 W; cards at 41 50 40 
+2026-11-16 12:40:13 arm llama-1card end, exit 0; cards at 41 72 40 
+2026-11-16 12:41:59 arm tensorless-1card start at 140 W; cards at 40 50 40 
+2026-11-16 13:04:16 arm tensorless-1card end, exit 0; cards at 41 72 40 
+2026-11-16 13:04:17 power limit back to 140 W; serving container started again
+2026-11-16 13:04:17 SPEED-DONE
+FNX-BENCH-DONE
+2026-11-16 14:16:03 quality chain: serving stopped
+2026-11-16 14:16:03 quality q36-tensor start
+2026-11-16 14:43:46 quality q36-tensor end, exit 0
+2026-11-16 14:44:06 quality fnx2 start
+2026-11-16 14:46:07 fnx2 loaded: {"status": "ok", "max_context": 262144, "model": "qwen3.8-flash-next-iq3_s", "images": false, "api_key": false, "image_g
+2026-11-16 15:35:21 quality fnx2 end, exit 0
+2026-11-16 15:35:35 serving container started again
+2026-11-16 15:35:35 QUALITY-DONE
+BENCH3-DONE fnx3a
+QUICK-DONE fnx3u
+QUICK-ALL-DONE
+FNX3U-FULL-DONE
+Loaded image: local/llama-cpp:v1.0.0-sm60
+2026-11-16 19:01:07 llama.cpp 1.0 chain: serving stopped
+2026-11-16 19:03:23 arm q36v1-tensor start; cards at 49 40 50 
+2026-11-16 19:24:34 arm q36v1-tensor end, exit 0; cards at 41 53 66 
+2026-11-16 19:27:05 arm fn1-3card start; cards at 40 40 50 
+2026-11-16 20:20:12 arm fn1-3card end, exit 0; cards at 62 48 62 
+2026-11-16 20:20:13 serving container started again
+2026-11-16 20:20:13 LLAMA1-DONE

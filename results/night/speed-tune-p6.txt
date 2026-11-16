@@ -1,0 +1,22 @@
+start 08:13:17, GPU C: 51 41 43 
+p4k        prompt  3857 tok @  235.4 tok/s | gen    4 tok @  40.3 tok/s | drafts 3/3 | '180'
+p16k       prompt 15672 tok @  373.7 tok/s | gen    4 tok @  36.0 tok/s | drafts 3/3 | '720'
+p32k       prompt 31885 tok @  468.9 tok/s | gen    5 tok @  28.2 tok/s | drafts 4/6 | '1440'
+gen        prompt    26 tok @   28.0 tok/s | gen  300 tok @  41.8 tok/s | drafts 144/286 | 'Elias Thorne did not speak to the sea; h'
+gen        prompt     7 tok @   25.6 tok/s | gen  300 tok @  44.2 tok/s | drafts 129/267 | 'Elias was not merely a keeper of light; '
+gen        prompt     7 tok @   29.2 tok/s | gen  300 tok @  46.1 tok/s | drafts 141/287 | 'Elias had not spoken a word in three yea'
+tool       prompt   305 tok @   80.3 tok/s | gen  124 tok @  43.6 tok/s | drafts 69/118 | [('get_weather', '{"city":"Brisbane"}')]
+night-tune-p6 code parse_duration   PASS   250 tok @  51.3 tok/s    7.3 s  think     0 ch  
+night-tune-p6 code merge_intervals  PASS   188 tok @  58.6 tok/s    5.3 s  think     0 ch  
+night-tune-p6 code lru_cache        PASS   239 tok @  68.7 tok/s    5.7 s  think     0 ch  
+night-tune-p6 code roman            PASS   488 tok @  68.7 tok/s    9.3 s  think     0 ch  
+night-tune-p6 code toposort         PASS   430 tok @  65.2 tok/s    8.8 s  think     0 ch  
+night-tune-p6 code fix_bisect       PASS    90 tok @  69.4 tok/s    3.9 s  think     0 ch  
+night-tune-p6 code calc             PASS   886 tok @  63.2 tok/s   16.1 s  think     0 ch  
+night-tune-p6 code wrap             PASS   376 tok @  69.9 tok/s    7.5 s  think     0 ch  
+night-tune-p6 code total 8/8 passed, 2947 tokens, 64 s
+end 08:17:00
+GPU0 max 67C, max 183W, thermal slowdown 0/111
+GPU1 max 61C, max 163W, thermal slowdown 0/111
+GPU2 max 60C, max 167W, thermal slowdown 0/111
+DONE

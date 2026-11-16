@@ -1,0 +1,22 @@
+start 17:23:20, GPU C: 52 43 51 
+p4k        prompt  3857 tok @  327.3 tok/s | gen    4 tok @  12.2 tok/s | drafts 1/3 | '180'
+p16k       prompt 15672 tok @  562.1 tok/s | gen    4 tok @  15.8 tok/s | drafts 1/3 | '720'
+p32k       prompt 31885 tok @  561.4 tok/s | gen    5 tok @  21.3 tok/s | drafts 2/3 | '1440'
+gen        prompt    26 tok @   21.8 tok/s | gen  300 tok @  42.4 tok/s | drafts 117/214 | 'The salt spray tasted of iron and old me'
+gen        prompt     7 tok @   20.3 tok/s | gen  300 tok @  47.8 tok/s | drafts 127/212 | 'Elias was not merely a man who tended to'
+gen        prompt     7 tok @   21.5 tok/s | gen  300 tok @  45.9 tok/s | drafts 124/249 | 'Elias had not spoken to another human be'
+tool       prompt   305 tok @   38.7 tok/s | gen   96 tok @  32.4 tok/s | drafts 56/75 | [('get_weather', '{"city":"Brisbane"}')]
+fnx3d    code parse_duration   PASS   250 tok @  39.7 tok/s    8.6 s  think     0 ch  
+fnx3d    code merge_intervals  PASS   182 tok @  34.7 tok/s    7.3 s  think     0 ch  
+fnx3d    code lru_cache        PASS   529 tok @  42.6 tok/s   14.8 s  think     0 ch  
+fnx3d    code roman            PASS   443 tok @  37.4 tok/s   14.4 s  think     0 ch  
+fnx3d    code toposort         PASS   409 tok @  43.4 tok/s   11.5 s  think     0 ch  
+fnx3d    code fix_bisect       PASS    95 tok @  27.3 tok/s   14.7 s  think     0 ch  
+fnx3d    code calc             PASS   874 tok @  44.3 tok/s   21.9 s  think     0 ch  
+fnx3d    code wrap             PASS   309 tok @  50.2 tok/s    8.2 s  think     0 ch  
+fnx3d    code total 8/8 passed, 3091 tokens, 101 s
+end 17:27:15
+GPU0 max 63C, max 148W, thermal slowdown 0/117
+GPU1 max 53C, max 178W, thermal slowdown 0/117
+GPU2 max 62C, max 172W, thermal slowdown 0/117
+DONE

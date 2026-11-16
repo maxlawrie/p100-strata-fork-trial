@@ -1,0 +1,22 @@
+start 08:45:46, GPU C: 51 41 43 
+p4k        prompt  3857 tok @  235.6 tok/s | gen    4 tok @  40.4 tok/s | drafts 3/3 | '180'
+p16k       prompt 15672 tok @  373.8 tok/s | gen    4 tok @  36.0 tok/s | drafts 3/3 | '720'
+p32k       prompt 31885 tok @  469.1 tok/s | gen    5 tok @  28.2 tok/s | drafts 4/6 | '1440'
+gen        prompt    26 tok @   28.1 tok/s | gen  300 tok @  41.7 tok/s | drafts 140/255 | 'Elias did not speak to the sea; he liste'
+gen        prompt     7 tok @   26.3 tok/s | gen  300 tok @  44.3 tok/s | drafts 134/274 | 'Elias was not merely a man; he was an ex'
+gen        prompt     7 tok @   29.3 tok/s | gen  300 tok @  47.3 tok/s | drafts 145/273 | 'The fog did not roll in; it invaded. It '
+tool       prompt   305 tok @   80.1 tok/s | gen   71 tok @  42.2 tok/s | drafts 45/63 | [('get_weather', '{"city":"Brisbane"}')]
+night-tune-base2 code parse_duration   PASS   250 tok @  50.1 tok/s    7.4 s  think     0 ch  
+night-tune-base2 code merge_intervals  PASS   188 tok @  59.2 tok/s    5.2 s  think     0 ch  
+night-tune-base2 code lru_cache        PASS   256 tok @  67.1 tok/s    6.0 s  think     0 ch  
+night-tune-base2 code roman            PASS   488 tok @  68.4 tok/s    9.3 s  think     0 ch  
+night-tune-base2 code toposort         PASS   429 tok @  65.2 tok/s    8.8 s  think     0 ch  
+night-tune-base2 code fix_bisect       PASS    90 tok @  70.7 tok/s    3.9 s  think     0 ch  
+night-tune-base2 code calc             PASS   867 tok @  64.9 tok/s   15.4 s  think     0 ch  
+night-tune-base2 code wrap             PASS   382 tok @  69.8 tok/s    7.6 s  think     0 ch  
+night-tune-base2 code total 8/8 passed, 2950 tokens, 64 s
+end 08:49:27
+GPU0 max 66C, max 172W, thermal slowdown 0/110
+GPU1 max 62C, max 176W, thermal slowdown 0/110
+GPU2 max 60C, max 166W, thermal slowdown 0/110
+DONE

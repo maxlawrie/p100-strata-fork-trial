@@ -1,0 +1,51 @@
+start 20:08:10, GPU C: 56 42 49 
+19 s  17.6 tok/s  GPU C: 57 43 51  slowdown samples: 0
+36 s  19.9 tok/s  GPU C: 57 44 52  slowdown samples: 0
+53 s  19.7 tok/s  GPU C: 57 44 52  slowdown samples: 0
+70 s  20.3 tok/s  GPU C: 58 45 53  slowdown samples: 0
+85 s  20.7 tok/s  GPU C: 58 45 54  slowdown samples: 0
+101 s  20.0 tok/s  GPU C: 58 45 55  slowdown samples: 0
+117 s  20.6 tok/s  GPU C: 58 46 55  slowdown samples: 0
+143 s  19.5 tok/s  GPU C: 57 46 54  slowdown samples: 0
+159 s  20.2 tok/s  GPU C: 58 46 55  slowdown samples: 0
+175 s  20.6 tok/s  GPU C: 58 47 56  slowdown samples: 0
+191 s  20.5 tok/s  GPU C: 58 46 56  slowdown samples: 0
+207 s  20.4 tok/s  GPU C: 59 47 57  slowdown samples: 0
+223 s  20.6 tok/s  GPU C: 59 47 57  slowdown samples: 0
+238 s  20.6 tok/s  GPU C: 59 47 57  slowdown samples: 0
+254 s  20.7 tok/s  GPU C: 59 48 58  slowdown samples: 0
+269 s  20.9 tok/s  GPU C: 60 48 58  slowdown samples: 0
+285 s  20.6 tok/s  GPU C: 60 47 59  slowdown samples: 0
+301 s  20.8 tok/s  GPU C: 60 48 59  slowdown samples: 0
+316 s  20.8 tok/s  GPU C: 60 48 59  slowdown samples: 0
+332 s  20.2 tok/s  GPU C: 60 48 59  slowdown samples: 0
+348 s  20.7 tok/s  GPU C: 61 48 60  slowdown samples: 0
+363 s  20.8 tok/s  GPU C: 61 48 60  slowdown samples: 0
+379 s  20.7 tok/s  GPU C: 61 48 60  slowdown samples: 0
+394 s  21.0 tok/s  GPU C: 61 48 60  slowdown samples: 0
+410 s  20.8 tok/s  GPU C: 61 48 61  slowdown samples: 0
+425 s  20.5 tok/s  GPU C: 61 48 61  slowdown samples: 0
+441 s  20.8 tok/s  GPU C: 62 49 61  slowdown samples: 0
+456 s  20.7 tok/s  GPU C: 62 49 61  slowdown samples: 0
+472 s  20.6 tok/s  GPU C: 62 48 61  slowdown samples: 0
+488 s  20.9 tok/s  GPU C: 62 48 61  slowdown samples: 0
+503 s  20.9 tok/s  GPU C: 62 49 61  slowdown samples: 0
+519 s  20.3 tok/s  GPU C: 62 48 61  slowdown samples: 0
+534 s  20.9 tok/s  GPU C: 62 48 62  slowdown samples: 0
+550 s  20.9 tok/s  GPU C: 62 49 62  slowdown samples: 0
+565 s  20.6 tok/s  GPU C: 62 48 62  slowdown samples: 0
+581 s  21.0 tok/s  GPU C: 62 49 62  slowdown samples: 0
+596 s  21.0 tok/s  GPU C: 62 49 62  slowdown samples: 0
+612 s  20.4 tok/s  GPU C: 62 48 62  slowdown samples: 0
+627 s  21.0 tok/s  GPU C: 62 49 62  slowdown samples: 0
+643 s  21.0 tok/s  GPU C: 63 49 63  slowdown samples: 0
+659 s  20.5 tok/s  GPU C: 62 48 62  slowdown samples: 0
+674 s  20.8 tok/s  GPU C: 63 49 62  slowdown samples: 0
+690 s  21.0 tok/s  GPU C: 63 49 62  slowdown samples: 0
+705 s  20.5 tok/s  GPU C: 63 48 63  slowdown samples: 0
+721 s  21.0 tok/s  GPU C: 63 49 63  slowdown samples: 0
+end 20:20:11 after 721 s
+GPU0 max 63C, mean 76 W, thermal slowdown 0/359 samples
+GPU1 max 49C, mean 63 W, thermal slowdown 0/359 samples
+GPU2 max 63C, mean 73 W, thermal slowdown 0/359 samples
+DONE

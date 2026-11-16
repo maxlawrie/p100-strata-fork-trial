@@ -1,0 +1,15 @@
+start 07:32:46, GPU C: 58 48 50 
+night-tune-base code semver_sort      PASS  1136 tok @  65.3 tok/s   19.9 s  think     0 ch  
+night-tune-base code cron_next        FAIL  1406 tok @  64.7 tok/s   24.4 s  think     0 ch  ValueError: day is out of range for month
+night-tune-base code json_parse       PASS  2070 tok @  71.3 tok/s   31.5 s  think     0 ch  
+night-tune-base code regex_match      FAIL  2117 tok @  66.9 tok/s   34.2 s  think     0 ch  exit 124
+night-tune-base code osa_distance     PASS   463 tok @  68.6 tok/s    9.1 s  think     0 ch  
+night-tune-base code parse_csv        FAIL   829 tok @  68.8 tok/s   14.5 s  think     0 ch  AssertionError: ('"a b,",b b,"\n\n ","a \r\n"\r\n"""bb\na"," \n\n"",",', [['a b,
+night-tune-base code run_limited      FAIL   692 tok @  61.5 tok/s   13.5 s  think     0 ch  asyncio.exceptions.CancelledError
+night-tune-base code lex_shortest_path PASS   972 tok @  57.1 tok/s   19.5 s  think     0 ch  
+night-tune-base code-hard total 4/8 passed, 9685 tokens, 167 s
+end 07:36:07
+GPU0 max 64C, max 127W, thermal slowdown 0/100
+GPU1 max 56C, max 142W, thermal slowdown 0/100
+GPU2 max 60C, max 133W, thermal slowdown 0/100
+DONE

@@ -1,0 +1,24 @@
+[kindi 16:07:56]   40 / 851 tensors
+[kindi 16:08:04]   80 / 851 tensors
+[kindi 16:08:12]   120 / 851 tensors
+[kindi 16:08:20]   160 / 851 tensors
+[kindi 16:08:28]   200 / 851 tensors
+[kindi 16:08:36]   240 / 851 tensors
+[kindi 16:08:44]   280 / 851 tensors
+[kindi 16:08:52]   320 / 851 tensors
+[kindi 16:09:00]   360 / 851 tensors
+[kindi 16:09:08]   400 / 851 tensors
+[kindi 16:09:16]   440 / 851 tensors
+[kindi 16:09:24]   480 / 851 tensors
+[kindi 16:09:32]   520 / 851 tensors
+[kindi 16:09:40]   560 / 851 tensors
+[kindi 16:09:48]   600 / 851 tensors
+[kindi 16:09:56]   640 / 851 tensors
+[kindi 16:10:04]   680 / 851 tensors
+[kindi 16:10:12]   720 / 851 tensors
+[kindi 16:10:20]   760 / 851 tensors
+[kindi 16:10:28]   800 / 851 tensors
+[kindi 16:10:35]   840 / 851 tensors
+[kindi 16:10:38] hashing the source file ...
+[kindi 16:10:45] pack written to /data/pack-27b (7242 MB) in 195s
+[kindi 16:10:45] next: kindi verify

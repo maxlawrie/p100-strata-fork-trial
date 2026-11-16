@@ -1,0 +1,22 @@
+start 06:07:34, GPU C: 45 38 39 
+p4k        prompt  3857 tok @  133.3 tok/s | gen    3 tok @   0.0 tok/s | drafts -/wall 28.9s | '180'
+p16k       prompt 15672 tok @  165.0 tok/s | gen    3 tok @   0.0 tok/s | drafts -/wall 95.0s | '719'
+p32k       prompt 31885 tok @  156.1 tok/s | gen    4 tok @   0.0 tok/s | drafts -/wall 204.2s | '1439'
+gen        prompt    26 tok @    0.0 tok/s | gen  300 tok @  26.7 tok/s | drafts -/wall 11.3s | 'The wind didn’t just blow; it scoured. I'
+gen        prompt    26 tok @    0.0 tok/s | gen  300 tok @  34.3 tok/s | drafts -/wall 8.7s | 'The fog had rolled in from the North Atl'
+gen        prompt    26 tok @    0.0 tok/s | gen  300 tok @  34.8 tok/s | drafts -/wall 8.6s | 'The wind didn’t just blow at Blackrock P'
+tool       prompt   278 tok @    0.0 tok/s | gen   27 tok @   7.1 tok/s | drafts -/wall 3.8s | [('get_weather', '{"city": "Brisbane"}')]
+night-bonsai-kindi-2card code parse_duration   PASS     0 tok @   0.0 tok/s    6.9 s  think     0 ch  
+night-bonsai-kindi-2card code merge_intervals  PASS     0 tok @   0.0 tok/s    6.1 s  think     0 ch  
+night-bonsai-kindi-2card code lru_cache        PASS     0 tok @   0.0 tok/s    7.5 s  think     0 ch  
+night-bonsai-kindi-2card code roman            PASS     0 tok @   0.0 tok/s   13.3 s  think     0 ch  
+night-bonsai-kindi-2card code toposort         PASS     0 tok @   0.0 tok/s   10.3 s  think     0 ch  
+ABORT: a GPU reached 80C at 06:14:24
+night-bonsai-kindi-2card code fix_bisect       PASS     0 tok @   0.0 tok/s    3.8 s  think     0 ch  
+night-bonsai-kindi-2card ABORT seen, stopping
+night-bonsai-kindi-2card code total 6/8 passed, 0 tokens, 48 s
+end 06:14:26
+GPU0 max 45C, max 29W, thermal slowdown 0/204
+GPU1 max 75C, max 154W, thermal slowdown 0/204
+GPU2 max 80C, max 154W, thermal slowdown 13/204
+DONE

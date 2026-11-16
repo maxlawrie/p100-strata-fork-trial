@@ -1,0 +1,22 @@
+start 11:24:24, GPU C: 45 39 47 
+p4k        prompt  3857 tok @  272.9 tok/s | gen    4 tok @  40.0 tok/s | drafts 3/3 | '180'
+p16k       prompt 15672 tok @  438.5 tok/s | gen    4 tok @  36.5 tok/s | drafts 3/3 | '720'
+p32k       prompt 31885 tok @  532.5 tok/s | gen    5 tok @  28.2 tok/s | drafts 4/6 | '1440'
+gen        prompt    26 tok @   28.3 tok/s | gen  300 tok @  40.6 tok/s | drafts 134/262 | 'Elias did not speak to the sea; he liste'
+gen        prompt     7 tok @   26.2 tok/s | gen  300 tok @  46.7 tok/s | drafts 141/269 | 'Elias Thorne had not spoken to another h'
+gen        prompt     7 tok @   29.3 tok/s | gen  300 tok @  42.9 tok/s | drafts 123/282 | 'Elias was not merely a man who lived in '
+tool       prompt   305 tok @   82.6 tok/s | gen   51 tok @  51.5 tok/s | drafts 36/42 | [('get_weather', '{"city":"Brisbane"}')]
+night-pl220-prefillpipe code parse_duration   PASS   250 tok @  50.6 tok/s    7.3 s  think     0 ch  
+night-pl220-prefillpipe code merge_intervals  PASS   188 tok @  59.3 tok/s    5.2 s  think     0 ch  
+night-pl220-prefillpipe code lru_cache        PASS   251 tok @  68.1 tok/s    5.9 s  think     0 ch  
+night-pl220-prefillpipe code roman            PASS   488 tok @  68.0 tok/s    9.3 s  think     0 ch  
+night-pl220-prefillpipe code toposort         PASS   419 tok @  65.4 tok/s    8.6 s  think     0 ch  
+night-pl220-prefillpipe code fix_bisect       PASS    90 tok @  72.2 tok/s    3.8 s  think     0 ch  
+night-pl220-prefillpipe code calc             FAIL   872 tok @  64.6 tok/s   15.5 s  think     0 ch  ValueError: Invalid number with multiple decimal points
+night-pl220-prefillpipe code wrap             PASS   381 tok @  68.8 tok/s    7.6 s  think     0 ch  
+night-pl220-prefillpipe code total 7/8 passed, 2939 tokens, 63 s
+end 11:27:48
+GPU0 max 66C, max 232W, thermal slowdown 0/102
+GPU1 max 69C, max 227W, thermal slowdown 0/102
+GPU2 max 71C, max 238W, thermal slowdown 0/102
+DONE

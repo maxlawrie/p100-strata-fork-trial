@@ -1,0 +1,22 @@
+start 07:42:35, GPU C: 51 41 43 
+p4k        prompt  3857 tok @  235.8 tok/s | gen    4 tok @  40.6 tok/s | drafts 3/3 | '180'
+p16k       prompt 15672 tok @  374.7 tok/s | gen    4 tok @  35.7 tok/s | drafts 3/3 | '720'
+p32k       prompt 31885 tok @  469.8 tok/s | gen    5 tok @  28.2 tok/s | drafts 4/6 | '1440'
+gen        prompt    26 tok @   28.1 tok/s | gen  300 tok @  40.3 tok/s | drafts 138/297 | 'Elias lived in the space between the sky'
+gen        prompt     7 tok @   27.4 tok/s | gen  300 tok @  45.5 tok/s | drafts 135/256 | 'The salt spray didn’t just coat the glas'
+gen        prompt     7 tok @   29.3 tok/s | gen  300 tok @  46.2 tok/s | drafts 140/280 | 'Elias knew the rhythm of the coast bette'
+tool       prompt   305 tok @   80.2 tok/s | gen   59 tok @  53.3 tok/s | drafts 37/52 | [('get_weather', '{"city":"Brisbane"}')]
+night-tune-pipeline code parse_duration   PASS   250 tok @  50.5 tok/s    7.4 s  think     0 ch  
+night-tune-pipeline code merge_intervals  PASS   188 tok @  58.3 tok/s    5.3 s  think     0 ch  
+night-tune-pipeline code lru_cache        PASS   256 tok @  67.7 tok/s    6.0 s  think     0 ch  
+night-tune-pipeline code roman            PASS   514 tok @  66.5 tok/s    9.9 s  think     0 ch  
+night-tune-pipeline code toposort         PASS   431 tok @  64.1 tok/s    8.9 s  think     0 ch  
+night-tune-pipeline code fix_bisect       PASS    90 tok @  67.3 tok/s    4.0 s  think     0 ch  
+night-tune-pipeline code calc             FAIL   872 tok @  64.4 tok/s   15.6 s  think     0 ch  ValueError: Invalid number with multiple decimal points
+night-tune-pipeline code wrap             PASS   313 tok @  71.0 tok/s    6.5 s  think     0 ch  
+night-tune-pipeline code total 7/8 passed, 2914 tokens, 64 s
+end 07:46:15
+GPU0 max 66C, max 160W, thermal slowdown 0/110
+GPU1 max 61C, max 181W, thermal slowdown 0/110
+GPU2 max 60C, max 189W, thermal slowdown 0/110
+DONE

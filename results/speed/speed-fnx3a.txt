@@ -1,0 +1,22 @@
+start 16:30:37, GPU C: 43 38 42 
+p4k        prompt  3857 tok @  289.6 tok/s | gen    4 tok @   9.6 tok/s | drafts 1/3 | '180'
+p16k       prompt 15672 tok @  536.1 tok/s | gen    4 tok @  10.5 tok/s | drafts 1/3 | '720'
+p32k       prompt 31885 tok @  536.6 tok/s | gen    5 tok @  13.6 tok/s | drafts 2/3 | '1440'
+gen        prompt    26 tok @   18.6 tok/s | gen  300 tok @  36.7 tok/s | drafts 112/222 | 'The wind howled like a wounded animal, t'
+gen        prompt     7 tok @   15.5 tok/s | gen  300 tok @  36.8 tok/s | drafts 125/221 | 'The salt spray had long since bleached t'
+gen        prompt     7 tok @   16.1 tok/s | gen  300 tok @  37.6 tok/s | drafts 122/208 | 'Elias did not fear the dark; he feared t'
+tool       prompt   305 tok @   31.5 tok/s | gen   56 tok @  17.4 tok/s | drafts 29/49 | [('get_weather', '{"city":"Brisbane"}')]
+fnx3a    code parse_duration   PASS   250 tok @  27.1 tok/s   13.1 s  think     0 ch  
+fnx3a    code merge_intervals  PASS   182 tok @  25.9 tok/s   10.1 s  think     0 ch  
+fnx3a    code lru_cache        PASS   529 tok @  28.3 tok/s   22.5 s  think     0 ch  
+fnx3a    code roman            PASS   443 tok @  26.8 tok/s   20.5 s  think     0 ch  
+fnx3a    code toposort         PASS   409 tok @  28.5 tok/s   17.6 s  think     0 ch  
+fnx3a    code fix_bisect       PASS    95 tok @  21.0 tok/s   19.4 s  think     0 ch  
+fnx3a    code calc             PASS   874 tok @  29.8 tok/s   32.6 s  think     0 ch  
+fnx3a    code wrap             PASS   309 tok @  34.0 tok/s   12.3 s  think     0 ch  
+fnx3a    code total 8/8 passed, 3091 tokens, 148 s
+end 16:35:31
+GPU0 max 58C, max 160W, thermal slowdown 0/146
+GPU1 max 51C, max 170W, thermal slowdown 0/146
+GPU2 max 55C, max 174W, thermal slowdown 0/146
+DONE

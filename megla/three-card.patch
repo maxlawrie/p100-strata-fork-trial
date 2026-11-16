@@ -1,0 +1,60 @@
+diff --git a/engine/src/card_split.hpp b/engine/src/card_split.hpp
+index 8b76e1b..406fb8e 100644
+--- a/engine/src/card_split.hpp
++++ b/engine/src/card_split.hpp
+@@ -22,7 +22,10 @@ constexpr int khead_first(int n, int c) { return c * (NVH / n) / VPK; }
+ constexpr int khead_count(int n, int c) { return ((c + 1) * (NVH / n) - 1) / VPK - khead_first(n, c) + 1; }
+ // The FF width in whole 32-value blocks, the first cards one block more when they do not divide evenly: card c's
+ // slice [ff_lo, ff_hi). Three cards: 224, 224, 192
+-constexpr int ff_lo(int n, int c) { return 32 * (c * (FF / 32 / n) + (c < FF / 32 % n ? c : FF / 32 % n)); }
++// three-card P100 build: in 64-value units, not 32, because the P100 expert kernels (p100_moe.cu) take a card's columns
++// in units of 64. Two cards are unchanged (320, 320); three cards become 256, 192, 192 instead of 224, 224, 192
++constexpr int FFU = 64;
++constexpr int ff_lo(int n, int c) { return FFU * (c * (FF / FFU / n) + (c < FF / FFU % n ? c : FF / FFU % n)); }
+ constexpr int ff_hi(int n, int c) { return ff_lo(n, c + 1); }
+ 
+ namespace split_check {
+@@ -32,7 +35,7 @@ constexpr int K3[3][2] = {{0, 6}, {5, 6}, {10, 6}};
+ constexpr int V3[3][16] = {{0, 1, 2, 3, 4, 5, 16, 17, 18, 19, 20, 32, 33, 34, 35, 36},
+                            {6, 7, 8, 9, 10, 21, 22, 23, 24, 25, 26, 37, 38, 39, 40, 41},
+                            {11, 12, 13, 14, 15, 27, 28, 29, 30, 31, 42, 43, 44, 45, 46, 47}};
+-constexpr int F3[3][2] = {{0, 224}, {224, 448}, {448, 640}};
++constexpr int F3[3][2] = {{0, 256}, {256, 448}, {448, 640}};   // was 224, 224, 192 (see FFU)
+ constexpr int K2[2][2] = {{0, 8}, {8, 8}};
+ constexpr int V2[2][24] = {{0, 1, 2, 3, 4, 5, 6, 7, 16, 17, 18, 19, 20, 21, 22, 23, 32, 33, 34, 35, 36, 37, 38, 39},
+                            {8, 9, 10, 11, 12, 13, 14, 15, 24, 25, 26, 27, 28, 29, 30, 31, 40, 41, 42, 43, 44, 45, 46, 47}};
+diff --git a/engine/src/model.hpp b/engine/src/model.hpp
+index 1f5d848..48bb6c3 100644
+--- a/engine/src/model.hpp
++++ b/engine/src/model.hpp
+@@ -68,7 +68,7 @@ static_assert(ncard_ok(NCARD), "FNX_NCARD: 2, 3, 4, 6 or 8 cards (card_split.hpp
+ // the widest FF slice a card gets: FF in whole 32-value blocks, the first cards one block wider when they do not divide
+ // evenly (card_split.hpp's ff_lo / ff_hi, checked against this in Model::Model): what the down kernels' per-card
+ // buffers are sized for. 320 on two cards, 224 on three, 160 on four, 128 on six, 96 on eight
+-constexpr int FF_CARD_MAX = (FF + 32 * NCARD - 1) / (32 * NCARD) * 32;
++constexpr int FF_CARD_MAX = (FF + FFU * NCARD - 1) / (FFU * NCARD) * FFU;   // three-card P100 build: FFU (64) units, 256 on three cards
+ // the shared expert's FF slice on a card, at most, for its fused path inside the routed launches (dense.cuh)
+ constexpr int SH_MAXF = FF_CARD_MAX > 256 ? FF_CARD_MAX : 256;
+ static_assert(NQH % NCARD == 0, "the attention's query heads split evenly over the cards");
+diff --git a/engine/src/prefill.cu b/engine/src/prefill.cu
+index b21e387..347f780 100644
+--- a/engine/src/prefill.cu
++++ b/engine/src/prefill.cu
+@@ -766,7 +766,7 @@ void pf_ring(Engine::Pf& p, int g, float* x, int C, const RingMoe* m, unsigned*
+ // into base. Flags [set][0]: the rows are in; [set][1]: the receiver has them (the sender's next use of the set waits for that). Every
+ // card makes the same calls in the same order (seq)
+ void pf_gather(Engine::Pf& p, int g, float* base, int row_floats, int C, cudaStream_t s) {
+-    static_assert(NCARD == 2, "pf_gather: two cards");
++    if (NCARD != 2) throw std::runtime_error("pf_gather (FNX_PF_SP): two cards only");   // three-card build: was a static_assert; FNX_PF_SP is only switched on when NCARD == 2
+     const unsigned seq = ++p.gseq;
+     const int set = (int) (seq & 1u), own = (g + 1) % NCARD, oth = g;
+     auto r0 = [&](int k) { return k * C / NCARD; };
+@@ -801,7 +801,7 @@ __global__ void k_lat_zadd(const __half* __restrict__ z, __half* __restrict__ r,
+ // of this card's groups into lrx (pf_lat_zadd adds this card's, a pass later). Every card makes the same calls in the same order (lseq), and
+ // the exchange is the last thing a card queues in its pass: the other card's send must be queued before this card queues more
+ void pf_lat_swap(Engine::Pf& p, int h, int C, bool zs, cudaStream_t s) {
+-    static_assert(NCARD == 2, "pf_lat_swap: two cards");
++    if (NCARD != 2) throw std::runtime_error("pf_lat_swap (FNX_LAT_SPLIT): two cards only");   // three-card build: was a static_assert; model.cpp refuses FNX_LAT_SPLIT unless NCARD == 2
+     if (!p.lrx || !p.lflags || !p.lnflags) throw std::runtime_error("FNX_LAT_SPLIT: the prompt path's latent exchange buffers");
+     const unsigned seq = ++p.lseq;
+     const int set = (int) (seq & 1u), own = h * LAT_HW, oth = (1 - h) * LAT_HW;   // lat16's columns: this card's groups, the other's

@@ -1,0 +1,12 @@
+07:40:49 [tune-pipeline] starting (easy hard); cards at 50 40 43 
+ Container strata-night  Creating
+ Container strata-night  Created
+ Container strata-night  Starting
+ Container strata-night  Started
+07:42:34 [tune-pipeline] model ready after 105 s
+07:42:34 [tune-pipeline] cards at 51 41 43 after waiting 0 s for <= 58 C
+07:42:34 [tune-pipeline] step easy
+07:48:00 [tune-pipeline] cards at 58 48 50 after waiting 105 s for <= 58 C
+07:48:00 [tune-pipeline] step hard
+07:51:30 [tune-pipeline] done
+07:51:41 [tune-pipeline] container stopped

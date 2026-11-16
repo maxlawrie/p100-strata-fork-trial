@@ -1,0 +1,22 @@
+start 00:32:27, GPU C: 43 49 43 
+p4k        prompt  3857 tok @  323.6 tok/s | gen    4 tok @  29.6 tok/s | drafts 3/6 | '180'
+p16k       prompt 15672 tok @  339.2 tok/s | gen    4 tok @  29.9 tok/s | drafts 3/6 | '720'
+p32k       prompt 31885 tok @  332.7 tok/s | gen    5 tok @  36.0 tok/s | drafts 4/6 | '1440'
+gen        prompt    26 tok @   30.8 tok/s | gen  300 tok @  43.9 tok/s | drafts 134/252 | 'The wind howled against the thick, reinf'
+gen        prompt     7 tok @   28.6 tok/s | gen  300 tok @  43.5 tok/s | drafts 130/253 | 'Elias Thorne did not mind the rain; he m'
+gen        prompt     7 tok @   28.9 tok/s | gen  300 tok @  43.4 tok/s | drafts 130/251 | 'The wind howled against the thick glass '
+tool       prompt   305 tok @  144.7 tok/s | gen   80 tok @  60.8 tok/s | drafts 52/70 | [('get_weather', '{"city":"Brisbane"}')]
+night-coder-2card-peer code parse_duration   FAIL   335 tok @  64.3 tok/s    6.7 s  think     0 ch  ValueError: Unexpected unit: s, expected h
+night-coder-2card-peer code merge_intervals  PASS   161 tok @  65.0 tok/s    3.7 s  think     0 ch  
+night-coder-2card-peer code lru_cache        PASS   253 tok @  70.5 tok/s    4.9 s  think     0 ch  
+night-coder-2card-peer code roman            FAIL   468 tok @  66.3 tok/s    8.4 s  think     0 ch  AssertionError
+night-coder-2card-peer code toposort         PASS   323 tok @  63.2 tok/s    6.5 s  think     0 ch  
+night-coder-2card-peer code fix_bisect       PASS    90 tok @  75.5 tok/s    2.7 s  think     0 ch  
+night-coder-2card-peer code calc             PASS   765 tok @  66.6 tok/s   12.7 s  think     0 ch  
+night-coder-2card-peer code wrap             PASS   323 tok @  70.1 tok/s    5.9 s  think     0 ch  
+night-coder-2card-peer code total 6/8 passed, 2718 tokens, 51 s
+end 00:36:21
+GPU0 max 43C, max 29W, thermal slowdown 0/117
+GPU1 max 72C, max 197W, thermal slowdown 0/117
+GPU2 max 55C, max 157W, thermal slowdown 0/117
+DONE

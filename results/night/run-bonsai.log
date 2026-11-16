@@ -1,0 +1,14 @@
+2026-11-15 21:30:41 waiting for the overnight chain
+2026-11-16 02:00:46 serving stopped
+2026-11-16 02:00:46 loading kindi:0.4.0
+Loaded image: kindi:0.4.0
+2026-11-16 02:01:13 loading local/llama-prism:c96baf4
+Loaded image: local/llama-prism:c96baf4
+2026-11-16 02:07:29 arm bonsai-kindi-1card start; cards at 50 37 38 ; RAM used 1 GB
+2026-11-16 04:57:30 arm bonsai-kindi-1card end, exit 124; cards at 75 36 38 
+2026-11-16 05:03:46 arm bonsai-llama-1card start; cards at 50 36 38 ; RAM used 1 GB
+2026-11-16 05:56:46 arm bonsai-llama-1card end, exit 0; cards at 78 36 38 
+2026-11-16 06:03:02 arm bonsai-kindi-2card start; cards at 50 36 38 ; RAM used 1 GB
+2026-11-16 06:28:50 arm bonsai-kindi-2card end, exit 0; cards at 45 77 77 
+2026-11-16 06:28:50 serving container started again
+2026-11-16 06:28:50 BONSAI-DONE

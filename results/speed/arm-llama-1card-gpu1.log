@@ -1,0 +1,9 @@
+6db181042cc7ecb9f14b47101eb5d9d91561adadb185908285f33d5c99087a89
+12:16:22 [bonsai-llama-1card-gpu1] starting (easy sustain) on GPU 1; cards at 41 50 40 
+12:16:32 [bonsai-llama-1card-gpu1] model ready after 10 s; health: {"status":"ok"}
+12:16:32 [bonsai-llama-1card-gpu1] cards at 41 50 40 after waiting 0 s for <= 58 C
+12:16:32 [bonsai-llama-1card-gpu1] step easy
+12:28:06 [bonsai-llama-1card-gpu1] cards at 40 57 39 after waiting 60 s for <= 58 C
+12:28:06 [bonsai-llama-1card-gpu1] step sustain
+12:40:12 [bonsai-llama-1card-gpu1] done
+12:40:13 [bonsai-llama-1card-gpu1] container stopped

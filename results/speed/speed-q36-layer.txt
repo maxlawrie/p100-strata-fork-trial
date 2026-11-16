@@ -1,0 +1,22 @@
+start 10:20:15, GPU C: 41 40 50 
+p4k        prompt  3857 tok @  501.1 tok/s | gen    4 tok @  83.4 tok/s | drafts 3/3 | '180'
+p16k       prompt 15672 tok @  506.2 tok/s | gen    4 tok @  76.8 tok/s | drafts 3/3 | '720'
+p32k       prompt 31885 tok @  462.7 tok/s | gen    5 tok @  49.7 tok/s | drafts 2/5 | '1440'
+gen        prompt    26 tok @  113.7 tok/s | gen  300 tok @  56.6 tok/s | drafts 113/132 | 'The wind howled against the granite wall'
+gen        prompt    26 tok @  125.4 tok/s | gen  300 tok @  60.0 tok/s | drafts 125/147 | 'Elara’s world ended at the edge of the c'
+gen        prompt    26 tok @  125.4 tok/s | gen  300 tok @  55.3 tok/s | drafts 109/135 | 'Elias had not spoken to another human so'
+tool       prompt   276 tok @  290.3 tok/s | gen  482 tok @  81.4 tok/s | drafts 280/285 | [('get_weather', '{"city":"Brisbane"}')]
+night-q36-layer code parse_duration   PASS   393 tok @  95.0 tok/s    4.9 s  think     0 ch  
+night-q36-layer code merge_intervals  PASS   160 tok @ 100.4 tok/s    2.2 s  think     0 ch  
+night-q36-layer code lru_cache        PASS   534 tok @ 110.3 tok/s    5.5 s  think     0 ch  
+night-q36-layer code roman            PASS   461 tok @ 111.5 tok/s    4.7 s  think     0 ch  
+night-q36-layer code toposort         PASS   581 tok @  95.3 tok/s    6.8 s  think     0 ch  
+night-q36-layer code fix_bisect       PASS    90 tok @ 120.6 tok/s    1.6 s  think     0 ch  
+night-q36-layer code calc             PASS  1728 tok @  96.2 tok/s   18.5 s  think     0 ch  
+night-q36-layer code wrap             PASS   330 tok @  97.3 tok/s    4.1 s  think     0 ch  
+night-q36-layer code total 8/8 passed, 4277 tokens, 48 s
+end 10:23:18
+GPU0 max 41C, max 28W, thermal slowdown 0/92
+GPU1 max 52C, max 145W, thermal slowdown 0/92
+GPU2 max 66C, max 144W, thermal slowdown 0/92
+DONE

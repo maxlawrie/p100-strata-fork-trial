@@ -1,0 +1,16 @@
+00:31:41 [coder-2card-peer] starting (easy hard sustain quality); cards at 43 50 43 
+ Container strata-night  Creating
+ Container strata-night  Created
+ Container strata-night  Starting
+ Container strata-night  Started
+00:32:26 [coder-2card-peer] model ready after 45 s
+00:32:27 [coder-2card-peer] cards at 43 49 43 after waiting 1 s for <= 58 C
+00:32:27 [coder-2card-peer] step easy
+00:37:36 [coder-2card-peer] cards at 43 57 49 after waiting 75 s for <= 58 C
+00:37:36 [coder-2card-peer] step hard
+00:41:19 [coder-2card-peer] cards at 43 58 48 after waiting 75 s for <= 58 C
+00:41:19 [coder-2card-peer] step sustain
+00:55:23 [coder-2card-peer] cards at 43 58 45 after waiting 120 s for <= 58 C
+00:55:23 [coder-2card-peer] step quality
+01:29:11 [coder-2card-peer] done
+01:29:14 [coder-2card-peer] container stopped

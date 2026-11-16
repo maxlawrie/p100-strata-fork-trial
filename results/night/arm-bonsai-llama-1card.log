@@ -1,0 +1,14 @@
+641a56e077513b6ec9a1747b80b75696aafd8618bbb70fd87ed55579da15283a
+05:03:47 [bonsai-llama-1card] starting (easy hard sustain quality) on GPU 0; cards at 50 36 38 
+05:04:07 [bonsai-llama-1card] model ready after 20 s; health: {"status":"ok"}
+05:04:07 [bonsai-llama-1card] cards at 50 36 37 after waiting 0 s for <= 58 C
+05:04:07 [bonsai-llama-1card] step easy
+05:21:35 [bonsai-llama-1card] cards at 58 36 38 after waiting 301 s for <= 58 C
+05:21:35 [bonsai-llama-1card] step hard
+05:28:58 [bonsai-llama-1card] cards at 58 37 38 after waiting 286 s for <= 58 C
+05:28:58 [bonsai-llama-1card] step sustain
+05:46:12 [bonsai-llama-1card] cards at 58 36 38 after waiting 301 s for <= 58 C
+05:46:12 [bonsai-llama-1card] step quality
+Terminated                 OUT_DIR=out python3 -I bench/quality.py $URL "$KEY" "$L" > "$RES/quality-$ARM.txt" 2>&1
+05:56:45 [bonsai-llama-1card] done
+05:56:46 [bonsai-llama-1card] container stopped

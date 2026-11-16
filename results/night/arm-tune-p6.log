@@ -1,0 +1,12 @@
+08:11:31 [tune-p6] starting (easy hard); cards at 50 41 43 
+ Container strata-night  Creating
+ Container strata-night  Created
+ Container strata-night  Starting
+ Container strata-night  Started
+08:13:17 [tune-p6] model ready after 105 s
+08:13:17 [tune-p6] cards at 51 41 43 after waiting 0 s for <= 58 C
+08:13:17 [tune-p6] step easy
+08:19:00 [tune-p6] cards at 58 48 50 after waiting 120 s for <= 58 C
+08:19:00 [tune-p6] step hard
+08:22:47 [tune-p6] done
+08:22:57 [tune-p6] container stopped

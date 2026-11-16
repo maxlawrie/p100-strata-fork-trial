@@ -1,0 +1,9 @@
+452ccb18490d2789b17367e98fe67e473745359254c130e4a525e849f741adea
+19:27:05 [fn1-3card] starting (easy sustain) on GPU 0,1,2; cards at 41 40 50 
+19:27:36 [fn1-3card] model ready after 31 s; health: {"status":"ok"}
+19:27:36 [fn1-3card] cards at 42 40 49 after waiting 0 s for <= 58 C
+19:27:36 [fn1-3card] step easy
+20:08:10 [fn1-3card] cards at 56 42 49 after waiting 0 s for <= 58 C
+20:08:10 [fn1-3card] step sustain
+20:20:11 [fn1-3card] done
+20:20:12 [fn1-3card] container stopped

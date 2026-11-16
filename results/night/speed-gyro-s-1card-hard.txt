@@ -1,0 +1,12 @@
+start 01:41:27, GPU C: 58 37 39 
+night-gyro-s-1card code semver_sort      FAIL  1458 tok @  39.8 tok/s   38.9 s  think     0 ch  TypeError: '<' not supported between instances of 'int' and 'tuple'
+night-gyro-s-1card code cron_next        FAIL  1865 tok @  42.3 tok/s   46.5 s  think     0 ch  AssertionError: ('0 0 29 2 *', datetime.datetime(2028, 2, 28, 23, 0), datetime.d
+ABORT: a GPU reached 80C at 01:43:41
+night-gyro-s-1card code json_parse       PASS  2399 tok @  46.7 tok/s   53.5 s  think     0 ch  
+night-gyro-s-1card ABORT seen, stopping
+night-gyro-s-1card code-hard total 1/8 passed, 5722 tokens, 139 s
+end 01:43:47
+GPU0 max 80C, max 148W, thermal slowdown 4/70
+GPU1 max 37C, max 28W, thermal slowdown 0/70
+GPU2 max 39C, max 28W, thermal slowdown 0/70
+DONE

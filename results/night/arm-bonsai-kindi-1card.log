@@ -1,0 +1,15 @@
+02:07:29 [bonsai-kindi-1card] converting the PTQ1_0 file (CPU only)
+02:10:45 [bonsai-kindi-1card] converted: 6.8G
+aba47ff9c13164125f55e1b354326fce7466974324f1bcf22ad97c3ac37b6769
+02:10:46 [bonsai-kindi-1card] starting (easy hard sustain quality) on GPU 0; cards at 46 37 38 
+02:16:07 [bonsai-kindi-1card] model ready after 321 s; health: {"ok":true,"kindi":"0.4.0","commit":null,"model":"bonsai2-27b","ctx":65536,"head":"exact","uptime_s":4,"busy":null,"stats":{"requests":0,"prompt_tokens":0,"cached_tokens":0,"completion_tokens":0},"gpu_free_mib":7857,"gpu_total_mib":16269}
+02:16:07 [bonsai-kindi-1card] cards at 47 36 37 after waiting 0 s for <= 58 C
+02:16:07 [bonsai-kindi-1card] step easy
+02:35:28 [bonsai-kindi-1card] cards at 58 36 38 after waiting 286 s for <= 58 C
+02:35:28 [bonsai-kindi-1card] step hard
+02:47:43 [bonsai-kindi-1card] cards at 58 36 38 after waiting 286 s for <= 58 C
+02:47:43 [bonsai-kindi-1card] step sustain
+03:04:32 [bonsai-kindi-1card] cards at 58 36 38 after waiting 286 s for <= 58 C
+03:04:32 [bonsai-kindi-1card] step quality
+Terminated                 OUT_DIR=out python3 -I bench/quality.py $URL "$KEY" "$L" > "$RES/quality-$ARM.txt" 2>&1
+04:57:30 [bonsai-kindi-1card] container stopped

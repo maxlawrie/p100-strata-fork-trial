@@ -1,0 +1,15 @@
+start 08:51:27, GPU C: 58 48 50 
+night-tune-base2 code semver_sort      PASS   963 tok @  64.9 tok/s   17.3 s  think     0 ch  
+night-tune-base2 code cron_next        FAIL  1350 tok @  63.3 tok/s   24.0 s  think     0 ch  ValueError: day is out of range for month
+night-tune-base2 code json_parse       PASS  2121 tok @  70.7 tok/s   32.4 s  think     0 ch  
+night-tune-base2 code regex_match      PASS  2110 tok @  67.5 tok/s   33.9 s  think     0 ch  
+night-tune-base2 code osa_distance     PASS   460 tok @  68.3 tok/s    9.1 s  think     0 ch  
+night-tune-base2 code parse_csv        FAIL  1007 tok @  67.4 tok/s   17.4 s  think     0 ch  AssertionError: ('"a b,",b b,"\n\n ","a \r\n"\r\n"""bb\na"," \n\n"",",', [['a b,
+night-tune-base2 code run_limited      PASS   371 tok @  63.7 tok/s    8.1 s  think     0 ch  
+night-tune-base2 code lex_shortest_path PASS  1341 tok @  57.4 tok/s   25.9 s  think     0 ch  
+night-tune-base2 code-hard total 6/8 passed, 9723 tokens, 168 s
+end 08:54:19
+GPU0 max 65C, max 135W, thermal slowdown 0/86
+GPU1 max 58C, max 142W, thermal slowdown 0/86
+GPU2 max 63C, max 142W, thermal slowdown 0/86
+DONE

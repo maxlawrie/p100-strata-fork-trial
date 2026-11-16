@@ -1,0 +1,22 @@
+start 11:02:41, GPU C: 45 39 47 
+p4k        prompt  3857 tok @  261.1 tok/s | gen    4 tok @  40.2 tok/s | drafts 3/3 | '180'
+p16k       prompt 15672 tok @  419.7 tok/s | gen    4 tok @  36.0 tok/s | drafts 3/3 | '720'
+p32k       prompt 31885 tok @  531.9 tok/s | gen    5 tok @  28.2 tok/s | drafts 4/6 | '1440'
+gen        prompt    26 tok @   28.2 tok/s | gen  300 tok @  41.7 tok/s | drafts 148/285 | 'The wind did not howl; it screamed, a ja'
+gen        prompt     7 tok @   26.3 tok/s | gen  300 tok @  44.6 tok/s | drafts 143/300 | 'Elias was not merely a man; he was an ex'
+gen        prompt     7 tok @   29.2 tok/s | gen  300 tok @  47.8 tok/s | drafts 148/268 | 'Elias had not spoken to another human so'
+tool       prompt   305 tok @   82.5 tok/s | gen   68 tok @  49.4 tok/s | drafts 44/62 | [('get_weather', '{"city":"Brisbane"}')]
+night-pl220 code parse_duration   PASS   250 tok @  52.8 tok/s    7.1 s  think     0 ch  
+night-pl220 code merge_intervals  PASS   188 tok @  59.0 tok/s    5.2 s  think     0 ch  
+night-pl220 code lru_cache        PASS   255 tok @  69.8 tok/s    5.8 s  think     0 ch  
+night-pl220 code roman            PASS   514 tok @  66.0 tok/s    9.9 s  think     0 ch  
+night-pl220 code toposort         PASS   423 tok @  65.4 tok/s    8.6 s  think     0 ch  
+night-pl220 code fix_bisect       PASS    90 tok @  67.8 tok/s    3.9 s  think     0 ch  
+night-pl220 code calc             FAIL   871 tok @  66.4 tok/s   15.1 s  think     0 ch  ValueError: Invalid number with multiple decimal points
+night-pl220 code wrap             PASS   375 tok @  68.8 tok/s    7.6 s  think     0 ch  
+night-pl220 code total 7/8 passed, 2966 tokens, 63 s
+end 11:06:06
+GPU0 max 65C, max 214W, thermal slowdown 0/103
+GPU1 max 66C, max 235W, thermal slowdown 0/103
+GPU2 max 68C, max 221W, thermal slowdown 0/103
+DONE

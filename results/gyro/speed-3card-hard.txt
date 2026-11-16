@@ -1,0 +1,15 @@
+start 07:46:00, GPU C: 62 74 70 
+gyro-s-3card code semver_sort      FAIL  1229 tok @  66.1 tok/s   20.4 s  think     0 ch  TypeError: ord() expected a character, but string of length 2 found
+gyro-s-3card code cron_next        PASS  3735 tok @  56.5 tok/s   68.1 s  think     0 ch  
+gyro-s-3card code json_parse       PASS  2308 tok @  71.5 tok/s   34.1 s  think     0 ch  
+gyro-s-3card code regex_match      FAIL  2717 tok @  65.5 tok/s   43.5 s  think     0 ch  no code block
+gyro-s-3card code osa_distance     PASS   464 tok @  72.0 tok/s    8.2 s  think     0 ch  
+gyro-s-3card code parse_csv        FAIL   808 tok @  65.5 tok/s   14.1 s  think     0 ch  AssertionError: accepted invalid: ['"a"b,c']
+gyro-s-3card code run_limited      PASS   361 tok @  63.4 tok/s    7.3 s  think     0 ch  
+gyro-s-3card code lex_shortest_path PASS   702 tok @  61.1 tok/s   13.4 s  think     0 ch  
+gyro-s-3card code-hard total 5/8 passed, 12324 tokens, 209 s
+end 07:49:37
+GPU0 max 67C, max 175W, thermal slowdown 0/108
+GPU1 max 80C, max 188W, thermal slowdown 0/108
+GPU2 max 79C, max 147W, thermal slowdown 1/108
+DONE

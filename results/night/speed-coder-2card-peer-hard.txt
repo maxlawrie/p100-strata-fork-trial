@@ -1,0 +1,15 @@
+start 00:37:36, GPU C: 43 57 49 
+night-coder-2card-peer code semver_sort      PASS   691 tok @  62.1 tok/s   12.7 s  think     0 ch  
+night-coder-2card-peer code cron_next        FAIL   900 tok @  64.6 tok/s   15.4 s  think     0 ch  AttributeError: type object 'datetime.datetime' has no attribute 'datetime'
+night-coder-2card-peer code json_parse       PASS  2461 tok @  69.8 tok/s   36.7 s  think     0 ch  
+night-coder-2card-peer code regex_match      PASS  2589 tok @  67.9 tok/s   39.7 s  think     0 ch  
+night-coder-2card-peer code osa_distance     PASS   336 tok @  72.0 tok/s    6.1 s  think     0 ch  
+night-coder-2card-peer code parse_csv        PASS   657 tok @  64.8 tok/s   11.6 s  think     0 ch  
+night-coder-2card-peer code run_limited      FAIL   518 tok @  62.9 tok/s    9.5 s  think     0 ch  AssertionError: [0, 10, 20, 30, 40, 50, 60, 70, 80, None]
+night-coder-2card-peer code lex_shortest_path PASS   585 tok @  57.6 tok/s   11.7 s  think     0 ch  
+night-coder-2card-peer code-hard total 6/8 passed, 8737 tokens, 143 s
+end 00:40:04
+GPU0 max 43C, max 29W, thermal slowdown 0/74
+GPU1 max 72C, max 146W, thermal slowdown 0/74
+GPU2 max 53C, max 118W, thermal slowdown 0/74
+DONE

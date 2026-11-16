@@ -1,0 +1,39 @@
+# Trial container: Gyro-S (agentionai) on the same image as compose.yaml (qr0n's P100 fork of Strata v0.2.2).
+# Not started by hand: gyro/run-arm.sh picks an arm file from gyro/arms/ and passes it with --env-file.
+# It uses port 8080 like the serving container, so that one has to be stopped first (run-arm.sh does it).
+services:
+  strata-gyro:
+    image: local/strata-pascal:0.2.2-qr0n
+    container_name: strata-gyro
+    restart: "no"
+    network_mode: host
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    shm_size: 2gb
+    stop_grace_period: 2m
+    volumes:
+      # A state folder per arm: the launcher keeps earlier STRATA_SET values in /data, and the engine refuses
+      # peer-device together with layer-split, so the arms must not share one.
+      - /srv/strata-state-gyro/${ARM}:/data
+      # Read-write: the first start downloads the 58.5 GB file and writes the 1.5 GB pack here. It adds files next
+      # to the IQ3_S ones and reuses the MTP head that is already there.
+      - /srv/strata:/data/Strata-data
+    environment:
+      FAMILY: gyro
+      MODEL: Gyro-S
+      CONTEXT: ${CONTEXT}
+      PARALLEL: "1"
+      VISION: "off"
+      TUNE: skip
+      GPUS: ${GPUS}
+      API_KEY: ${STRATA_API_KEY}
+      STRATA_SET: ${STRATA_SET}
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]

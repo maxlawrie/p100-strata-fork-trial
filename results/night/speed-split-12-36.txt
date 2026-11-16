@@ -1,0 +1,22 @@
+start 09:50:25, GPU C: 48 46 57 
+p4k        prompt  3857 tok @  234.3 tok/s | gen    4 tok @  30.5 tok/s | drafts 3/3 | '180'
+p16k       prompt 15672 tok @  361.1 tok/s | gen    4 tok @  39.8 tok/s | drafts 3/3 | '720'
+p32k       prompt 31885 tok @  443.6 tok/s | gen    5 tok @  25.8 tok/s | drafts 4/6 | '1440'
+gen        prompt     7 tok @   11.0 tok/s | gen  300 tok @  45.7 tok/s | drafts 136/268 | 'Elias was not merely a man; he was the h'
+gen        prompt     7 tok @   33.0 tok/s | gen  300 tok @  47.6 tok/s | drafts 145/280 | 'The salt spray clung to Elias’s beard li'
+gen        prompt     7 tok @   38.5 tok/s | gen  300 tok @  46.8 tok/s | drafts 142/276 | 'Elias did not fear the dark; he feared t'
+tool       prompt   305 tok @   79.6 tok/s | gen   67 tok @  36.0 tok/s | drafts 40/69 | [('get_weather', '{"city":"Brisbane"}')]
+night-split-12-36 code parse_duration   PASS   250 tok @  48.7 tok/s    7.6 s  think     0 ch  
+night-split-12-36 code merge_intervals  PASS   188 tok @  57.6 tok/s    5.4 s  think     0 ch  
+night-split-12-36 code lru_cache        PASS   255 tok @  65.3 tok/s    6.1 s  think     0 ch  
+night-split-12-36 code roman            PASS   488 tok @  66.3 tok/s    9.6 s  think     0 ch  
+night-split-12-36 code toposort         PASS   430 tok @  62.8 tok/s    9.1 s  think     0 ch  
+night-split-12-36 code fix_bisect       PASS    90 tok @  67.0 tok/s    4.0 s  think     0 ch  
+night-split-12-36 code calc             PASS   907 tok @  62.8 tok/s   16.5 s  think     0 ch  
+night-split-12-36 code wrap             PASS   313 tok @  67.3 tok/s    6.8 s  think     0 ch  
+night-split-12-36 code total 8/8 passed, 2921 tokens, 65 s
+end 09:54:12
+GPU0 max 61C, max 182W, thermal slowdown 0/113
+GPU1 max 62C, max 169W, thermal slowdown 0/113
+GPU2 max 64C, max 213W, thermal slowdown 0/113
+DONE

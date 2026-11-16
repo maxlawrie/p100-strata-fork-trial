@@ -1,0 +1,22 @@
+start 10:41:24, GPU C: 43 39 47 
+p4k        prompt  3857 tok @  251.7 tok/s | gen    4 tok @  39.9 tok/s | drafts 3/3 | '180'
+p16k       prompt 15672 tok @  403.4 tok/s | gen    4 tok @  35.9 tok/s | drafts 3/3 | '720'
+p32k       prompt 31885 tok @  510.2 tok/s | gen    5 tok @  28.2 tok/s | drafts 4/6 | '1440'
+gen        prompt    26 tok @   27.8 tok/s | gen  300 tok @  40.8 tok/s | drafts 144/292 | 'Elias did not speak to people; he spoke '
+gen        prompt     7 tok @   25.3 tok/s | gen  300 tok @  44.0 tok/s | drafts 133/279 | 'Elias had not spoken to another human be'
+gen        prompt     7 tok @   28.5 tok/s | gen  300 tok @  43.9 tok/s | drafts 133/280 | 'Elias did not speak to the wind, for he '
+tool       prompt   305 tok @   82.5 tok/s | gen   62 tok @  47.2 tok/s | drafts 41/56 | [('get_weather', '{"city":"Brisbane"}')]
+night-pl180 code parse_duration   PASS   250 tok @  50.9 tok/s    7.3 s  think     0 ch  
+night-pl180 code merge_intervals  PASS   192 tok @  57.9 tok/s    5.4 s  think     0 ch  
+night-pl180 code lru_cache        PASS   256 tok @  67.4 tok/s    6.0 s  think     0 ch  
+night-pl180 code roman            PASS   514 tok @  66.0 tok/s    9.9 s  think     0 ch  
+night-pl180 code toposort         PASS   419 tok @  66.3 tok/s    8.5 s  think     0 ch  
+night-pl180 code fix_bisect       PASS    90 tok @  71.0 tok/s    3.8 s  think     0 ch  
+night-pl180 code calc             FAIL   872 tok @  64.9 tok/s   15.5 s  think     0 ch  ValueError: Invalid number with multiple decimal points
+night-pl180 code wrap             PASS   376 tok @  68.7 tok/s    7.6 s  think     0 ch  
+night-pl180 code total 7/8 passed, 2969 tokens, 64 s
+end 10:44:55
+GPU0 max 61C, max 205W, thermal slowdown 0/106
+GPU1 max 62C, max 221W, thermal slowdown 0/106
+GPU2 max 65C, max 223W, thermal slowdown 0/106
+DONE

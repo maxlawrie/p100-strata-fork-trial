@@ -1,0 +1,12 @@
+start 06:57:21, GPU C: 59 36 38 
+night-tensorless-1card code semver_sort      PASS   894 tok @  25.2 tok/s   38.5 s  think     0 ch  
+night-tensorless-1card code cron_next        PASS  1260 tok @  23.5 tok/s   56.0 s  think     0 ch  
+ABORT: a GPU reached 80C at 06:59:51
+night-tensorless-1card code json_parse       FAIL  1977 tok @  11.5 tok/s  174.7 s  think     0 ch  IndexError: string index out of range
+night-tensorless-1card ABORT seen, stopping
+night-tensorless-1card code-hard total 2/8 passed, 4131 tokens, 269 s
+end 07:01:51
+GPU0 max 80C, max 138W, thermal slowdown 78/134
+GPU1 max 36C, max 27W, thermal slowdown 0/134
+GPU2 max 38C, max 26W, thermal slowdown 0/134
+DONE

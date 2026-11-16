@@ -1,0 +1,13 @@
+06:32:45 [tensorless-1card] downloading Qwen3.8-27B-PN3-P0k19.gguf (13 GB)
+06:41:58 [tensorless-1card] model downloaded and checked
+19ed0aaeb58d94e4049db33620d561618c75a3100bc0ab4a98e1543bb5685d6c
+06:41:59 [tensorless-1card] starting (easy hard sustain) on GPU 0; cards at 43 37 38 
+06:42:09 [tensorless-1card] model ready after 10 s; health: {"status":"ok"}
+06:42:09 [tensorless-1card] cards at 44 37 38 after waiting 0 s for <= 58 C
+06:42:09 [tensorless-1card] step easy
+06:57:20 [tensorless-1card] cards at 58 36 38 after waiting 286 s for <= 58 C
+06:57:20 [tensorless-1card] step hard
+07:06:52 [tensorless-1card] cards at 58 36 38 after waiting 301 s for <= 58 C
+07:06:52 [tensorless-1card] step sustain
+07:19:16 [tensorless-1card] done
+07:19:17 [tensorless-1card] container stopped

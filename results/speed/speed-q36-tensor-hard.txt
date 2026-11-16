@@ -1,0 +1,15 @@
+start 10:01:03, GPU C: 42 48 58 
+night-q36-tensor code semver_sort      PASS   688 tok @ 100.9 tok/s    7.4 s  think     0 ch  
+night-q36-tensor code cron_next        FAIL  1193 tok @ 103.0 tok/s   12.1 s  think     0 ch  AssertionError: ('*/15 9-17 * * 1-5', datetime.datetime(2027, 12, 31, 23, 59), d
+night-q36-tensor code json_parse       PASS  2145 tok @ 125.3 tok/s   17.6 s  think     0 ch  
+night-q36-tensor code regex_match      FAIL  4525 tok @ 107.4 tok/s   42.7 s  think     0 ch  NameError: name 'right_tree' is not defined. Did you mean: 'right_tokens'?
+night-q36-tensor code osa_distance     PASS   518 tok @ 121.0 tok/s    4.9 s  think     0 ch  
+night-q36-tensor code parse_csv        PASS   990 tok @ 125.8 tok/s    8.3 s  think     0 ch  
+night-q36-tensor code run_limited      FAIL   362 tok @ 107.9 tok/s    3.8 s  think     0 ch  ValueError: Set of Tasks/Futures is empty.
+night-q36-tensor code lex_shortest_path PASS  1052 tok @  92.3 tok/s   11.9 s  think     0 ch  
+night-q36-tensor code-hard total 5/8 passed, 11473 tokens, 109 s
+end 10:02:56
+GPU0 max 42C, max 28W, thermal slowdown 0/57
+GPU1 max 59C, max 117W, thermal slowdown 0/57
+GPU2 max 70C, max 123W, thermal slowdown 0/57
+DONE

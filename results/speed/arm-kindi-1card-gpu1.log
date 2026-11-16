@@ -1,0 +1,9 @@
+7dadefc35a1104d7dbfd019d670d9f7271e2cea47f13c49a8913186ab4c5e798
+11:50:22 [bonsai-kindi-1card-gpu1] starting (easy sustain) on GPU 1; cards at 40 50 40 
+11:50:42 [bonsai-kindi-1card-gpu1] model ready after 20 s; health: {"ok":true,"kindi":"0.4.0","commit":null,"model":"bonsai2-27b","ctx":65536,"head":"exact","uptime_s":3,"busy":null,"stats":{"requests":0,"prompt_tokens":0,"cached_tokens":0,"completion_tokens":0},"gpu_free_mib":7859,"gpu_total_mib":16269}
+11:50:43 [bonsai-kindi-1card-gpu1] cards at 40 49 40 after waiting 1 s for <= 58 C
+11:50:43 [bonsai-kindi-1card-gpu1] step easy
+12:02:31 [bonsai-kindi-1card-gpu1] cards at 41 57 40 after waiting 61 s for <= 58 C
+12:02:31 [bonsai-kindi-1card-gpu1] step sustain
+12:14:35 [bonsai-kindi-1card-gpu1] done
+12:14:36 [bonsai-kindi-1card-gpu1] container stopped

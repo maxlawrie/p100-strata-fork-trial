@@ -1,0 +1,22 @@
+start 22:24:03, GPU C: 51 40 42 
+p4k        prompt  3857 tok @  256.4 tok/s | gen    4 tok @  47.3 tok/s | drafts 3/3 | '180'
+p16k       prompt 15672 tok @  396.1 tok/s | gen    4 tok @  44.3 tok/s | drafts 3/3 | '720'
+p32k       prompt 31885 tok @  488.6 tok/s | gen    5 tok @  61.8 tok/s | drafts 3/3 | '1440'
+gen        prompt    26 tok @   32.4 tok/s | gen  300 tok @  47.5 tok/s | drafts 129/272 | 'Elias stood at the edge of the world, wh'
+gen        prompt     7 tok @   27.0 tok/s | gen  300 tok @  46.9 tok/s | drafts 125/283 | 'The wind howled against the glass, a rel'
+gen        prompt     7 tok @   30.5 tok/s | gen  300 tok @  45.6 tok/s | drafts 117/276 | 'The fog had not lifted for three days. I'
+tool       prompt   305 tok @  100.6 tok/s | gen   54 tok @  66.4 tok/s | drafts 35/38 | [('get_weather', '{"city":"Brisbane"}')]
+night-iq2xs-3card code parse_duration   PASS   261 tok @  62.1 tok/s    5.9 s  think     0 ch  
+night-iq2xs-3card code merge_intervals  PASS   196 tok @  69.3 tok/s    4.2 s  think     0 ch  
+night-iq2xs-3card code lru_cache        PASS   325 tok @  72.0 tok/s    6.1 s  think     0 ch  
+night-iq2xs-3card code roman            PASS   420 tok @  75.1 tok/s    7.1 s  think     0 ch  
+night-iq2xs-3card code toposort         PASS   290 tok @  70.0 tok/s    5.7 s  think     0 ch  
+night-iq2xs-3card code fix_bisect       PASS    90 tok @  82.8 tok/s    3.1 s  think     0 ch  
+night-iq2xs-3card code calc             PASS   553 tok @  76.0 tok/s    8.7 s  think     0 ch  
+night-iq2xs-3card code wrap             PASS   268 tok @  76.0 tok/s    5.0 s  think     0 ch  
+night-iq2xs-3card code total 8/8 passed, 2403 tokens, 46 s
+end 22:27:17
+GPU0 max 66C, max 165W, thermal slowdown 0/97
+GPU1 max 61C, max 170W, thermal slowdown 0/97
+GPU2 max 59C, max 157W, thermal slowdown 0/97
+DONE

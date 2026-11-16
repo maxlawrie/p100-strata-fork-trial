@@ -1,0 +1,22 @@
+start 12:16:32, GPU C: 41 50 40 
+p4k        prompt  3857 tok @  122.7 tok/s | gen    4 tok @  23.4 tok/s | drafts -/- | '180'
+p16k       prompt 15672 tok @  116.6 tok/s | gen    4 tok @  21.0 tok/s | drafts -/- | '720'
+p32k       prompt 31885 tok @  107.0 tok/s | gen   10 tok @  17.7 tok/s | drafts -/- | 'The records are labeled consecutively fr'
+gen        prompt    26 tok @   21.8 tok/s | gen  300 tok @  24.9 tok/s | drafts -/- | 'The fog rolled in off the Atlantic like '
+gen        prompt    26 tok @   22.1 tok/s | gen  300 tok @  24.9 tok/s | drafts -/- | 'The lighthouse at Cape Kestrel was not j'
+gen        prompt    26 tok @   22.2 tok/s | gen  300 tok @  25.0 tok/s | drafts -/- | 'The fog rolled in like a gray tide, swal'
+tool       prompt   314 tok @   85.1 tok/s | gen   52 tok @  24.9 tok/s | drafts -/- | [('get_weather', '{"city":"Brisbane"}')]
+night-bonsai-llama-1card-gpu1 code parse_duration   PASS   169 tok @  25.0 tok/s    9.8 s  think     0 ch  
+night-bonsai-llama-1card-gpu1 code merge_intervals  PASS   174 tok @  25.0 tok/s    8.6 s  think     0 ch  
+night-bonsai-llama-1card-gpu1 code lru_cache        PASS   223 tok @  25.0 tok/s   10.9 s  think     0 ch  
+night-bonsai-llama-1card-gpu1 code roman            PASS   443 tok @  25.0 tok/s   19.7 s  think     0 ch  
+night-bonsai-llama-1card-gpu1 code toposort         PASS   292 tok @  25.0 tok/s   13.7 s  think     0 ch  
+night-bonsai-llama-1card-gpu1 code fix_bisect       PASS    90 tok @  25.0 tok/s    6.1 s  think     0 ch  
+night-bonsai-llama-1card-gpu1 code calc             PASS   869 tok @  24.9 tok/s   36.5 s  think     0 ch  
+night-bonsai-llama-1card-gpu1 code wrap             PASS   258 tok @  25.0 tok/s   12.4 s  think     0 ch  
+night-bonsai-llama-1card-gpu1 code total 8/8 passed, 2518 tokens, 118 s
+end 12:27:06
+GPU0 max 41C, max 27W, thermal slowdown 0/315
+GPU1 max 73C, max 155W, thermal slowdown 0/315
+GPU2 max 40C, max 27W, thermal slowdown 0/315
+DONE

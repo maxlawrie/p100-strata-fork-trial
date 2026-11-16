@@ -1,0 +1,9 @@
+67ae1dd8707fba050f8b6c33c65a77ec54a83ed2859f0124eefd40040f2c448d
+10:20:04 [q36-layer] starting (easy sustain) on GPU 1,2; cards at 41 40 50 
+10:20:15 [q36-layer] model ready after 10 s; health: {"status":"ok"}
+10:20:15 [q36-layer] cards at 41 40 50 after waiting 0 s for <= 58 C
+10:20:15 [q36-layer] step easy
+10:24:04 [q36-layer] cards at 40 46 58 after waiting 45 s for <= 58 C
+10:24:04 [q36-layer] step sustain
+10:36:05 [q36-layer] done
+10:36:06 [q36-layer] container stopped

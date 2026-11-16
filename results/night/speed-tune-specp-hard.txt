@@ -1,0 +1,15 @@
+start 08:03:36, GPU C: 58 48 51 
+night-tune-specp code semver_sort      PASS  1048 tok @  66.2 tok/s   18.3 s  think     0 ch  
+night-tune-specp code cron_next        FAIL  1421 tok @  62.6 tok/s   25.3 s  think     0 ch  TypeError: '>=' not supported between instances of 'datetime.datetime' and 'date
+night-tune-specp code json_parse       PASS  2052 tok @  71.2 tok/s   31.3 s  think     0 ch  
+night-tune-specp code regex_match      PASS  2343 tok @  68.0 tok/s   37.0 s  think     0 ch  
+night-tune-specp code osa_distance     PASS   469 tok @  69.2 tok/s    9.1 s  think     0 ch  
+night-tune-specp code parse_csv        FAIL   707 tok @  65.0 tok/s   13.3 s  think     0 ch  AssertionError: ('"a b,",b b,"\n\n ","a \r\n"\r\n"""bb\na"," \n\n"",",', [['a b,
+night-tune-specp code run_limited      FAIL   381 tok @  62.6 tok/s    8.3 s  think     0 ch  AssertionError: {'now': 0, 'peak': 3, 'started': [0, 1, 2], 'cancelled': 0}
+night-tune-specp code lex_shortest_path PASS  1612 tok @  56.0 tok/s   31.3 s  think     0 ch  
+night-tune-specp code-hard total 5/8 passed, 10033 tokens, 174 s
+end 08:06:35
+GPU0 max 65C, max 130W, thermal slowdown 0/89
+GPU1 max 58C, max 133W, thermal slowdown 0/89
+GPU2 max 63C, max 139W, thermal slowdown 0/89
+DONE

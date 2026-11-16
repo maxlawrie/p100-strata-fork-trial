@@ -1,0 +1,15 @@
+start 19:07:29, GPU C: 43 47 58 
+night-q36v1-tensor code semver_sort      PASS   701 tok @  54.6 tok/s   13.3 s  think     0 ch  
+night-q36v1-tensor code cron_next        PASS  1411 tok @  60.8 tok/s   23.7 s  think     0 ch  
+night-q36v1-tensor code json_parse       FAIL  2140 tok @  74.3 tok/s   29.3 s  think     0 ch  NameError: name 'selftext' is not defined
+night-q36v1-tensor code regex_match      FAIL  6000 tok @  61.5 tok/s   98.1 s  think     0 ch  no code block
+night-q36v1-tensor code osa_distance     PASS   514 tok @  71.1 tok/s    7.7 s  think     0 ch  
+night-q36v1-tensor code parse_csv        PASS   998 tok @  75.3 tok/s   13.7 s  think     0 ch  
+night-q36v1-tensor code run_limited      FAIL   477 tok @  58.1 tok/s    8.6 s  think     0 ch  AssertionError: {'now': 0, 'peak': 3, 'started': [0, 1, 2], 'cancelled': 0}
+night-q36v1-tensor code lex_shortest_path PASS  1115 tok @  51.1 tok/s   22.3 s  think     0 ch  
+night-q36v1-tensor code-hard total 5/8 passed, 13356 tokens, 217 s
+end 19:11:10
+GPU0 max 43C, max 28W, thermal slowdown 0/110
+GPU1 max 57C, max 133W, thermal slowdown 0/110
+GPU2 max 70C, max 138W, thermal slowdown 0/110
+DONE

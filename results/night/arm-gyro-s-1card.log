@@ -1,0 +1,14 @@
+01:32:01 [gyro-s-1card] starting (easy hard sustain); cards at 43 49 45 
+ Container strata-night  Creating
+ Container strata-night  Created
+ Container strata-night  Starting
+ Container strata-night  Started
+01:32:47 [gyro-s-1card] model ready after 45 s
+01:32:47 [gyro-s-1card] cards at 46 46 43 after waiting 0 s for <= 58 C
+01:32:47 [gyro-s-1card] step easy
+01:41:27 [gyro-s-1card] cards at 58 37 39 after waiting 286 s for <= 58 C
+01:41:27 [gyro-s-1card] step hard
+01:48:18 [gyro-s-1card] cards at 58 37 38 after waiting 271 s for <= 58 C
+01:48:18 [gyro-s-1card] step sustain
+02:00:26 [gyro-s-1card] done
+02:00:28 [gyro-s-1card] container stopped

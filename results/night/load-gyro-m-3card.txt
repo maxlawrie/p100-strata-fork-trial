@@ -1,0 +1,58 @@
+[strata] 2026-11-15 11:01:48 engine started: /opt/strata/components/engine/0.1.47-linux-x86_64-cuda-cuda12/strata --serve --pack /data/Strata-data/packs/gyro-gyro-m --native /data/Strata-data/models/gyro-Gyro-M/Qwen3.8-Flash-Next-Gyro-M-TQ2_0.gguf --ple-gguf /data/Strata-data/models/gyro-Gyro-M/Qwen3.8-Flash-Next-Gyro-M-TQ2_0.gguf --expert-profile /opt/strata/terminal/data/expert-profile.bin --expert-cache auto --prefill auto --spec 4 --spec-min-p 0.5 --mtp /data/Strata-data/mtp/rt --max-context 262144 --kv int8 --kv-resident 32768 --layer-split 12,34 --conversation-cache-mib 8192 --trim-stage-weights
+strata generate: layer split across 3 GPUs: CUDA0, then CUDA1,2 (split 12,34)
+strata generate: APR pack: Hadamard-folded experts (block 128)
+strata generate: this CPU has no AVX-512: the expert kernels run on AVX-2 (multi-token for the i-quant gate/up rows)
+strata generate: native pack: /data/Strata-data/packs/gyro-gyro-m experts (largest blob 1.31 MB), token embedding Q8_0 in mapped host memory (644 MiB, 0.8 s)
+strata generate: layer split: CUDA0 loads the dense weights of layers 0-11 only
+strata generate: layer split: CUDA1 loads the dense weights of layers 12-33 only
+strata generate: layer split: CUDA1 PCIe probe 6.7 GB/s (best of 6.7 6.7 6.7 6.7) -> pcie_frac 0.18
+strata generate: layer split: CUDA1 holds its weights; 13.53 GiB free (its session follows the split search)
+strata generate: layer split: CUDA2 loads the dense weights of layers 34-47 only
+strata generate: layer split: CUDA2 PCIe probe 6.7 GB/s (best of 6.7 6.7 6.7 6.7) -> pcie_frac 0.18
+strata generate: layer split: CUDA2 holds its weights; 14.26 GiB free (its session follows the split search)
+strata generate: profile /opt/strata/terminal/data/expert-profile.bin: 24576 ranked pairs, built for 24576 slots
+strata generate: KV streaming: 32768 of 262144 cells per QSA layer in VRAM, the K/V in 0.77 GiB of pinned RAM
+strata generate: layer split: CUDA1 holds its weights, session [12, 34); 13.08 GiB free
+strata generate: layer split: CUDA2 holds its weights, session [34, 48) and the head; 13.26 GiB free
+strata mtp: draft layer loaded, 835 MiB of VRAM (experts 675, dense 111), files read in 0.81 s (964 MiB/s)
+strata generate: expert arena read through the file cache (buffered (not Windows))
+strata generate: expert arena: cudaHostRegister PORTABLE ok; MAP_HUGETLB unavailable (needed 15301 2 MiB pages, vm.nr_hugepages=0); transparent huge pages requested (MADV_HUGEPAGE)
+strata generate: dropped the file cache of 0 expert shard(s); PLE table re-touched in 0.0 s
+strata generate: expert cache auto: 14.08 GiB free, 700 MiB reserved (+0 MiB for the draft head) -> 6144 slots
+strata generate: expert cache 6144 slots, 7.47 GiB of VRAM; policy is
+strata generate: the GPU computes the experts in the cache; it rounds differently from the CPU,
+strata generate: pre-filled 6144 of 6144 slots from the profile in 5.6 s (1430 MB/s); slot 0 verified
+strata generate: layer split, CUDA1: 13.02 GiB free of 15.89, room for experts 12.24 GiB
+strata generate: layer split: CUDA1 runs layers 12-33, expert cache 10065 slots (12.24 GiB), 10065 of its 11264 profiled pairs; slot 0 verified
+strata generate: layer split, CUDA2: 12.38 GiB free of 15.89, room for experts 11.60 GiB
+strata generate: layer split: CUDA2 runs layers 34-47, expert cache 7168 slots (8.72 GiB), 7168 of its 7168 profiled pairs; slot 0 verified
+strata generate: layer split: CUDA0 runs layers 0-11
+strata generate: R4 hit path ON - resident experts are computed on the GPU
+strata generate: 5 expert-pool workers + the host thread
+strata generate: token graph hit path: 23377 resident experts, decided on the device
+strata serve: layer split: 95% of the experts resident, the prompt path's streamed ring 96 slots
+strata serve: prompt chunk auto: 8192 tokens, a 96-slot ring
+strata serve:   CUDA1 prompt path borrows 2960 of its 10065 slots (3.60 GiB)
+strata serve:   CUDA2 prompt path borrows 2960 of its 7168 slots (3.60 GiB)
+strata hc: CUDA1: the hyper-connection read runs as staged (the norm per token and stream, the down projection's activations staged ahead by cp.async); checked bit for bit against the plain read on this card (STRATA_HC_SPLIT=1 or 0 for the earlier ones)
+strata hc: CUDA2: the hyper-connection read runs as staged (the norm per token and stream, the down projection's activations staged ahead by cp.async); checked bit for bit against the plain read on this card (STRATA_HC_SPLIT=1 or 0 for the earlier ones)
+strata verify: window up to 6 tokens, 55.2 MiB of device buffers (100% VRAM resident: zero-doorbell graph)
+strata serve: layer split: layers 0-11 (CUDA0), 12-33 (CUDA1), 34-47 (CUDA2), one hand-off per window
+strata hc: CUDA0: the hyper-connection read runs as staged (the norm per token and stream, the down projection's activations staged ahead by cp.async); checked bit for bit against the plain read on this card (STRATA_HC_SPLIT=1 or 0 for the earlier ones)
+strata verify: window up to 6 tokens, 55.2 MiB of device buffers (100% VRAM resident: zero-doorbell graph)
+strata serve: adaptive overlap: off: not on a layer split
+strata verify: captured the 6-token window (upload no error, sync no error)
+strata verify: captured the 6-token window (upload no error, sync no error)
+strata verify: captured the 6-token window (upload no error, sync no error)
+strata verify: captured the 4-token window (upload no error, sync no error)
+strata verify: captured the 4-token window (upload no error, sync no error)
+strata verify: captured the 4-token window (upload no error, sync no error)
+strata verify: captured the 1-token window (upload no error, sync no error)
+strata verify: captured the 1-token window (upload no error, sync no error)
+strata verify: captured the 1-token window (upload no error, sync no error)
+strata serve: decode expert cache hit rate: 97.7% (215 hits / 220 lookups)
+strata serve: decode expert cache hit rate: 99.8% (47001 hits / 47080 lookups)
+strata serve: decode expert cache hit rate: 99.9% (130749 hits / 130900 lookups)
+strata serve: decode expert cache hit rate: 99.8% (114642 hits / 114840 lookups)
+strata serve: decode expert cache hit rate: 99.9% (98281 hits / 98340 lookups)
+strata serve: decode expert cache hit rate: 100.0% (83998 hits / 84040 lookups)

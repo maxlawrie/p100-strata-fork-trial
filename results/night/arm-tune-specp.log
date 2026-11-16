@@ -1,0 +1,12 @@
+07:56:27 [tune-specp] starting (easy hard); cards at 50 41 43 
+ Container strata-night  Creating
+ Container strata-night  Created
+ Container strata-night  Starting
+ Container strata-night  Started
+07:58:13 [tune-specp] model ready after 105 s
+07:58:13 [tune-specp] cards at 51 41 43 after waiting 0 s for <= 58 C
+07:58:13 [tune-specp] step easy
+08:03:36 [tune-specp] cards at 58 48 51 after waiting 105 s for <= 58 C
+08:03:36 [tune-specp] step hard
+08:06:35 [tune-specp] done
+08:06:45 [tune-specp] container stopped

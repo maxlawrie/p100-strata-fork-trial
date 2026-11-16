@@ -1,0 +1,13 @@
+09:35:23 [split-12-36] starting (sustain easy); cards at 46 41 51 
+ Container strata-night  Creating
+ Container strata-night  Created
+ Container strata-night  Starting
+ Container strata-night  Started
+09:37:09 [split-12-36] model ready after 105 s
+09:37:09 [split-12-36] cards at 45 39 47 after waiting 0 s for <= 58 C
+09:37:09 [split-12-36] step sustain
+09:50:25 [split-12-36] cards at 48 46 57 after waiting 76 s for <= 58 C
+09:50:25 [split-12-36] step easy
+09:54:12 [split-12-36] done
+09:54:22 [split-12-36] container stopped
+SPLIT-DONE

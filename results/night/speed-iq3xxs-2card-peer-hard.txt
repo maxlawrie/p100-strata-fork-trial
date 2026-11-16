@@ -1,0 +1,15 @@
+start 23:29:28, GPU C: 44 58 47 
+night-iq3xxs-2card-peer code semver_sort      PASS  1147 tok @  63.5 tok/s   19.9 s  think     0 ch  
+night-iq3xxs-2card-peer code cron_next        PASS  1206 tok @  62.3 tok/s   21.2 s  think     0 ch  
+night-iq3xxs-2card-peer code json_parse       FAIL  2062 tok @  67.2 tok/s   32.5 s  think     0 ch  ValueError: Expected ',' or ']' at position 133
+night-iq3xxs-2card-peer code regex_match      PASS  3265 tok @  62.7 tok/s   54.0 s  think     0 ch  
+night-iq3xxs-2card-peer code osa_distance     PASS   337 tok @  65.4 tok/s    6.9 s  think     0 ch  
+night-iq3xxs-2card-peer code parse_csv        FAIL   694 tok @  60.3 tok/s   13.2 s  think     0 ch  AssertionError: accepted invalid: ['"a"b,c']
+night-iq3xxs-2card-peer code run_limited      FAIL  1443 tok @  60.5 tok/s   25.5 s  think     0 ch  UnboundLocalError: cannot access local variable 'active_tasks' where it is not a
+night-iq3xxs-2card-peer code lex_shortest_path PASS   832 tok @  56.9 tok/s   16.4 s  think     0 ch  
+night-iq3xxs-2card-peer code-hard total 5/8 passed, 10986 tokens, 190 s
+end 23:32:41
+GPU0 max 44C, max 29W, thermal slowdown 0/97
+GPU1 max 74C, max 142W, thermal slowdown 0/97
+GPU2 max 51C, max 93W, thermal slowdown 0/97
+DONE

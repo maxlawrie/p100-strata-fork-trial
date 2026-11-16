@@ -1,0 +1,40 @@
+[strata] 2026-11-14 00:34:22 engine started: /opt/strata/components/engine/0.1.47-linux-x86_64-cuda-cuda12/strata --serve --pack /data/Strata-data/packs/gyro-gyro-s --native /data/Strata-data/models/gyro-Gyro-S/Qwen3.8-Flash-Next-Gyro-S-TQ1_0.gguf --ple-gguf /data/Strata-data/models/gyro-Gyro-S/Qwen
+strata generate: APR pack: Hadamard-folded experts (block 128)
+strata generate: this CPU has no AVX-512: the expert kernels run on AVX-2 (multi-token for the i-quant gate/up rows)
+strata generate: native pack: /data/Strata-data/packs/gyro-gyro-s experts (largest blob 1.05 MB), token embedding Q6_K in mapped host memory (497 MiB, 0.6 s)
+strata generate: profile /opt/strata/terminal/data/expert-profile.bin: 24576 ranked pairs, built for 24576 slots
+strata mtp: draft layer loaded, 839 MiB of VRAM (experts 675, dense 111), files read in 0.78 s (1002 MiB/s)
+strata generate: expert arena read through the file cache (buffered (not Windows))
+strata generate: expert arena: cudaHostRegister PORTABLE ok; MAP_HUGETLB unavailable (needed 12301 2 MiB pages, vm.nr_hugepages=0); transparent huge pages requested (MADV_HUGEPAGE)
+strata generate: dropped the file cache of 0 expert shard(s); PLE table re-touched in 0.0 s
+strata generate: expert cache auto: 10.07 GiB free, 700 MiB reserved (+218 MiB for the draft head) -> 9382 slots
+strata generate: expert cache 9382 slots, 9.17 GiB of VRAM; policy is
+strata generate: the GPU computes the experts in the cache; it rounds differently from the CPU,
+strata generate: pre-filled 9382 of 9382 slots from the profile in 6.9 s (1425 MB/s); slot 0 verified
+strata generate: R4 hit path ON - resident experts are computed on the GPU
+strata generate: 5 expert-pool workers + the host thread
+strata generate: token graph hit path: 9382 resident experts, decided on the device
+prefill: the CPU share is ON by default for prompt chunks below 1024 tokens (the idle CPU takes some of the experts the GPU would stream; answers can differ slightly from 0.1.40.3, mean KL ~0.004). STRATA_PREFILL_CPU_SHARE=0 turns it off.
+strata serve: the prompt path borrows 3679 CUDA0 cache slots (3.60 GiB)
+strata serve: decode expert cache hit rate: 70.2% (337 hits / 480 lookups)
+strata serve: decode expert cache hit rate: 61.1% (1759 hits / 2880 lookups)
+strata serve: decode expert cache hit rate: 70.5% (1692 hits / 2400 lookups)
+strata serve: decode expert cache hit rate: 68.0% (2285 hits / 3360 lookups)
+strata serve: PCIe share: the CPU pool takes 177 us per missed expert (5.9 GB/s of expert bytes), the link 1.5 GB/s -> pcie_frac 0.10 (was 0.04; --pcie-frac N fixes it, STRATA_PCIE_FRAC_DEFAULT=old keeps the start-up rule)
+strata serve: decode expert cache hit rate: 86.2% (541377 hits / 627968 lookups); 1312 more read by the GPU over PCIe or from another GPU (0.2% of all 629280 routed)
+strata serve: decode expert cache hit rate: 89.6% (607473 hits / 678101 lookups); 1099 more read by the GPU over PCIe or from another GPU (0.2% of all 679200 routed)
+strata serve: decode expert cache hit rate: 92.3% (2103567 hits / 2278864 lookups); 2576 more read by the GPU over PCIe or from another GPU (0.1% of all 2281440 routed)
+strata serve: decode expert cache hit rate: 90.0% (1130882 hits / 1256493 lookups); 1587 more read by the GPU over PCIe or from another GPU (0.1% of all 1258080 routed)
+strata serve: decode expert cache hit rate: 91.4% (1155614 hits / 1264755 lookups); 1485 more read by the GPU over PCIe or from another GPU (0.1% of all 1266240 routed)
+strata serve: decode expert cache hit rate: 86.6% (209940 hits / 242349 lookups); 531 more read by the GPU over PCIe or from another GPU (0.2% of all 242880 routed)
+strata serve: decode expert cache hit rate: 88.4% (402611 hits / 455233 lookups); 767 more read by the GPU over PCIe or from another GPU (0.2% of all 456000 routed)
+strata serve: decode expert cache hit rate: 88.3% (129006 hits / 146084 lookups); 316 more read by the GPU over PCIe or from another GPU (0.2% of all 146400 routed)
+strata serve: decode expert cache hit rate: 92.5% (709963 hits / 767783 lookups); 697 more read by the GPU over PCIe or from another GPU (0.1% of all 768480 routed)
+strata serve: decode expert cache hit rate: 87.8% (492515 hits / 560844 lookups); 1236 more read by the GPU over PCIe or from another GPU (0.2% of all 562080 routed)
+strata serve: decode expert cache hit rate: 89.7% (607526 hits / 677086 lookups); 1154 more read by the GPU over PCIe or from another GPU (0.2% of all 678240 routed)
+strata serve: decode expert cache hit rate: 90.6% (161190 hits / 177918 lookups); 162 more read by the GPU over PCIe or from another GPU (0.1% of all 178080 routed)
+strata serve: decode expert cache hit rate: 91.9% (1010978 hits / 1100249 lookups); 1351 more read by the GPU over PCIe or from another GPU (0.1% of all 1101600 routed)
+strata serve: decode expert cache hit rate: 90.8% (298525 hits / 328822 lookups); 458 more read by the GPU over PCIe or from another GPU (0.1% of all 329280 routed)
+strata serve: decode expert cache hit rate: 91.5% (268417 hits / 293505 lookups); 255 more read by the GPU over PCIe or from another GPU (0.1% of all 293760 routed)
+strata serve: decode expert cache hit rate: 88.8% (518900 hits / 584074 lookups); 1046 more read by the GPU over PCIe or from another GPU (0.2% of all 585120 routed)
+strata serve: decode expert cache hit rate: 91.8% (754275 hits / 821913 lookups); 807 more read by the GPU over PCIe or from another GPU (0.1% of all 822720 routed)

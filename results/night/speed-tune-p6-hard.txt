@@ -1,0 +1,15 @@
+start 08:19:00, GPU C: 58 48 50 
+night-tune-p6 code semver_sort      PASS  1009 tok @  62.2 tok/s   18.7 s  think     0 ch  
+night-tune-p6 code cron_next        FAIL  1330 tok @  65.2 tok/s   23.0 s  think     0 ch  exit 124
+night-tune-p6 code json_parse       PASS  2045 tok @  71.5 tok/s   31.1 s  think     0 ch  
+night-tune-p6 code regex_match      PASS  3766 tok @  68.7 tok/s   57.4 s  think     0 ch  
+night-tune-p6 code osa_distance     PASS   469 tok @  66.6 tok/s    9.5 s  think     0 ch  
+night-tune-p6 code parse_csv        FAIL   849 tok @  68.8 tok/s   14.8 s  think     0 ch  AssertionError: ('"a b,",b b,"\n\n ","a \r\n"\r\n"""bb\na"," \n\n"",",', [['a b,
+night-tune-p6 code run_limited      PASS   753 tok @  59.0 tok/s   15.0 s  think     0 ch  
+night-tune-p6 code lex_shortest_path PASS  1197 tok @  58.5 tok/s   23.0 s  think     0 ch  
+night-tune-p6 code-hard total 6/8 passed, 11418 tokens, 192 s
+end 08:22:47
+GPU0 max 65C, max 129W, thermal slowdown 0/113
+GPU1 max 57C, max 144W, thermal slowdown 0/113
+GPU2 max 62C, max 140W, thermal slowdown 0/113
+DONE

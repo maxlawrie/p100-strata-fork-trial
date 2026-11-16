@@ -1,0 +1,12 @@
+start 09:10:54, GPU C: 42 78 45 
+gyro-s-2card-peer code semver_sort      PASS  1513 tok @  56.0 tok/s   28.8 s  think     0 ch  
+gyro-s-2card-peer code cron_next        FAIL  2205 tok @  53.3 tok/s   43.4 s  think     0 ch  ValueError: No matching time found within reasonable search range
+ABORT: a GPU reached 80C at 09:12:10
+gyro-s-2card-peer code json_parse       PASS  2320 tok @  62.9 tok/s   38.5 s  think     0 ch  
+gyro-s-2card-peer ABORT seen, stopping
+gyro-s-2card-peer code-hard total 2/8 passed, 6038 tokens, 111 s
+end 09:12:48
+GPU0 max 42C, max 28W, thermal slowdown 0/57
+GPU1 max 79C, max 120W, thermal slowdown 23/57
+GPU2 max 50C, max 65W, thermal slowdown 0/57
+DONE

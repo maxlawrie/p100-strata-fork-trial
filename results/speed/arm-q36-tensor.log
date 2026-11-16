@@ -1,0 +1,11 @@
+f083d02a2c7f70b5d5633f3797733c42ed0f6f7e70e338274966e643f9ff8ec8
+09:57:24 [q36-tensor] starting (easy hard sustain) on GPU 1,2; cards at 47 41 48 
+09:57:44 [q36-tensor] model ready after 20 s; health: {"status":"ok"}
+09:57:44 [q36-tensor] cards at 46 41 48 after waiting 0 s for <= 58 C
+09:57:44 [q36-tensor] step easy
+10:01:03 [q36-tensor] cards at 42 48 58 after waiting 60 s for <= 58 C
+10:01:03 [q36-tensor] step hard
+10:04:12 [q36-tensor] cards at 41 47 58 after waiting 76 s for <= 58 C
+10:04:12 [q36-tensor] step sustain
+10:16:17 [q36-tensor] done
+10:16:18 [q36-tensor] container stopped

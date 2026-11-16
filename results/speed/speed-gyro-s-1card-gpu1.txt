@@ -1,0 +1,22 @@
+start 11:31:00, GPU C: 47 42 49 
+p4k        prompt  3857 tok @  263.1 tok/s | gen    4 tok @  14.2 tok/s | drafts 3/6 | '179'
+p16k       prompt 15672 tok @  287.3 tok/s | gen    4 tok @  28.5 tok/s | drafts 3/3 | '720'
+p32k       prompt 31885 tok @  279.4 tok/s | gen    5 tok @  20.4 tok/s | drafts 4/6 | '1440'
+gen        prompt    26 tok @   31.7 tok/s | gen  300 tok @  30.9 tok/s | drafts 123/274 | 'The fog rolled in like a heavy blanket, '
+gen        prompt     7 tok @   69.3 tok/s | gen  300 tok @  39.7 tok/s | drafts 126/255 | 'The wind howled against the granite wall'
+gen        prompt     7 tok @   67.4 tok/s | gen  300 tok @  41.8 tok/s | drafts 134/266 | 'The wind howled across the jagged rocks '
+tool       prompt   305 tok @  120.9 tok/s | gen   46 tok @  30.9 tok/s | drafts 29/40 | [('get_weather', '{"city":"Brisbane"}')]
+night-gyro-s-1card-gpu1 code parse_duration   PASS   347 tok @  36.8 tok/s   10.9 s  think     0 ch  
+night-gyro-s-1card-gpu1 code merge_intervals  PASS   168 tok @  46.2 tok/s    4.8 s  think     0 ch  
+night-gyro-s-1card-gpu1 code lru_cache        PASS   256 tok @  55.5 tok/s    6.0 s  think     0 ch  
+night-gyro-s-1card-gpu1 code roman            PASS   532 tok @  52.0 tok/s   11.6 s  think     0 ch  
+night-gyro-s-1card-gpu1 code toposort         PASS   451 tok @  51.4 tok/s   10.1 s  think     0 ch  
+night-gyro-s-1card-gpu1 code fix_bisect       PASS    90 tok @  54.5 tok/s    3.5 s  think     0 ch  
+night-gyro-s-1card-gpu1 code calc             FAIL   834 tok @  55.0 tok/s   16.4 s  think     0 ch  ValueError: Unexpected character '.' at position 6
+night-gyro-s-1card-gpu1 code wrap             PASS   304 tok @  57.9 tok/s    6.6 s  think     0 ch  
+night-gyro-s-1card-gpu1 code total 7/8 passed, 2982 tokens, 70 s
+end 11:35:46
+GPU0 max 47C, max 29W, thermal slowdown 0/143
+GPU1 max 68C, max 172W, thermal slowdown 0/143
+GPU2 max 49C, max 28W, thermal slowdown 0/143
+DONE

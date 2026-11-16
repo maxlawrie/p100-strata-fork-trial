@@ -1,0 +1,12 @@
+11:00:55 [pl220] starting (easy sustain); cards at 44 40 50 
+ Container strata-night  Creating
+ Container strata-night  Created
+ Container strata-night  Starting
+ Container strata-night  Started
+11:02:40 [pl220] model ready after 105 s
+11:02:41 [pl220] cards at 45 39 47 after waiting 1 s for <= 58 C
+11:02:41 [pl220] step easy
+11:06:52 [pl220] cards at 53 49 58 after waiting 46 s for <= 58 C
+11:06:52 [pl220] step sustain
+11:18:57 [pl220] done
+11:19:07 [pl220] container stopped

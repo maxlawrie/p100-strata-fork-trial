@@ -1,0 +1,39 @@
+[strata] 2026-11-13 21:41:59 engine started: /opt/strata/components/engine/0.1.47-linux-x86_64-cuda-cuda12/strata --serve --pack /data/Strata-data/packs/gyro-gyro-s --native /data/Strata-data/models/gyro-Gyro-S/Qwen3.8-Flash-Next-Gyro-S-TQ1_0.gguf --ple-gguf /
+strata generate: layer split across 3 GPUs: CUDA0, then CUDA1,2 (split 12,34)
+strata generate: APR pack: Hadamard-folded experts (block 128)
+strata generate: this CPU has no AVX-512: the expert kernels run on AVX-2 (multi-token for the i-quant gate/up rows)
+strata generate: native pack: /data/Strata-data/packs/gyro-gyro-s experts (largest blob 1.05 MB), token embedding Q6_K in mapped host memory (497 MiB, 0.4 s)
+strata generate: layer split: CUDA0 loads the dense weights of layers 0-11 only
+strata generate: layer split: CUDA1 loads the dense weights of layers 12-33 only
+strata generate: layer split: CUDA1 PCIe probe 6.7 GB/s (best of 6.7 6.7 6.7 6.7) -> pcie_frac 0.18
+strata generate: layer split: CUDA1 holds its weights; 13.89 GiB free (its session follows the split search)
+strata generate: layer split: CUDA2 loads the dense weights of layers 34-47 only
+strata generate: layer split: CUDA2 PCIe probe 6.7 GB/s (best of 6.7 6.7 6.7 6.7) -> pcie_frac 0.18
+strata generate: layer split: CUDA2 holds its weights; 14.48 GiB free (its session follows the split search)
+strata generate: profile /opt/strata/terminal/data/expert-profile.bin: 24576 ranked pairs, built for 24576 slots
+strata generate: layer split: CUDA1 holds its weights, session [12, 34); 13.44 GiB free
+strata generate: layer split: CUDA2 holds its weights, session [34, 48) and the head; 13.63 GiB free
+strata mtp: draft layer loaded, 835 MiB of VRAM (experts 675, dense 111), files read in 0.98 s (799 MiB/s)
+strata: expert arena: MAP_HUGETLB unavailable (needed 12301 2 MiB pages, vm.nr_hugepages=0); transparent huge pages NOT requested: only 0 GiB of free 2 MiB blocks for a 24 GiB arena, compaction would stall the load (STRATA_ARENA_THP=1 requests them anyway) (#2
+strata generate: expert arena read through the file cache (buffered (not Windows))
+strata generate: expert arena: cudaHostRegister PORTABLE ok; MAP_HUGETLB unavailable (needed 12301 2 MiB pages, vm.nr_hugepages=0); transparent huge pages NOT requested: only 0 GiB of free 2 MiB blocks for a 24 GiB arena, compaction would stall the load (STRAT
+strata generate: dropped the file cache of 0 expert shard(s); PLE table re-touched in 0.0 s
+strata generate: expert cache auto: 14.28 GiB free, 700 MiB reserved (+0 MiB for the draft head) -> 6144 slots
+strata generate: expert cache 6144 slots, 6.01 GiB of VRAM; policy is
+strata generate: the GPU computes the experts in the cache; it rounds differently from the CPU,
+strata generate: pre-filled 6144 of 6144 slots from the profile in 4.5 s (1426 MB/s); slot 0 verified
+strata generate: layer split, CUDA1: 13.39 GiB free of 15.89, room for experts 12.62 GiB
+strata generate: layer split: CUDA1 runs layers 12-33, expert cache 11264 slots (11.01 GiB), 11264 of its 11264 profiled pairs; slot 0 verified
+strata generate: layer split, CUDA2: 12.76 GiB free of 15.89, room for experts 11.98 GiB
+strata generate: layer split: CUDA2 runs layers 34-47, expert cache 7168 slots (7.01 GiB), 7168 of its 7168 profiled pairs; slot 0 verified
+strata generate: layer split: CUDA0 runs layers 0-11
+strata generate: R4 hit path ON - resident experts are computed on the GPU
+strata generate: 5 expert-pool workers + the host thread
+strata generate: token graph hit path: 24576 resident experts, decided on the device
+strata serve: layer split: 100% of the experts resident, the prompt path's streamed ring 96 slots
+strata serve:   CUDA1 prompt path borrows 3655 of its 11264 slots (3.57 GiB)
+strata verify: window up to 6 tokens, 51.3 MiB of device buffers (100% VRAM resident: zero-doorbell graph)
+strata verify: window up to 6 tokens, 51.3 MiB of device buffers (100% VRAM resident: zero-doorbell graph)
+strata serve: layer split: layers 0-11 (CUDA0), 12-33 (CUDA1), 34-47 (CUDA2), one hand-off per window
+strata verify: window up to 6 tokens, 51.3 MiB of device buffers (100% VRAM resident: zero-doorbell graph)
+strata serve: adaptive overlap: off: not on a layer split

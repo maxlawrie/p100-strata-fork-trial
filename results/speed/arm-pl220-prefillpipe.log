@@ -1,0 +1,10 @@
+11:22:38 [pl220-prefillpipe] starting (easy); cards at 44 39 50 
+ Container strata-night  Creating
+ Container strata-night  Created
+ Container strata-night  Starting
+ Container strata-night  Started
+11:24:24 [pl220-prefillpipe] model ready after 105 s
+11:24:24 [pl220-prefillpipe] cards at 45 39 47 after waiting 0 s for <= 58 C
+11:24:24 [pl220-prefillpipe] step easy
+11:27:48 [pl220-prefillpipe] done
+11:27:58 [pl220-prefillpipe] container stopped

@@ -1,0 +1,6 @@
+17:44:32
+health: {"status": "ok", "max_context": 262144, "model": "qwen3.8-flash-next-iq3_s", "images": false, "api_key": false, "image_generation": false, "loaded": tru
+fnx Up 2 minutes
+17:44:12 used 52184 avail 9974 48.08GiB / 58GiB gpu 7369 11731 11731 
+17:44:23 used 43719 avail 18439 39.64GiB / 58GiB gpu 10807 15941 15941 
+ready: http://127.0.0.1:8080/v1  (OpenAI: /v1/chat/completions, Anthropic: /v1/messages, context 262144 tokens)

@@ -1,0 +1,35 @@
+Starting Strata: IQ3_XXS (preset 'docker').
+Main: GPU 3 Tesla P100-PCIE-16GB. Helper: GPU 2 Tesla P100-PCIE-16GB. Off: GPU 1 Tesla P100-PCIE-16GB.
+    Checking the engine for this computer…
+    Engine 0.1.47 (cuda) is installed.
+    Getting qwen IQ3_XXS ready (a download may be large; it continues where it stopped if interrupted)…
+    Getting your model ready
+    Checking your computer
+    Getting the helper packages ready
+    Checking the engine for this PC
+    Getting the model files: 75.8 of 75.8 GB
+    Preparing your model for Strata (one time)
+    Preparing the model data for the engine (one time)
+    Preparing the draft layer
+    Saving the model's settings
+    qwen IQ3_XXS is ready.
+    Writing this launch's settings…
+    Settings are saved.
+    Starting the engine and loading the model. The first start can take a few minutes.
+    Loading the model… 15 s
+    Loading the model… 30 s
+    Loading the model… 45 s
+    Loading the model… 60 s
+    Loading the model… 75 s
+    The model is loaded and answering.
+    Ready: http://127.0.0.1:8080, http://<rig-lan-ip>:8080
+    Strata is serving.
+
+Strata is serving.
+  This computer  http://127.0.0.1:8080/v1
+  Network        http://<rig-lan-ip>:8080/v1
+  Anthropic apps http://127.0.0.1:8080   (Claude Code: ANTHROPIC_BASE_URL, no /v1 at the end)
+  API key        75e6451114••••••••   (show it: strata launch --show-key --preset "docker")
+  Watch it:    STRATA_API_KEY=$(strata launch --show-key) strata monitor --url http://127.0.0.1:8080 --credential-env STRATA_API_KEY
+  Connect an app:  strata connect opencode      Stop:  strata launch --stop --preset "docker"
+Serving on port 8080. Watch it: docker exec -it <container> strata monitor    Stop: docker stop <container>

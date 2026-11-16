@@ -1,0 +1,39 @@
+start 05:28:58, GPU C: 58 36 38 
+14 s  25.0 tok/s  GPU C: 65 36 38  slowdown samples: 0
+28 s  24.8 tok/s  GPU C: 68 37 38  slowdown samples: 0
+41 s  24.7 tok/s  GPU C: 71 36 38  slowdown samples: 0
+55 s  24.4 tok/s  GPU C: 73 37 38  slowdown samples: 0
+69 s  24.3 tok/s  GPU C: 76 36 38  slowdown samples: 0
+83 s  24.0 tok/s  GPU C: 78 36 38  slowdown samples: 0
+98 s  22.5 tok/s  GPU C: 78 36 38  slowdown samples: 2
+117 s  17.3 tok/s  GPU C: 78 36 38  slowdown samples: 2
+138 s  15.9 tok/s  GPU C: 79 36 38  slowdown samples: 6
+160 s  14.4 tok/s  GPU C: 79 36 38  slowdown samples: 7
+183 s  14.3 tok/s  GPU C: 79 36 38  slowdown samples: 7
+207 s  13.7 tok/s  GPU C: 79 36 38  slowdown samples: 12
+231 s  13.4 tok/s  GPU C: 79 36 38  slowdown samples: 9
+256 s  13.0 tok/s  GPU C: 79 37 38  slowdown samples: 11
+281 s  13.4 tok/s  GPU C: 79 37 38  slowdown samples: 10
+308 s  12.0 tok/s  GPU C: 78 37 38  slowdown samples: 11
+332 s  13.1 tok/s  GPU C: 79 37 38  slowdown samples: 11
+357 s  13.4 tok/s  GPU C: 79 37 38  slowdown samples: 9
+380 s  13.9 tok/s  GPU C: 79 37 38  slowdown samples: 9
+406 s  12.6 tok/s  GPU C: 78 37 38  slowdown samples: 13
+431 s  13.0 tok/s  GPU C: 79 37 39  slowdown samples: 11
+456 s  12.8 tok/s  GPU C: 79 37 39  slowdown samples: 10
+482 s  12.5 tok/s  GPU C: 78 37 39  slowdown samples: 10
+506 s  13.5 tok/s  GPU C: 79 37 38  slowdown samples: 11
+532 s  12.6 tok/s  GPU C: 79 37 39  slowdown samples: 12
+558 s  12.4 tok/s  GPU C: 79 37 38  slowdown samples: 11
+581 s  14.1 tok/s  GPU C: 79 37 38  slowdown samples: 10
+607 s  12.7 tok/s  GPU C: 79 37 38  slowdown samples: 11
+632 s  13.2 tok/s  GPU C: 79 37 39  slowdown samples: 11
+656 s  13.5 tok/s  GPU C: 79 37 39  slowdown samples: 10
+682 s  12.4 tok/s  GPU C: 79 37 38  slowdown samples: 10
+708 s  12.3 tok/s  GPU C: 79 37 39  slowdown samples: 10
+733 s  13.3 tok/s  GPU C: 78 37 39  slowdown samples: 11
+end 05:41:11 after 733 s
+GPU0 max 80C, mean 90 W, thermal slowdown 257/362 samples
+GPU1 max 37C, mean 27 W, thermal slowdown 0/362 samples
+GPU2 max 39C, mean 26 W, thermal slowdown 0/362 samples
+DONE

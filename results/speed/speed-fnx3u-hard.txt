@@ -1,0 +1,15 @@
+start 18:12:18, GPU C: 75 62 79 
+fnx3u    code semver_sort      PASS   965 tok @  53.0 tok/s   20.6 s  think     0 ch  
+fnx3u    code cron_next        FAIL  1347 tok @  53.1 tok/s   33.0 s  think     0 ch  ValueError: No matching time found within search limit
+fnx3u    code json_parse       PASS  2110 tok @  50.0 tok/s   44.3 s  think     0 ch  
+fnx3u    code regex_match      PASS  2002 tok @  55.5 tok/s   43.0 s  think     0 ch  
+fnx3u    code osa_distance     PASS   457 tok @  52.0 tok/s   10.9 s  think     0 ch  
+fnx3u    code parse_csv        PASS   816 tok @  56.9 tok/s   16.6 s  think     0 ch  
+fnx3u    code run_limited      PASS   619 tok @  61.2 tok/s   11.9 s  think     0 ch  
+fnx3u    code lex_shortest_path PASS   887 tok @  52.9 tok/s   23.5 s  think     0 ch  
+fnx3u    code-hard total 7/8 passed, 9203 tokens, 204 s
+end 18:15:46
+GPU0 max 76C, max 108W, thermal slowdown 0/104
+GPU1 max 62C, max 105W, thermal slowdown 0/104
+GPU2 max 79C, max 114W, thermal slowdown 0/104
+DONE

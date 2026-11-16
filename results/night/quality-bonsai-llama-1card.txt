@@ -1,0 +1,4 @@
+night-bonsai-llama-1card run 1 code  semver_sort          PASS   399 tok @  24.9 tok/s   19.2 s  
+night-bonsai-llama-1card run 1 code  cron_next            FAIL   894 tok @  24.4 tok/s   40.4 s  AttributeError: type object 'datetime.datetime' has no attribute 'datetime'
+night-bonsai-llama-1card run 1 code  json_parse           FAIL  1740 tok @  18.6 tok/s   97.1 s  ValueError: Expected ',' or ']' at position 133
+night-bonsai-llama-1card run 1 code  regex_match          FAIL  5328 tok @  13.2 tok/s  406.3 s  ValueError: bad class

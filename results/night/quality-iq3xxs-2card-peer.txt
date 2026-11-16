@@ -1,0 +1,187 @@
+night-iq3xxs-2card-peer run 1 code  semver_sort          PASS  1202 tok @  57.5 tok/s   22.7 s  
+night-iq3xxs-2card-peer run 1 code  cron_next            PASS  1182 tok @  62.8 tok/s   20.7 s  
+night-iq3xxs-2card-peer run 1 code  json_parse           PASS  2083 tok @  65.6 tok/s   33.6 s  
+night-iq3xxs-2card-peer run 1 code  regex_match          PASS  3950 tok @  58.9 tok/s   68.9 s  
+night-iq3xxs-2card-peer run 1 code  osa_distance         PASS   337 tok @  65.9 tok/s    6.7 s  
+night-iq3xxs-2card-peer run 1 code  parse_csv            FAIL   693 tok @  61.8 tok/s   13.0 s  AssertionError: ('"a b,",b b,"\n\n ","a \r\n"\r\n"""bb\na"," \n\n"",",', [['a b,', 'b b', '\n\n ', '
+night-iq3xxs-2card-peer run 1 code  run_limited          PASS   514 tok @  60.6 tok/s   10.1 s  
+night-iq3xxs-2card-peer run 1 code  lex_shortest_path    PASS  1177 tok @  57.5 tok/s   22.2 s  
+night-iq3xxs-2card-peer run 1 code  b64                  PASS  1130 tok @  60.9 tok/s   20.2 s  
+night-iq3xxs-2card-peer run 1 code  glob_match           FAIL  1276 tok @  58.8 tok/s   23.6 s  AssertionError: ('***[!a]', 'cb]', False, True)
+night-iq3xxs-2card-peer run 1 code  fraction_to_decimal  PASS   320 tok @  64.2 tok/s    7.0 s  
+night-iq3xxs-2card-peer run 1 code  knapsack_pick        FAIL  1236 tok @  57.5 tok/s   23.3 s  AssertionError: ([(1, 0), (1, 9), (0, 1), (1, 5), (3, 0), (0, 0), (5, 9)], 15, (24, [1, 2, 3, 6]), (
+night-iq3xxs-2card-peer run 1 code  kth_permutation      PASS   586 tok @  62.1 tok/s   11.0 s  
+night-iq3xxs-2card-peer run 1 code  text_justify         PASS   491 tok @  68.2 tok/s    9.0 s  
+night-iq3xxs-2card-peer run 1 code  add_days             FAIL  1333 tok @  62.3 tok/s   23.3 s  ValueError: Resulting date is out of range (before year 0001)
+night-iq3xxs-2card-peer run 1 code  crc32                PASS   486 tok @  57.6 tok/s   10.3 s  
+night-iq3xxs-2card-peer run 1 code  weighted_intervals   PASS   820 tok @  63.3 tok/s   14.6 s  
+night-iq3xxs-2card-peer run 1 code  normpath             PASS   617 tok @  61.9 tok/s   11.7 s  
+night-iq3xxs-2card-peer run 1 code  min_window           PASS   336 tok @  59.3 tok/s    7.3 s  
+night-iq3xxs-2card-peer run 1 code  int_to_words         PASS   595 tok @  64.8 tok/s   11.2 s  
+night-iq3xxs-2card-peer run 1 code  big_mul              PASS   469 tok @  62.5 tok/s    9.3 s  
+night-iq3xxs-2card-peer run 1 arith arith00              PASS   277 tok @  55.8 tok/s    6.7 s  
+night-iq3xxs-2card-peer run 1 arith arith01              PASS   569 tok @  64.9 tok/s   10.6 s  
+night-iq3xxs-2card-peer run 1 arith arith02              PASS   485 tok @  65.9 tok/s    9.0 s  
+night-iq3xxs-2card-peer run 1 arith arith03              PASS   420 tok @  64.5 tok/s    8.0 s  
+night-iq3xxs-2card-peer run 1 arith arith04              PASS   295 tok @  64.7 tok/s    6.2 s  
+night-iq3xxs-2card-peer run 1 arith arith05              PASS   216 tok @  68.5 tok/s    4.8 s  
+night-iq3xxs-2card-peer run 1 arith arith06              PASS   377 tok @  66.6 tok/s    7.3 s  
+night-iq3xxs-2card-peer run 1 arith arith07              PASS   506 tok @  66.5 tok/s    9.1 s  
+night-iq3xxs-2card-peer run 1 arith arith08              PASS   254 tok @  63.6 tok/s    5.6 s  
+night-iq3xxs-2card-peer run 1 arith arith09              PASS   366 tok @  66.1 tok/s    7.2 s  
+night-iq3xxs-2card-peer run 1 arith arith10              PASS   278 tok @  70.0 tok/s    5.6 s  
+night-iq3xxs-2card-peer run 1 arith arith11              PASS   394 tok @  67.2 tok/s    7.4 s  
+night-iq3xxs-2card-peer run 1 arith arith12              PASS   520 tok @  66.8 tok/s    9.3 s  
+night-iq3xxs-2card-peer run 1 arith arith13              PASS   367 tok @  65.1 tok/s    7.3 s  
+night-iq3xxs-2card-peer run 1 arith arith14              PASS   424 tok @  62.1 tok/s    8.5 s  
+night-iq3xxs-2card-peer run 1 arith arith15              PASS   268 tok @  69.5 tok/s    5.4 s  
+night-iq3xxs-2card-peer run 1 arith arith16              PASS   334 tok @  67.9 tok/s    6.6 s  
+night-iq3xxs-2card-peer run 1 arith arith17              PASS   393 tok @  65.9 tok/s    7.6 s  
+night-iq3xxs-2card-peer run 1 arith arith18              PASS   488 tok @  67.3 tok/s    8.8 s  
+night-iq3xxs-2card-peer run 1 arith arith19              PASS   428 tok @  65.1 tok/s    8.1 s  
+night-iq3xxs-2card-peer run 1 arith arith20              PASS   267 tok @  67.8 tok/s    5.6 s  
+night-iq3xxs-2card-peer run 1 arith arith21              PASS   510 tok @  66.2 tok/s    9.3 s  
+night-iq3xxs-2card-peer run 1 arith arith22              PASS   488 tok @  64.3 tok/s    9.2 s  
+night-iq3xxs-2card-peer run 1 arith arith23              PASS   376 tok @  67.8 tok/s    7.0 s  
+night-iq3xxs-2card-peer run 1 arith arith24              PASS   324 tok @  62.9 tok/s    6.8 s  
+night-iq3xxs-2card-peer run 1 arith arith25              PASS   265 tok @  72.1 tok/s    5.3 s  
+night-iq3xxs-2card-peer run 1 arith arith26              PASS   475 tok @  67.7 tok/s    8.8 s  
+night-iq3xxs-2card-peer run 1 arith arith27              PASS   434 tok @  65.6 tok/s    8.2 s  
+night-iq3xxs-2card-peer run 1 arith arith28              PASS   268 tok @  64.7 tok/s    5.8 s  
+night-iq3xxs-2card-peer run 1 arith arith29              PASS   450 tok @  63.2 tok/s    8.8 s  
+night-iq3xxs-2card-peer run 1 arith arith30              PASS   266 tok @  69.3 tok/s    5.4 s  
+night-iq3xxs-2card-peer run 1 arith arith31              PASS   393 tok @  65.2 tok/s    7.5 s  
+night-iq3xxs-2card-peer run 1 arith arith32              PASS   428 tok @  66.7 tok/s    8.1 s  
+night-iq3xxs-2card-peer run 1 arith arith33              PASS   363 tok @  64.3 tok/s    7.3 s  
+night-iq3xxs-2card-peer run 1 arith arith34              PASS   333 tok @  64.1 tok/s    6.8 s  
+night-iq3xxs-2card-peer run 1 arith arith35              PASS   266 tok @  69.7 tok/s    5.3 s  
+night-iq3xxs-2card-peer run 1 arith arith36              PASS   484 tok @  63.5 tok/s    9.4 s  
+night-iq3xxs-2card-peer run 1 arith arith37              PASS   883 tok @  68.5 tok/s   14.6 s  
+night-iq3xxs-2card-peer run 1 arith arith38              PASS   357 tok @  61.5 tok/s    7.5 s  
+night-iq3xxs-2card-peer run 1 arith arith39              PASS   429 tok @  66.8 tok/s    7.9 s  
+night-iq3xxs-2card-peer run 2 code  semver_sort          PASS  1344 tok @  59.2 tok/s   24.7 s  
+night-iq3xxs-2card-peer run 2 code  cron_next            FAIL  1295 tok @  58.7 tok/s   24.0 s  ValueError: No matching time found within search limit
+night-iq3xxs-2card-peer run 2 code  json_parse           PASS  2097 tok @  66.0 tok/s   33.5 s  
+night-iq3xxs-2card-peer run 2 code  regex_match          FAIL  5156 tok @  63.3 tok/s   83.3 s  TypeError: unhashable type: 'list'
+night-iq3xxs-2card-peer run 2 code  osa_distance         PASS   480 tok @  58.7 tok/s   10.0 s  
+night-iq3xxs-2card-peer run 2 code  parse_csv            PASS  1437 tok @  60.8 tok/s   25.5 s  
+night-iq3xxs-2card-peer run 2 code  run_limited          PASS   357 tok @  60.6 tok/s    7.5 s  
+night-iq3xxs-2card-peer run 2 code  lex_shortest_path    PASS  1343 tok @  54.8 tok/s   26.1 s  
+night-iq3xxs-2card-peer run 2 code  b64                  PASS  1124 tok @  62.2 tok/s   19.9 s  
+night-iq3xxs-2card-peer run 2 code  glob_match           FAIL  1082 tok @  59.6 tok/s   20.0 s  AssertionError: ('***[!a]', 'cb]', False, True)
+night-iq3xxs-2card-peer run 2 code  fraction_to_decimal  PASS   340 tok @  64.3 tok/s    7.3 s  
+night-iq3xxs-2card-peer run 2 code  knapsack_pick        FAIL  1389 tok @  57.9 tok/s   25.7 s  AssertionError: ([(1, 0), (1, 9), (0, 1), (1, 5), (3, 0), (0, 0), (5, 9)], 15, (24, []), (24, [0, 1,
+night-iq3xxs-2card-peer run 2 code  kth_permutation      PASS   419 tok @  61.8 tok/s    8.5 s  
+night-iq3xxs-2card-peer run 2 code  text_justify         PASS   473 tok @  64.8 tok/s    9.1 s  
+night-iq3xxs-2card-peer run 2 code  add_days             FAIL  1261 tok @  61.2 tok/s   22.5 s  ValueError: Resulting date is out of range (before year 0001)
+night-iq3xxs-2card-peer run 2 code  crc32                PASS   704 tok @  57.0 tok/s   14.1 s  
+night-iq3xxs-2card-peer run 2 code  weighted_intervals   PASS   819 tok @  63.1 tok/s   14.8 s  
+night-iq3xxs-2card-peer run 2 code  normpath             FAIL   594 tok @  61.7 tok/s   11.4 s  AssertionError: ('/', '.', '/')
+night-iq3xxs-2card-peer run 2 code  min_window           PASS   336 tok @  62.3 tok/s    7.1 s  
+night-iq3xxs-2card-peer run 2 code  int_to_words         PASS   595 tok @  65.5 tok/s   11.0 s  
+night-iq3xxs-2card-peer run 2 code  big_mul              PASS   469 tok @  63.7 tok/s    9.3 s  
+night-iq3xxs-2card-peer run 2 arith arith00              PASS   277 tok @  57.7 tok/s    6.5 s  
+night-iq3xxs-2card-peer run 2 arith arith01              PASS   608 tok @  65.7 tok/s   11.0 s  
+night-iq3xxs-2card-peer run 2 arith arith02              PASS   461 tok @  68.5 tok/s    8.2 s  
+night-iq3xxs-2card-peer run 2 arith arith03              PASS   384 tok @  66.3 tok/s    7.4 s  
+night-iq3xxs-2card-peer run 2 arith arith04              PASS   292 tok @  65.8 tok/s    6.1 s  
+night-iq3xxs-2card-peer run 2 arith arith05              PASS   219 tok @  69.3 tok/s    4.8 s  
+night-iq3xxs-2card-peer run 2 arith arith06              PASS   377 tok @  67.1 tok/s    7.1 s  
+night-iq3xxs-2card-peer run 2 arith arith07              PASS   506 tok @  68.4 tok/s    9.0 s  
+night-iq3xxs-2card-peer run 2 arith arith08              PASS   262 tok @  64.3 tok/s    5.7 s  
+night-iq3xxs-2card-peer run 2 arith arith09              PASS   366 tok @  65.8 tok/s    7.2 s  
+night-iq3xxs-2card-peer run 2 arith arith10              PASS   278 tok @  69.7 tok/s    5.5 s  
+night-iq3xxs-2card-peer run 2 arith arith11              PASS   394 tok @  67.8 tok/s    7.5 s  
+night-iq3xxs-2card-peer run 2 arith arith12              PASS   375 tok @  68.1 tok/s    7.1 s  
+night-iq3xxs-2card-peer run 2 arith arith13              PASS   392 tok @  67.4 tok/s    7.4 s  
+night-iq3xxs-2card-peer run 2 arith arith14              PASS   416 tok @  66.9 tok/s    7.7 s  
+night-iq3xxs-2card-peer run 2 arith arith15              PASS   268 tok @  68.9 tok/s    5.5 s  
+night-iq3xxs-2card-peer run 2 arith arith16              PASS   334 tok @  68.6 tok/s    6.5 s  
+night-iq3xxs-2card-peer run 2 arith arith17              PASS   393 tok @  67.1 tok/s    7.5 s  
+night-iq3xxs-2card-peer run 2 arith arith18              PASS   488 tok @  67.2 tok/s    8.7 s  
+night-iq3xxs-2card-peer run 2 arith arith19              PASS   428 tok @  66.5 tok/s    8.1 s  
+night-iq3xxs-2card-peer run 2 arith arith20              PASS   266 tok @  68.9 tok/s    5.5 s  
+night-iq3xxs-2card-peer run 2 arith arith21              PASS   503 tok @  66.4 tok/s    9.2 s  
+night-iq3xxs-2card-peer run 2 arith arith22              PASS   706 tok @  65.8 tok/s   12.2 s  
+night-iq3xxs-2card-peer run 2 arith arith23              PASS   376 tok @  66.6 tok/s    7.2 s  
+night-iq3xxs-2card-peer run 2 arith arith24              PASS   298 tok @  62.6 tok/s    6.4 s  
+night-iq3xxs-2card-peer run 2 arith arith25              PASS   266 tok @  71.6 tok/s    5.3 s  
+night-iq3xxs-2card-peer run 2 arith arith26              PASS   481 tok @  69.2 tok/s    8.6 s  
+night-iq3xxs-2card-peer run 2 arith arith27              PASS   434 tok @  66.7 tok/s    8.2 s  
+night-iq3xxs-2card-peer run 2 arith arith28              PASS   301 tok @  63.9 tok/s    6.3 s  
+night-iq3xxs-2card-peer run 2 arith arith29              PASS   421 tok @  62.4 tok/s    8.4 s  
+night-iq3xxs-2card-peer run 2 arith arith30              PASS   266 tok @  68.9 tok/s    5.3 s  
+night-iq3xxs-2card-peer run 2 arith arith31              PASS   393 tok @  65.9 tok/s    7.6 s  
+night-iq3xxs-2card-peer run 2 arith arith32              PASS   428 tok @  66.9 tok/s    8.1 s  
+night-iq3xxs-2card-peer run 2 arith arith33              PASS   363 tok @  64.4 tok/s    7.3 s  
+night-iq3xxs-2card-peer run 2 arith arith34              PASS   300 tok @  64.9 tok/s    6.1 s  
+night-iq3xxs-2card-peer run 2 arith arith35              PASS   180 tok @  66.7 tok/s    4.3 s  
+night-iq3xxs-2card-peer run 2 arith arith36              PASS   484 tok @  64.0 tok/s    9.3 s  
+night-iq3xxs-2card-peer run 2 arith arith37              PASS   859 tok @  67.7 tok/s   14.4 s  
+night-iq3xxs-2card-peer run 2 arith arith38              PASS   358 tok @  61.2 tok/s    7.4 s  
+night-iq3xxs-2card-peer run 2 arith arith39              PASS   429 tok @  67.8 tok/s    8.0 s  
+night-iq3xxs-2card-peer run 3 code  semver_sort          PASS  1226 tok @  60.6 tok/s   22.2 s  
+night-iq3xxs-2card-peer run 3 code  cron_next            FAIL  1438 tok @  59.8 tok/s   26.0 s  TypeError: can't compare datetime.datetime to datetime.date
+night-iq3xxs-2card-peer run 3 code  json_parse           FAIL  2072 tok @  66.5 tok/s   32.9 s  ValueError: Expected ',' or ']' at position 133
+night-iq3xxs-2card-peer run 3 code  regex_match          FAIL  6000 tok @  61.8 tok/s   99.1 s  no code block
+night-iq3xxs-2card-peer run 3 code  osa_distance         PASS   463 tok @  60.5 tok/s    9.5 s  
+night-iq3xxs-2card-peer run 3 code  parse_csv            FAIL   701 tok @  62.5 tok/s   13.0 s  AssertionError: accepted invalid: ['"a"b,c']
+night-iq3xxs-2card-peer run 3 code  run_limited          PASS   516 tok @  61.6 tok/s    9.9 s  
+night-iq3xxs-2card-peer run 3 code  lex_shortest_path    PASS  1187 tok @  56.0 tok/s   23.0 s  
+night-iq3xxs-2card-peer run 3 code  b64                  PASS  1137 tok @  62.8 tok/s   19.9 s  
+night-iq3xxs-2card-peer run 3 code  glob_match           FAIL   909 tok @  63.6 tok/s   16.2 s  AssertionError: ('***[!a]', 'cb]', False, True)
+night-iq3xxs-2card-peer run 3 code  fraction_to_decimal  PASS   320 tok @  64.9 tok/s    6.8 s  
+night-iq3xxs-2card-peer run 3 code  knapsack_pick        FAIL  1238 tok @  57.7 tok/s   23.3 s  AssertionError: ([(8, 7), (5, 2), (2, 0), (9, 2), (2, 8), (1, 5), (2, 0)], 21, (22, [0, 1, 2, 4, 5, 
+night-iq3xxs-2card-peer run 3 code  kth_permutation      PASS   400 tok @  63.4 tok/s    8.0 s  
+night-iq3xxs-2card-peer run 3 code  text_justify         PASS   483 tok @  69.0 tok/s    8.8 s  
+night-iq3xxs-2card-peer run 3 code  add_days             PASS  1292 tok @  63.2 tok/s   22.2 s  
+night-iq3xxs-2card-peer run 3 code  crc32                PASS   640 tok @  56.2 tok/s   13.2 s  
+night-iq3xxs-2card-peer run 3 code  weighted_intervals   FAIL   603 tok @  64.7 tok/s   11.1 s  AssertionError: ([(1, 2, 2), (12, 17, 1), (10, 11, 2), (12, 15, 4), (0, 1, 1), (5, 10, 8), (9, 13, 3
+night-iq3xxs-2card-peer run 3 code  normpath             FAIL   642 tok @  61.9 tok/s   12.1 s  AssertionError: ('/', '.', '/')
+night-iq3xxs-2card-peer run 3 code  min_window           PASS   335 tok @  62.7 tok/s    6.9 s  
+night-iq3xxs-2card-peer run 3 code  int_to_words         PASS   595 tok @  66.2 tok/s   11.1 s  
+night-iq3xxs-2card-peer run 3 code  big_mul              PASS   469 tok @  63.8 tok/s    9.3 s  
+night-iq3xxs-2card-peer run 3 arith arith00              PASS   277 tok @  56.9 tok/s    6.6 s  
+night-iq3xxs-2card-peer run 3 arith arith01              PASS   611 tok @  65.9 tok/s   11.0 s  
+night-iq3xxs-2card-peer run 3 arith arith02              PASS   486 tok @  67.9 tok/s    8.8 s  
+night-iq3xxs-2card-peer run 3 arith arith03              PASS   384 tok @  67.6 tok/s    7.3 s  
+night-iq3xxs-2card-peer run 3 arith arith04              PASS   301 tok @  66.6 tok/s    6.2 s  
+night-iq3xxs-2card-peer run 3 arith arith05              PASS   219 tok @  69.8 tok/s    4.6 s  
+night-iq3xxs-2card-peer run 3 arith arith06              PASS   377 tok @  66.3 tok/s    7.3 s  
+night-iq3xxs-2card-peer run 3 arith arith07              PASS   506 tok @  67.6 tok/s    9.1 s  
+night-iq3xxs-2card-peer run 3 arith arith08              PASS   256 tok @  64.2 tok/s    5.6 s  
+night-iq3xxs-2card-peer run 3 arith arith09              PASS   366 tok @  66.1 tok/s    7.1 s  
+night-iq3xxs-2card-peer run 3 arith arith10              PASS   278 tok @  70.3 tok/s    5.6 s  
+night-iq3xxs-2card-peer run 3 arith arith11              PASS   394 tok @  67.9 tok/s    7.5 s  
+night-iq3xxs-2card-peer run 3 arith arith12              PASS   383 tok @  69.6 tok/s    7.1 s  
+night-iq3xxs-2card-peer run 3 arith arith13              PASS   367 tok @  66.8 tok/s    7.0 s  
+night-iq3xxs-2card-peer run 3 arith arith14              PASS   459 tok @  64.7 tok/s    8.7 s  
+night-iq3xxs-2card-peer run 3 arith arith15              PASS   269 tok @  67.7 tok/s    5.6 s  
+night-iq3xxs-2card-peer run 3 arith arith16              PASS   334 tok @  69.0 tok/s    6.5 s  
+night-iq3xxs-2card-peer run 3 arith arith17              PASS   393 tok @  66.6 tok/s    7.4 s  
+night-iq3xxs-2card-peer run 3 arith arith18              PASS   486 tok @  68.0 tok/s    8.8 s  
+night-iq3xxs-2card-peer run 3 arith arith19              PASS   449 tok @  68.2 tok/s    8.3 s  
+night-iq3xxs-2card-peer run 3 arith arith20              PASS   267 tok @  67.5 tok/s    5.6 s  
+night-iq3xxs-2card-peer run 3 arith arith21              PASS   510 tok @  66.5 tok/s    9.2 s  
+night-iq3xxs-2card-peer run 3 arith arith22              PASS   703 tok @  65.5 tok/s   12.3 s  
+night-iq3xxs-2card-peer run 3 arith arith23              PASS   376 tok @  66.7 tok/s    7.2 s  
+night-iq3xxs-2card-peer run 3 arith arith24              PASS   448 tok @  65.7 tok/s    8.4 s  
+night-iq3xxs-2card-peer run 3 arith arith25              PASS   265 tok @  70.8 tok/s    5.2 s  
+night-iq3xxs-2card-peer run 3 arith arith26              PASS   489 tok @  68.2 tok/s    8.9 s  
+night-iq3xxs-2card-peer run 3 arith arith27              PASS   434 tok @  66.1 tok/s    8.3 s  
+night-iq3xxs-2card-peer run 3 arith arith28              PASS   306 tok @  66.5 tok/s    6.2 s  
+night-iq3xxs-2card-peer run 3 arith arith29              PASS   420 tok @  64.7 tok/s    8.0 s  
+night-iq3xxs-2card-peer run 3 arith arith30              PASS   265 tok @  70.3 tok/s    5.4 s  
+night-iq3xxs-2card-peer run 3 arith arith31              PASS   393 tok @  66.0 tok/s    7.6 s  
+night-iq3xxs-2card-peer run 3 arith arith32              PASS   428 tok @  67.2 tok/s    8.1 s  
+night-iq3xxs-2card-peer run 3 arith arith33              PASS   363 tok @  64.4 tok/s    7.1 s  
+night-iq3xxs-2card-peer run 3 arith arith34              PASS   333 tok @  64.2 tok/s    6.8 s  
+night-iq3xxs-2card-peer run 3 arith arith35              PASS   226 tok @  69.9 tok/s    4.8 s  
+night-iq3xxs-2card-peer run 3 arith arith36              PASS   563 tok @  65.0 tok/s   10.4 s  
+night-iq3xxs-2card-peer run 3 arith arith37              PASS   951 tok @  67.4 tok/s   15.7 s  
+night-iq3xxs-2card-peer run 3 arith arith38              PASS   358 tok @  62.3 tok/s    7.4 s  
+night-iq3xxs-2card-peer run 3 arith arith39              PASS   429 tok @  67.3 tok/s    8.0 s  
+night-iq3xxs-2card-peer code total 45/63 (71%); per run: 17 15 13; always 12, never 2, mixed 7 of 21 tasks
+night-iq3xxs-2card-peer code by task: semver_sort 3/3  cron_next 1/3  json_parse 2/3  regex_match 1/3  osa_distance 3/3  parse_csv 1/3  run_limited 3/3  lex_shortest_path 3/3  b64 3/3  glob_match 0/3  fraction_to_decimal 3/3  knapsack_pick 0/3  kth_permutation 3/3  text_justify 3/3  add_days 1/3  crc32 3/3  weighted_intervals 2/3  normpath 1/3  min_window 3/3  int_to_words 3/3  big_mul 3/3
+night-iq3xxs-2card-peer arith total 120/120 (100%); per run: 40 40 40; always 40, never 0, mixed 0 of 40 tasks
+QUALITY-DONE
